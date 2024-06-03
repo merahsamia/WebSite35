@@ -1119,7 +1119,7 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 200px; /* Ajustez la taille selon vos besoins */
+   width: 200px; /* Ajustez la taille selon vos besoins */
   height: auto; /* Pour conserver les proportions de l'image */
   border-radius: 10px; /* Vous pouvez ajuster le rayon de la bordure si nécessaire */
   border: 6px solid rgba(255, 255, 255, 0.15);
@@ -1171,12 +1171,7 @@ section {
   color: #eee;
 }
 
-.testimonials .swiper-pagination-custom {
-  margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
-}
-
-
-/* .testimonials .swiper-pagination {
+.testimonials .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
@@ -1191,7 +1186,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffc451;
   opacity: 1;
-} */
+}
 
 @media (min-width: 1024px) {
   .testimonials {

@@ -1,8 +1,6 @@
 <template>
   <HeaderIndex></HeaderIndex>
 
-
-
   <!-- ======= Hero Section ======= -->
     <section id="hero" class="d-flex align-items-center justify-content-center">
       <div class="container" data-aos="fade-up">
@@ -54,7 +52,6 @@
       </div>
     </section>
   <!-- End Hero -->
-
     
 
     <!-- ======= About Section ======= -->
@@ -145,100 +142,45 @@
 
     <!-- ======= Testimonials Section  ACTUALITES ======= -->
       <div class="container" data-aos="fade-up">
-
         <div class="section-title">
           <h2>Actualités</h2>
           <p>Dernières Actualités</p>
           <router-link :to="{ name: 'Actualites' }" > Actualites view</router-link>
-
         </div>
-
       </div>
+
+     
       <section id="testimonials" class="testimonials">
-        
         <div class="container" data-aos="zoom-in">
-          
           <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/e-paiement.jpg" class="testimonial-img" alt="">
-                  
-
-                  <h3>Actualité de 05/04/2024</h3>
+            <swiper
+              :modules="modules"
+              :pagination="{ clickable: true, el: '.swiper-pagination-custom' }"
+              :autoplay="{ delay: 3000, disableOnInteraction: false }"
+              class="swiper-wrapper"
+            >
+              <swiper-slide v-for="actualite in actualites" :key="actualite.id">
+                <div class="testimonial-item" v-if="actualite.images && actualite.images.length > 0">
+                  <img :src="'/storage/' + actualite.images[0].url" :alt="actualite.images[0].caption" class="testimonial-img">
+                  <h3>{{ actualite.title }} </h3>
                   <br>
                   <p>
                     <h2>
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      Vous pouvez désormais payer vos loyers en ligne
+                      {{ actualite.content }}
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </h2>
                     <h4>Lire plus</h4>
-
+                    <br>
                   </p>
                 </div>
-              </div><!-- End testimonial item -->
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/vente.jpg" class="testimonial-img" alt=""> 
-                  <img src="assets/img/testimonials/vente2.jpg" class="testimonial-img" alt="">
-                  <img src="assets/img/testimonials/vente3.jpg" class="testimonial-img" alt="">
-
-                  <h3>Actualité de 05/04/2024</h3>
-                  <br>
-                  <p>
-                    <h2>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      إعـــلان عـن التنـازل عـن حـق الإيجـار لمحـلات تجاريـة
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </h2>
-                    <h4>Lire plus</h4>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/vente-locaux-1.jpg" class="testimonial-img" alt="">
-                  <img src="assets/img/testimonials/vente-locaux-2.jpg" class="testimonial-img" alt="">
-                  <h3>Actualité de 05/04/2024</h3>
-                  <br>
-                  <p>
-                    <h2>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      إعـــلان عـن بيـع محـلات تجاريـة
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </h2>
-                    <h4>Lire plus</h4>
-                  </p>
-                </div>
-              </div><!-- End testimonial item -->
-
-              <div class="swiper-slide">
-                <div class="testimonial-item">
-                  <img src="assets/img/testimonials/relogement.jpg" class="testimonial-img" alt="">
-                  <img src="assets/img/testimonials/relogement-2.jpg" class="testimonial-img" alt="">
-                  <img src="assets/img/testimonials/relogement-3.jpg" class="testimonial-img" alt="">
-                <h3>Actualité de 05/04/2024</h3>
-                  <br>
-                  <p>
-                    <h2>
-                      <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                      .عملية توزيـع 347 وحـدة سكنيـة عموميـة إيجاريـة ببلديـة بنـي عمـران                   
-                      <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                    </h2>
-                    <h4>Lire plus</h4>
-                  </p>
-                </div>
-              </div><!--End testimonial item -->
-
-            </div>
-            <div class="swiper-pagination"></div>
+              </swiper-slide>
+            </swiper>
+            <div class="swiper-pagination swiper-pagination-custom"></div>
           </div>
-
         </div>
       </section>
+
     <!-- End Testimonials Section -->
 
 
@@ -667,17 +609,55 @@
 
 </template>
 
-<script>
-import HeaderIndex from './HeaderIndex.vue';
 
-export default {
-  name: 'Index',
-  components: {
-    HeaderIndex
+
+<script>
+  import { ref, onMounted } from 'vue';
+  import useActualites from '../composition-api/useActualites';
+  import HeaderIndex from './HeaderIndex.vue';
+
+  import {Pagination, Autoplay} from 'swiper';
+
+
+  export default {
+    name: 'Index',
+    components: {
+      HeaderIndex
+    },
+    setup() {
+      const { actualites, fetchActualites } = useActualites();
+
+      // Chargement des actualités lors de la création du composant
+      onMounted(() => {
+        fetchActualites();
+
+      });
+
+      return { actualites, fetchActualites, modules: [Pagination, Autoplay],  };
+    }
   }
+</script>
+
+<style>
+
+
+/* Style pour les bulles de pagination */
+.swiper-pagination-custom .swiper-pagination-bullet {
+  
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4)!important; /* Utilisez !important pour forcer l'application de la couleur */
+  opacity: 1; /* Assurez-vous que les bulles soient bien visibles */
 }
 
-</script>
+/* Style pour la bulle active */
+.swiper-pagination-custom .swiper-pagination-bullet-active {
+  background-color: #ffc451 !important; /* Utilisez !important pour forcer l'application de la couleur */
+}
+
+</style>
+
+
 
 
 

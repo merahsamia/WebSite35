@@ -7,7 +7,6 @@
               <h2>Actualité Details</h2>
               <ol>
                   <li><a href="\">Accueil</a></li>
-                 
                   <li>                 
                      <router-link :to="{ name: 'Actualites' }" > Actualites</router-link>
                   </li>
@@ -26,11 +25,47 @@
 
       <div class="row gy-4">
 
-        <swiper class="col-lg-8" v-if="actualite.images && actualite.images.length > 0" :modules="modules" :pagination="{ clickable: true }" :autoplay="{ delay: 3000, disableOnInteraction: false }">
-          <swiper-slide class="portfolio-details-slider" v-for="image in actualite.images" :key="image.id">
-            <img  :src="'/storage/' + image.url" :alt="image.caption">
-          </swiper-slide>
-        </swiper>
+              <!-- <div class="col-lg-8" v-if="actualite.images.length > 0">
+                <div class="portfolio-details-slider swiper"  v-for="image in actualite.images" :key="image.id">
+                  <div class="swiper-wrapper align-items-center">
+
+                    <div class="swiper-slide">
+                        <img :src="'/storage/' + image.url" :alt="image.caption" >
+                    </div>
+                  
+
+                    
+
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div> -->
+
+          <!-- <div class="col-lg-8" v-if="actualite.images && actualite.images.length > 0">
+              <div class="portfolio-details-slider swiper">
+                  <div class="swiper-wrapper align-items-center">
+                      <div class="swiper-slide">
+                          <img :src="'/storage/' + actualite.images[0].url" :alt="actualite.images[0].caption">
+                      </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+              </div>
+          </div> -->
+
+          <Swiper v-if="actualite.images && actualite.images.length > 0">
+            <SwiperSlide v-for="image in actualite.images" :key="image.id">
+                <div class="col-lg-8">
+                  <div class="portfolio-details-slider swiper">
+                      <div class="swiper-wrapper align-items-center">
+                          <div class="swiper-slide" >
+                              <img :src="'/storage/' + image.url" :alt="image.caption">
+                          </div>
+                      </div>
+                      <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+            </SwiperSlide>
+          </Swiper>
         
 
         <div class="col-lg-4">
@@ -43,12 +78,12 @@
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
             </ul>
           </div>
-          <div class="portfolio-description">
+          <!-- <div class="portfolio-description">
             <h2>This is an example of portfolio detail</h2>
             <p>
               Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
             </p>
-          </div> 
+          </div> -->
         </div>
 
       </div>
@@ -67,13 +102,11 @@ import useActualites from '../composition-api/useActualites';
 import { onMounted } from 'vue';
 import { useRoute } from 'vue-router';
 
-import {Pagination, Autoplay} from 'swiper';
-
-
+import {Swiper, SwiperSlide} from "swiper/vue";
+import "swiper/css";
 
 export default {
   setup() {
-
     const { actualite, fetchActualite } = useActualites();
     const route = useRoute();
     const id = route.params.actualiteId;
@@ -85,10 +118,7 @@ export default {
     
   
 
-    return { actualite, fetchActualite, modules: [Pagination, Autoplay], };
-
-  
-   
+    return { actualite, fetchActualite };
   }
 };
 </script>
