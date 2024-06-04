@@ -170,7 +170,7 @@
                       {{ actualite.content }}
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </h2>
-                    <h4>Lire plus</h4>
+                    <h4> <a href="" @click.prevent="readMore(actualite)"> Lire plus</a></h4>
                     <br>
                   </p>
                 </div>
@@ -309,10 +309,10 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Web 3</h4>
-                  <p>Web</p>
+                  <h4>380 Logements Boumerdes</h4>
+                  <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="380 LPL Boumerdes"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -344,10 +344,10 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Card 2</h4>
-                  <p>Card</p>
+                  <h4>76 Logements Zemmouri</h4>
+                  <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="76 LPL Zemmouri"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -358,10 +358,10 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Web 2</h4>
-                  <p>Web</p>
+                  <h4>300 Logements Si mustapha</h4>
+                  <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="300 LPL Si mustapha"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -372,10 +372,10 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>App 3</h4>
-                  <p>App</p>
+                  <h4>200 Logements Ouled Heddadj</h4>
+                  <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="200 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -386,10 +386,10 @@
               <div class="portfolio-wrap">
                 <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
                 <div class="portfolio-info">
-                  <h4>Card 1</h4>
-                  <p>Card</p>
+                  <h4>100 Logements Ouled Heddadj</h4>
+                  <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="100 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -541,9 +541,8 @@
         </div>
 
         <div>
-          <!-- <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe> -->
           <iframe style="border:0; width: 100%; height: 270px;" src=
-          "https://www.google.com/maps/d/u/0/embed?mid=18hIwYXb0gd3v54JJRytVBjx1DR51tis&ehbc=2E312F" frameborder="0" allowfullscreen></iframe>
+          "https://www.google.com/maps/d/u/0/embed?mid=18hIwYXb0gd3v54JJRytVBjx1DR51tis&ehbc=2E312F" frameborder="0" allowfullscreen loading="lazy"></iframe>
         </div>
 
         <div class="row mt-5">
@@ -615,6 +614,8 @@
   import { ref, onMounted } from 'vue';
   import useActualites from '../composition-api/useActualites';
   import HeaderIndex from './HeaderIndex.vue';
+  import { useRoute, useRouter } from 'vue-router';
+
 
   import {Pagination, Autoplay} from 'swiper';
 
@@ -626,6 +627,8 @@
     },
     setup() {
       const { actualites, fetchActualites } = useActualites();
+      const router = useRouter();
+
 
       // Chargement des actualités lors de la création du composant
       onMounted(() => {
@@ -633,7 +636,12 @@
 
       });
 
-      return { actualites, fetchActualites, modules: [Pagination, Autoplay],  };
+      const readMore = (actualite) => {
+      router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
+    };
+
+
+      return { actualites, fetchActualites, readMore, modules: [Pagination, Autoplay],  };
     }
   }
 </script>
