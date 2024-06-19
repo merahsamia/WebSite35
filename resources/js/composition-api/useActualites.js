@@ -8,6 +8,7 @@ export default function useActualites() {
     const generalError = ref(null);
 
     const actualites = ref([]);
+    const actualitesIndex = ref([]);
 
     const form = ref({
         title: "",
@@ -18,10 +19,26 @@ export default function useActualites() {
     const actualite = ref({});
     const id = ref('');
     
-//Home
-    const fetchActualites = async () => {
+//Index.vue 4 Latest actualities
+    const fetchActualitesIndex = async () => {
         try {
             const response = await fetch('/api/actualites'); 
+            if (!response.ok) {
+                throw new Error('Failed to fetch Index actualites');
+            }
+            const data = await response.json();
+            console.log(data)
+
+            actualitesIndex.value = data;
+        } catch (error) {
+            console.error('Error fetching Index actualites:', error);
+        }
+    };
+
+//Actualites.vue 
+    const fetchActualites = async () => {
+        try {
+            const response = await fetch('/api/AllActualites'); 
             if (!response.ok) {
                 throw new Error('Failed to fetch actualites');
             }
@@ -92,5 +109,5 @@ export default function useActualites() {
         }
       };
 
-    return { errors, generalError, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite};
+    return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite};
 }

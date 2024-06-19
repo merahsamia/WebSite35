@@ -21,6 +21,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/actualites', [ActualiteController::class, 'index']);
+Route::get('/AllActualites', [ActualiteController::class, 'actualites']);
 
 Route::post('/actualites/create', [ActualiteController::class, 'store']);
 Route::get('/actualites/actualite/{id}', [ActualiteController::class, 'show']);

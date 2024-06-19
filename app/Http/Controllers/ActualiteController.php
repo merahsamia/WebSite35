@@ -16,6 +16,14 @@ class ActualiteController extends Controller
 
     public function index()
     {
+        $actualites = Actualite::with('images')->latest()->take(4)->get();
+
+        return response()->json($actualites, 200);
+    }
+
+    
+    public function actualites()
+    {
         $actualites = Actualite::with('images')->latest()->get();
 
         return response()->json($actualites, 200);

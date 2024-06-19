@@ -145,7 +145,7 @@
         <div class="section-title">
           <h2>Actualités</h2>
           <p>Dernières Actualités</p>
-          <router-link :to="{ name: 'Actualites' }" > Actualites view</router-link>
+          <router-link :to="{ name: 'Actualites' }" >               Voir toutes les actualités        </router-link>
         </div>
       </div>
 
@@ -159,8 +159,8 @@
               :autoplay="{ delay: 3000, disableOnInteraction: false }"
               class="swiper-wrapper"
             >
-              <swiper-slide v-for="actualite in actualites" :key="actualite.id">
-                <div class="testimonial-item" v-if="actualite.images && actualite.images.length > 0">
+              <swiper-slide v-for="actualite in actualitesIndex" :key="actualite?.id">
+                <div class="testimonial-item" v-if="actualite && actualite.images && actualite.images.length > 0">
                   <img :src="'/storage/' + actualite.images[0].url" :alt="actualite.images[0].caption" class="testimonial-img">
                   <h3>{{ actualite.title }} </h3>
                   <br>
@@ -263,7 +263,7 @@
       </section> -->
     <!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section PROJETS PICS======= -->
+    <!-- ======= Portfolio Section PROJETS PICS And VIDEOS ======= -->
       <section id="portfolio" class="portfolio">
         <div class="container" data-aos="fade-up">
 
@@ -610,41 +610,30 @@
 
 
 
-<script>
-  import { ref, onMounted } from 'vue';
-  import useActualites from '../composition-api/useActualites';
-  import HeaderIndex from './HeaderIndex.vue';
-  import { useRoute, useRouter } from 'vue-router';
+<script setup>
 
+        import { ref, onMounted } from 'vue';
+        import useActualites from '../composition-api/useActualites';
+        import HeaderIndex from './HeaderIndex.vue';
+        import { useRouter } from 'vue-router';
+        import { Pagination, Autoplay } from 'swiper';
 
-  import {Pagination, Autoplay} from 'swiper';
+        // Utilisation du composable useActualites
+        const { actualitesIndex, fetchActualitesIndex } = useActualites();
+        const router = useRouter();
+        const modules = [Pagination, Autoplay];
 
+        // Chargement des actualités lors de la création du composant
+        onMounted(() => {
+          fetchActualitesIndex();
+        });
 
-  export default {
-    name: 'Index',
-    components: {
-      HeaderIndex
-    },
-    setup() {
-      const { actualites, fetchActualites } = useActualites();
-      const router = useRouter();
+        const readMore = (actualite) => {
+          router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
+        };
 
-
-      // Chargement des actualités lors de la création du composant
-      onMounted(() => {
-        fetchActualites();
-
-      });
-
-      const readMore = (actualite) => {
-      router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
-    };
-
-
-      return { actualites, fetchActualites, readMore, modules: [Pagination, Autoplay],  };
-    }
-  }
 </script>
+
 
 <style>
 

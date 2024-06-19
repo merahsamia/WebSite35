@@ -21007,10 +21007,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js":
-/*!***********************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js ***!
-  \***********************************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js ***!
+  \**********************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -21028,20 +21028,23 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// Utilisation du composable useActualites
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  name: 'Index',
-  components: {
-    HeaderIndex: _HeaderIndex_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
-  },
-  setup: function setup() {
+  __name: 'Index',
+  setup: function setup(__props, _ref) {
+    var __expose = _ref.expose;
+    __expose();
     var _useActualites = (0,_composition_api_useActualites__WEBPACK_IMPORTED_MODULE_1__["default"])(),
-      actualites = _useActualites.actualites,
-      fetchActualites = _useActualites.fetchActualites;
+      actualitesIndex = _useActualites.actualitesIndex,
+      fetchActualitesIndex = _useActualites.fetchActualitesIndex;
     var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_4__.useRouter)();
+    var modules = [swiper__WEBPACK_IMPORTED_MODULE_3__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_3__.Autoplay];
 
     // Chargement des actualités lors de la création du composant
     (0,vue__WEBPACK_IMPORTED_MODULE_0__.onMounted)(function () {
-      fetchActualites();
+      fetchActualitesIndex();
     });
     var readMore = function readMore(actualite) {
       router.push({
@@ -21051,12 +21054,33 @@ __webpack_require__.r(__webpack_exports__);
         }
       });
     };
-    return {
-      actualites: actualites,
-      fetchActualites: fetchActualites,
+    var __returned__ = {
+      actualitesIndex: actualitesIndex,
+      fetchActualitesIndex: fetchActualitesIndex,
+      router: router,
+      modules: modules,
       readMore: readMore,
-      modules: [swiper__WEBPACK_IMPORTED_MODULE_3__.Pagination, swiper__WEBPACK_IMPORTED_MODULE_3__.Autoplay]
+      ref: vue__WEBPACK_IMPORTED_MODULE_0__.ref,
+      onMounted: vue__WEBPACK_IMPORTED_MODULE_0__.onMounted,
+      get useActualites() {
+        return _composition_api_useActualites__WEBPACK_IMPORTED_MODULE_1__["default"];
+      },
+      HeaderIndex: _HeaderIndex_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+      get useRouter() {
+        return vue_router__WEBPACK_IMPORTED_MODULE_4__.useRouter;
+      },
+      get Pagination() {
+        return swiper__WEBPACK_IMPORTED_MODULE_3__.Pagination;
+      },
+      get Autoplay() {
+        return swiper__WEBPACK_IMPORTED_MODULE_3__.Autoplay;
+      }
     };
+    Object.defineProperty(__returned__, '__isScriptSetup', {
+      enumerable: false,
+      value: true
+    });
+    return __returned__;
   }
 });
 
@@ -21756,17 +21780,16 @@ var _hoisted_26 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   type: "submit"
 }, "Envoyer le message")])])])])])], -1 /* HOISTED */);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  var _component_HeaderIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("HeaderIndex");
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   var _component_swiper_slide = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper-slide");
   var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_HeaderIndex), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["HeaderIndex"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), _hoisted_2, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [_hoisted_7, _hoisted_8, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: {
       name: 'Actualites'
     }
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Actualites view")];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Voir toutes les actualités ")];
     }),
     _: 1 /* STABLE */
   })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
@@ -21782,12 +21805,12 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "swiper-wrapper"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.actualites, function (actualite) {
+      return [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.actualitesIndex, function (actualite) {
         return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)(_component_swiper_slide, {
-          key: actualite.id
+          key: actualite === null || actualite === void 0 ? void 0 : actualite.id
         }, {
           "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-            return [actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+            return [actualite && actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
               src: '/storage/' + actualite.images[0].url,
               alt: actualite.images[0].caption,
               "class": "testimonial-img"
@@ -21803,7 +21826,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }), 128 /* KEYED_FRAGMENT */))];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["modules"]), _hoisted_19])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS======= "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
+  }), _hoisted_19])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), _hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS And VIDEOS ======= "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), _hoisted_22, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), _hoisted_23, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), _hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), _hoisted_26, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -21959,6 +21982,7 @@ function useActualites() {
   var errors = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
   var generalError = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
   var actualites = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
+  var actualitesIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
   var form = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({
     title: "",
     content: "",
@@ -21967,8 +21991,8 @@ function useActualites() {
   var actualite = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
   var id = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
 
-  //Home
-  var fetchActualites = /*#__PURE__*/function () {
+  //Index.vue 4 Latest actualities
+  var fetchActualitesIndex = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
       var response, data;
       return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -21983,38 +22007,79 @@ function useActualites() {
               _context.next = 6;
               break;
             }
-            throw new Error('Failed to fetch actualites');
+            throw new Error('Failed to fetch Index actualites');
           case 6:
             _context.next = 8;
             return response.json();
           case 8:
             data = _context.sent;
             console.log(data);
-            actualites.value = data;
+            actualitesIndex.value = data;
             _context.next = 16;
             break;
           case 13:
             _context.prev = 13;
             _context.t0 = _context["catch"](0);
-            console.error('Error fetching actualites:', _context.t0);
+            console.error('Error fetching Index actualites:', _context.t0);
           case 16:
           case "end":
             return _context.stop();
         }
       }, _callee, null, [[0, 13]]);
     }));
-    return function fetchActualites() {
+    return function fetchActualitesIndex() {
       return _ref.apply(this, arguments);
+    };
+  }();
+
+  //Actualites.vue 
+  var fetchActualites = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+      var response, data;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            _context2.prev = 0;
+            _context2.next = 3;
+            return fetch('/api/AllActualites');
+          case 3:
+            response = _context2.sent;
+            if (response.ok) {
+              _context2.next = 6;
+              break;
+            }
+            throw new Error('Failed to fetch actualites');
+          case 6:
+            _context2.next = 8;
+            return response.json();
+          case 8:
+            data = _context2.sent;
+            console.log(data);
+            actualites.value = data;
+            _context2.next = 16;
+            break;
+          case 13:
+            _context2.prev = 13;
+            _context2.t0 = _context2["catch"](0);
+            console.error('Error fetching actualites:', _context2.t0);
+          case 16:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2, null, [[0, 13]]);
+    }));
+    return function fetchActualites() {
+      return _ref2.apply(this, arguments);
     };
   }();
 
   //AddActualite.vue
 
   var submitAddActualite = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
       var formData, response, data;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) switch (_context2.prev = _context2.next) {
+      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+        while (1) switch (_context3.prev = _context3.next) {
           case 0:
             formData = new FormData();
             formData.append("title", form.value.title);
@@ -22022,18 +22087,18 @@ function useActualites() {
             form.value.images.forEach(function (image, index) {
               formData.append("images[".concat(index, "]"), image);
             });
-            _context2.prev = 4;
-            _context2.next = 7;
+            _context3.prev = 4;
+            _context3.next = 7;
             return fetch('/api/actualites/create', {
               method: "POST",
               body: formData
             });
           case 7:
-            response = _context2.sent;
-            _context2.next = 10;
+            response = _context3.sent;
+            _context3.next = 10;
             return response.json();
           case 10:
-            data = _context2.sent;
+            data = _context3.sent;
             if (!response.ok) {
               if (response.status === 422) {
                 errors.value = data.errors; // Set validation errors
@@ -22048,21 +22113,21 @@ function useActualites() {
 
               // Optionally navigate or reset form
             }
-            _context2.next = 18;
+            _context3.next = 18;
             break;
           case 14:
-            _context2.prev = 14;
-            _context2.t0 = _context2["catch"](4);
-            console.error("Error creating actualité:", _context2.t0);
+            _context3.prev = 14;
+            _context3.t0 = _context3["catch"](4);
+            console.error("Error creating actualité:", _context3.t0);
             generalError.value = "Failed to create actualité. Please try again."; // Set general error message
           case 18:
           case "end":
-            return _context2.stop();
+            return _context3.stop();
         }
-      }, _callee2, null, [[4, 14]]);
+      }, _callee3, null, [[4, 14]]);
     }));
     return function submitAddActualite() {
-      return _ref2.apply(this, arguments);
+      return _ref3.apply(this, arguments);
     };
   }();
   var handleFileUpload = function handleFileUpload(event) {
@@ -22072,47 +22137,49 @@ function useActualites() {
   //Actualite.vue
 
   var fetchActualite = /*#__PURE__*/function () {
-    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(id) {
+    var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(id) {
       var response, data;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) switch (_context3.prev = _context3.next) {
+      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+        while (1) switch (_context4.prev = _context4.next) {
           case 0:
-            _context3.prev = 0;
-            _context3.next = 3;
+            _context4.prev = 0;
+            _context4.next = 3;
             return fetch("/api/actualites/actualite/".concat(id));
           case 3:
-            response = _context3.sent;
+            response = _context4.sent;
             if (response.ok) {
-              _context3.next = 6;
+              _context4.next = 6;
               break;
             }
             throw new Error('Failed to fetch Actualite');
           case 6:
-            _context3.next = 8;
+            _context4.next = 8;
             return response.json();
           case 8:
-            data = _context3.sent;
+            data = _context4.sent;
             console.log(data);
             actualite.value = data;
-            _context3.next = 16;
+            _context4.next = 16;
             break;
           case 13:
-            _context3.prev = 13;
-            _context3.t0 = _context3["catch"](0);
-            console.error('Error fetching Actualite:', _context3.t0);
+            _context4.prev = 13;
+            _context4.t0 = _context4["catch"](0);
+            console.error('Error fetching Actualite:', _context4.t0);
           case 16:
           case "end":
-            return _context3.stop();
+            return _context4.stop();
         }
-      }, _callee3, null, [[0, 13]]);
+      }, _callee4, null, [[0, 13]]);
     }));
     return function fetchActualite(_x) {
-      return _ref3.apply(this, arguments);
+      return _ref4.apply(this, arguments);
     };
   }();
   return {
     errors: errors,
     generalError: generalError,
+    actualitesIndex: actualitesIndex,
+    fetchActualitesIndex: fetchActualitesIndex,
     actualites: actualites,
     fetchActualites: fetchActualites,
     form: form,
@@ -40205,7 +40272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Index.vue?vue&type=template&id=bb962f12 */ "./resources/js/components/Index.vue?vue&type=template&id=bb962f12");
-/* harmony import */ var _Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&lang=js */ "./resources/js/components/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Index.vue?vue&type=script&setup=true&lang=js */ "./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js");
 /* harmony import */ var _Index_vue_vue_type_style_index_0_id_bb962f12_lang_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Index.vue?vue&type=style&index=0&id=bb962f12&lang=css */ "./resources/js/components/Index.vue?vue&type=style&index=0&id=bb962f12&lang=css");
 /* harmony import */ var _node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
@@ -40215,7 +40282,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 
 
-const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/Index.vue"]])
+const __exports__ = /*#__PURE__*/(0,_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_3__["default"])(_Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_Index_vue_vue_type_template_id_bb962f12__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/Index.vue"]])
 /* hot reload */
 if (false) {}
 
@@ -40272,18 +40339,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/Index.vue?vue&type=script&lang=js":
-/*!*******************************************************************!*\
-  !*** ./resources/js/components/Index.vue?vue&type=script&lang=js ***!
-  \*******************************************************************/
+/***/ "./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js ***!
+  \******************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
+/* harmony export */   "default": () => (/* reexport safe */ _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__["default"])
 /* harmony export */ });
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&lang=js");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_use_0_node_modules_vue_loader_dist_index_js_ruleSet_0_use_0_Index_vue_vue_type_script_setup_true_lang_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!../../../node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./Index.vue?vue&type=script&setup=true&lang=js */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5.use[0]!./node_modules/vue-loader/dist/index.js??ruleSet[0].use[0]!./resources/js/components/Index.vue?vue&type=script&setup=true&lang=js");
  
 
 /***/ }),
