@@ -5,7 +5,7 @@ export default function useActualites() {
     const router = getCurrentInstance().proxy.$router;
 
     const errors = ref({});
-    const generalError = ref(null);
+    const generalError = ref('');
 
     const actualites = ref([]);
     const actualitesIndex = ref([]);
@@ -13,7 +13,7 @@ export default function useActualites() {
     const form = ref({
         title: "",
         content: "",
-        image: [],
+        images: [],
     });
 
     const actualite = ref({});
@@ -62,7 +62,7 @@ export default function useActualites() {
         });
 
         try {
-            const response = await fetch('/api/actualites/create', {
+            const response = await fetch('/api/actualites', {
                 method: "POST",
                 body: formData,
             });
@@ -72,12 +72,20 @@ export default function useActualites() {
             if (!response.ok) {
                 if (response.status === 422) {
                     errors.value = data.errors;  // Set validation errors
+                    console.log(data.errors); // Ajoutez ceci pour déboguer
+
                 } else {
                     generalError.value = "Failed to create actualité. Please try again.";  // Set general error message
                 }
             } else {
                 console.log("Actualité created:", data);
                 router.push({ name: 'Actualites' });
+
+                window.Toast.fire({
+                    icon: "success",
+                    title: "Actualité créée avec succès"
+                    });
+        
 
                 // Optionally navigate or reset form
             }
@@ -96,7 +104,7 @@ export default function useActualites() {
 
     const fetchActualite = async (id) => { 
         try {
-          const response = await fetch(`/api/actualites/actualite/${id}`);
+          const response = await fetch(`/api/actualites/${id}`);
           if (!response.ok) {
             throw new Error('Failed to fetch Actualite');
           }
@@ -109,5 +117,44 @@ export default function useActualites() {
         }
       };
 
-    return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite};
+
+      const deleteActualite = async (id) => {
+        Swal.fire({
+            title: "Are you sure?",
+            text: "You won't be able to revert this!",
+            icon: "warning",
+            showCancelButton: true,
+            confirmButtonColor: "#3085d6",
+            cancelButtonColor: "#d33",
+            confirmButtonText: "Yes, delete it!"
+            }).then(async (result) => {
+            if (result.isConfirmed) {
+                try {
+                    const response = await fetch(`/api/articles/${id}`, {
+                        method: "DELETE",
+                    });
+
+                    if (!response.ok) {
+                        throw new Error("Failed to delete article");
+                    }
+
+                    article.value = {};
+                    window.Toast.fire({
+                        icon: "success",
+                        title: "Article deleted successfully!"
+                    });
+                } catch (error) {
+                    console.error("Error deleting article:", error);
+                    Swal.fire({
+                        icon: "error",
+                        title: "Oops...",
+                        text: "Failed to delete article. Please try again.",
+                    });
+                }
+            }
+        });
+
+      };
+
+    return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite, deleteActualite};
 }

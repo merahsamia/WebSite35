@@ -8,6 +8,8 @@ use Illuminate\Support\Facades\Validator;
 
 use App\Models\Actualite;
 use App\Models\Image;
+use Illuminate\Support\Facades\Storage;
+
 
 
 class ActualiteController extends Controller
@@ -78,6 +80,34 @@ class ActualiteController extends Controller
 
         return response()->json($actualite, 200);
 
+    }
+
+    
+
+    public function destroy($id)
+    {
+        $actualite = Actualite::findOrFail($id);
+
+        // Supprimer chaque image et son fichier associé du système de fichiers
+        foreach ($actualite->images as $image) {
+            // Construire le chemin complet du fichier image
+            $imagePath = public_path('storage/' . $image->url);
+            
+            // Vérifier si le fichier existe avant de le supprimer
+            if (file_exists($imagePath)) {
+                // Supprimer le fichier du système de fichiers
+                unlink($imagePath);
+            }
+            
+            // Supprimer l'enregistrement de l'image de la base de données
+            $image->delete();
+        }
+
+        // Supprimer l'actualité
+
+        $actualite->delete();
+
+        return response()->json(null, 204);
     }
 
 }

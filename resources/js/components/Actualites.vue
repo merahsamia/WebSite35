@@ -51,9 +51,9 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Actualité information</h3>
+              <h3>{{ actualite.title }}</h3>
               <ul>
-                <li><strong>Titre</strong>: {{ actualite.title }}</li>
+                <li><strong>Titre</strong>: </li>
                 <li><strong>Contenu</strong>: {{ actualite.content }}</li>
                 <li><strong>Project date</strong>: 01 March, 2020</li>
                 <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
