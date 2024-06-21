@@ -107,7 +107,8 @@ class ActualiteController extends Controller
 
         $actualite->delete();
 
-        return response()->json(null, 204);
+        //return response()->json(null, 204);
+        return response()->json(['message' => 'Actualité supprimée avec succès.'], 200);
     }
 
 }

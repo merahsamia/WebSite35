@@ -118,43 +118,45 @@ export default function useActualites() {
       };
 
 
-      const deleteActualite = async (id) => {
+    const deleteActualite = async (id) => {
         Swal.fire({
-            title: "Are you sure?",
-            text: "You won't be able to revert this!",
+            title: "Êtes-vous sûre de vouloir supprimer cette actualité ?",
+            text: "Vous ne pourrez pas annuler cette action !",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3085d6",
             cancelButtonColor: "#d33",
-            confirmButtonText: "Yes, delete it!"
+            confirmButtonText: "Oui, supprimez la!"
             }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`/api/articles/${id}`, {
+                    const response = await fetch(`/api/actualites/${id}`, {
                         method: "DELETE",
                     });
 
                     if (!response.ok) {
-                        throw new Error("Failed to delete article");
+                        throw new Error("Failed to delete actualite");
                     }
 
-                    article.value = {};
+                    actualite.value = {};
+                    router.push({ name: 'Actualites' });
+
                     window.Toast.fire({
                         icon: "success",
-                        title: "Article deleted successfully!"
+                        title: "Actualite deleted successfully!"
                     });
                 } catch (error) {
-                    console.error("Error deleting article:", error);
+                    console.error("Error deleting actualite:", error);
                     Swal.fire({
                         icon: "error",
                         title: "Oops...",
-                        text: "Failed to delete article. Please try again.",
+                        text: "Failed to delete actualite. Please try again.",
                     });
                 }
             }
         });
 
-      };
+    };
 
     return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite, deleteActualite};
 }

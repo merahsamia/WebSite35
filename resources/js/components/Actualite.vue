@@ -22,9 +22,9 @@
 
    <!-- ======= Portfolio Details Section ======= -->
    <section id="portfolio-details" class="portfolio-details">
-    <div class="container">
+    <div class="container" >
 
-      <div class="row gy-4">
+      <div class="row gy-4" v-if="Object.keys(actualite).length !== 0">
 
         <swiper class="col-lg-8" v-if="actualite.images && actualite.images.length > 0" :modules="modules" :pagination="{ clickable: true }" :autoplay="{ delay: 3000, disableOnInteraction: false }">
           <swiper-slide class="portfolio-details-slider" v-for="image in actualite.images" :key="image.id">
@@ -36,8 +36,13 @@
         <div class="col-lg-4">
           <div class="portfolio-info">
             <h3>Actualité information</h3>
+
             <ul>
-              <li><strong>Titre</strong>: {{ actualite.title }}</li>
+              <li>  
+                <button  class="btn btn-primary me-2">Modifier</button>
+                <button  @click="deleteActualite(actualite.id)" class="btn btn-danger">Supprimer</button>
+              </li>
+              <li><strong>Titre</strong>: {{ actualite.title }}  </li>
               <li><strong>Contenu</strong>: {{ actualite.content }}</li>
               <li><strong>Project date</strong>: 01 March, 2020</li>
               <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
@@ -56,6 +61,7 @@
       <hr>
       <br>
 
+    
     </div>
   </section><!-- End Portfolio Details Section -->
 </template>
@@ -74,7 +80,7 @@ import {Pagination, Autoplay} from 'swiper';
 export default {
   setup() {
 
-    const { actualite, fetchActualite } = useActualites();
+    const { actualite, fetchActualite, deleteActualite } = useActualites();
     const route = useRoute();
     const id = route.params.actualiteId;
 
@@ -85,7 +91,7 @@ export default {
     
   
 
-    return { actualite, fetchActualite, modules: [Pagination, Autoplay], };
+    return { actualite, fetchActualite, modules: [Pagination, Autoplay], deleteActualite };
 
   
    
