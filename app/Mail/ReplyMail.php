@@ -12,15 +12,21 @@ use Illuminate\Queue\SerializesModels;
 class ReplyMail extends Mailable
 {
     use Queueable, SerializesModels;
+    public $data;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($data)
     {
-        //
+        $this->data = $data;
+    }
+
+    public function build()
+    {
+        return $this->from('admin@app.com')->subject('Web Site Administration ')->view('reply.contact')->with('data', $this->data);
     }
 
     /**
@@ -43,7 +49,7 @@ class ReplyMail extends Mailable
     public function content()
     {
         return new Content(
-            view: 'view.name',
+            view: 'contact.reply',
         );
     }
 

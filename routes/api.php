@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActualiteController ;
+use App\Http\Controllers\ContactController ;
 
 
 /*
@@ -27,3 +28,5 @@ Route::get('/AllActualites', [ActualiteController::class, 'actualites']);
 //Route::get('/actualites/actualite/{id}', [ActualiteController::class, 'show']);
 
 Route::resource('actualites', ActualiteController::class);
+
+Route::post('storeContact', [ContactController::class, 'storeContact']);
