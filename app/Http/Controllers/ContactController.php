@@ -33,7 +33,7 @@ class ContactController extends Controller
 
        
             
-            Mail::to('admin@app.com')->send(new ContactMail($data));
+            Mail::to('website.contact@opgi-boumerdes.dz')->send(new ContactMail($data));
             Mail::to($data['email'])->send(new ReplyMail($data));
 
             return response()->json('success');

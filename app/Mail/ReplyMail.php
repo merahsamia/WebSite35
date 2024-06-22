@@ -26,7 +26,7 @@ class ReplyMail extends Mailable
 
     public function build()
     {
-        return $this->from('admin@app.com')->subject('Web Site Administration ')->view('reply.contact')->with('data', $this->data);
+        return $this->from('website.contact@opgi-boumerdes.dz')->subject('Web Site Administration ')->view('reply.contact')->with('data', $this->data);
     }
 
     /**
