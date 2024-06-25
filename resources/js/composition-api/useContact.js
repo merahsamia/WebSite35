@@ -9,6 +9,8 @@ export default function useContact() {
   });
 
   const errors = ref(null);
+  const email_loading = ref(false);
+
 
   const storeContact = async () => {
     try {
@@ -18,7 +20,8 @@ export default function useContact() {
       formData.append('subject', contactData.value.subject);
       formData.append('message', contactData.value.message);
 
-      const response = await fetch('/api/storeContact', {
+      email_loading.value = true;
+            const response = await fetch('/api/storeContact', {
         method: 'POST',
         body: formData
       });
@@ -40,6 +43,7 @@ export default function useContact() {
         };
         errors.value = null;
 
+
         // Afficher un message de succès
         window.Toast.fire({
           icon: 'success',
@@ -48,17 +52,23 @@ export default function useContact() {
       } else {
         // Afficher une erreur si la réponse indique un échec
         throw new Error('Failed to send email');
+
       }
 
     } catch (error) {
       console.error('Error sending email:', error);
       errors.value = ['Failed to send email. Please try again.'];
+      email_loading.value = false; 
+
+    } finally {
+      email_loading.value = false; // Toujours désactiver le spinner après l'envoi ou en cas d'erreur
     }
   };
 
   return {
     contactData,
     errors,
-    storeContact
+    storeContact,
+    email_loading,
   };
 }

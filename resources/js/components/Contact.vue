@@ -21,7 +21,9 @@
     </div>
 
     <div class="text-center">
-      <button type="submit" class="btn btn-primary">Envoyer le message</button>
+      <div class="spinner-border text-success me-2 mt-2" id="email-spinner" role="status"  v-if="email_loading"></div>
+
+      <button type="submit" class="btn btn-primary" :disabled="email_loading">Envoyer le message</button>
     </div>
   </form>
 </template>
@@ -30,5 +32,5 @@
 import useContact from '../composition-api/useContact';
 
 // Importation des données et méthodes depuis useContact
-const { contactData, errors, storeContact } = useContact();
+const { contactData, errors, storeContact, email_loading } = useContact();
 </script>

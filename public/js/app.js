@@ -21037,11 +21037,13 @@ __webpack_require__.r(__webpack_exports__);
     var _useContact = (0,_composition_api_useContact__WEBPACK_IMPORTED_MODULE_0__["default"])(),
       contactData = _useContact.contactData,
       errors = _useContact.errors,
-      storeContact = _useContact.storeContact;
+      storeContact = _useContact.storeContact,
+      email_loading = _useContact.email_loading;
     var __returned__ = {
       contactData: contactData,
       errors: errors,
       storeContact: storeContact,
+      email_loading: email_loading,
       get useContact() {
         return _composition_api_useContact__WEBPACK_IMPORTED_MODULE_0__["default"];
       }
@@ -21488,12 +21490,16 @@ var _hoisted_6 = {
   key: 0,
   "class": "mt-2 text-danger text-sm"
 };
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_7 = {
   "class": "text-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  type: "submit",
-  "class": "btn btn-primary"
-}, "Envoyer le message")], -1 /* HOISTED */);
+};
+var _hoisted_8 = {
+  key: 0,
+  "class": "spinner-border text-success me-2 mt-2",
+  id: "email-spinner",
+  role: "status"
+};
+var _hoisted_9 = ["disabled"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("form", {
     onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
@@ -21544,7 +21550,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: index
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(error), 1 /* TEXT */);
-  }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), _hoisted_7], 32 /* NEED_HYDRATION */);
+  }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [$setup.email_loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+    type: "submit",
+    "class": "btn btn-primary",
+    disabled: $setup.email_loading
+  }, "Envoyer le message", 8 /* PROPS */, _hoisted_9)])], 32 /* NEED_HYDRATION */);
 }
 
 /***/ }),
@@ -22429,6 +22439,7 @@ function useContact() {
     message: ''
   });
   var errors = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(null);
+  var email_loading = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)(false);
   var storeContact = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
       var formData, response, data;
@@ -22441,25 +22452,26 @@ function useContact() {
             formData.append('email', contactData.value.email);
             formData.append('subject', contactData.value.subject);
             formData.append('message', contactData.value.message);
-            _context.next = 8;
+            email_loading.value = true;
+            _context.next = 9;
             return fetch('/api/storeContact', {
               method: 'POST',
               body: formData
             });
-          case 8:
+          case 9:
             response = _context.sent;
             if (response.ok) {
-              _context.next = 11;
+              _context.next = 12;
               break;
             }
             throw new Error('Failed to send email');
-          case 11:
-            _context.next = 13;
+          case 12:
+            _context.next = 14;
             return response.json();
-          case 13:
+          case 14:
             data = _context.sent;
             if (!(data === 'success')) {
-              _context.next = 20;
+              _context.next = 21;
               break;
             }
             // Réinitialiser le formulaire et les erreurs
@@ -22476,23 +22488,28 @@ function useContact() {
               icon: 'success',
               title: 'Message sent successfully!'
             });
-            _context.next = 21;
+            _context.next = 22;
             break;
-          case 20:
-            throw new Error('Failed to send email');
           case 21:
-            _context.next = 27;
+            throw new Error('Failed to send email');
+          case 22:
+            _context.next = 29;
             break;
-          case 23:
-            _context.prev = 23;
+          case 24:
+            _context.prev = 24;
             _context.t0 = _context["catch"](0);
             console.error('Error sending email:', _context.t0);
             errors.value = ['Failed to send email. Please try again.'];
-          case 27:
+            email_loading.value = false;
+          case 29:
+            _context.prev = 29;
+            email_loading.value = false; // Toujours désactiver le spinner après l'envoi ou en cas d'erreur
+            return _context.finish(29);
+          case 32:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 23]]);
+      }, _callee, null, [[0, 24, 29, 32]]);
     }));
     return function storeContact() {
       return _ref.apply(this, arguments);
@@ -22501,7 +22518,8 @@ function useContact() {
   return {
     contactData: contactData,
     errors: errors,
-    storeContact: storeContact
+    storeContact: storeContact,
+    email_loading: email_loading
   };
 }
 
