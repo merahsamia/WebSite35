@@ -21317,7 +21317,7 @@ var _hoisted_17 = ["onClick"];
 var _hoisted_18 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("hr", null, null, -1 /* HOISTED */);
 var _hoisted_19 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Breadcrumbs ======= "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Breadcrumbs "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Details Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.actualites, function (actualite) {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Breadcrumbs ======= "), _hoisted_1, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Breadcrumbs "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Details Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_2, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.actualites.data, function (actualite) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       "class": "container",
       key: actualite.id
@@ -22123,6 +22123,7 @@ function useActualites() {
   var errors = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({});
   var generalError = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)('');
   var actualites = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
+  var actualitesLinks = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
   var actualitesIndex = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)([]);
   var form = (0,vue__WEBPACK_IMPORTED_MODULE_0__.ref)({
     title: "",
@@ -22197,17 +22198,18 @@ function useActualites() {
             data = _context2.sent;
             console.log(data);
             actualites.value = data;
-            _context2.next = 16;
+            actualitesLinks.value = data.links;
+            _context2.next = 17;
             break;
-          case 13:
-            _context2.prev = 13;
+          case 14:
+            _context2.prev = 14;
             _context2.t0 = _context2["catch"](0);
             console.error('Error fetching actualites:', _context2.t0);
-          case 16:
+          case 17:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, null, [[0, 13]]);
+      }, _callee2, null, [[0, 14]]);
     }));
     return function fetchActualites() {
       return _ref2.apply(this, arguments);
@@ -22403,6 +22405,7 @@ function useActualites() {
     fetchActualitesIndex: fetchActualitesIndex,
     actualites: actualites,
     fetchActualites: fetchActualites,
+    actualitesLinks: actualitesLinks,
     form: form,
     submitAddActualite: submitAddActualite,
     handleFileUpload: handleFileUpload,

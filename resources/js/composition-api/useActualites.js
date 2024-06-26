@@ -8,6 +8,8 @@ export default function useActualites() {
     const generalError = ref('');
 
     const actualites = ref([]);
+    const actualitesLinks = ref([]);
+
     const actualitesIndex = ref([]);
 
     const form = ref({
@@ -46,6 +48,8 @@ export default function useActualites() {
             console.log(data)
 
             actualites.value = data;
+            actualitesLinks.value = data.links
+
         } catch (error) {
             console.error('Error fetching actualites:', error);
         }
@@ -158,5 +162,5 @@ export default function useActualites() {
 
     };
 
-    return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, form, submitAddActualite, handleFileUpload, fetchActualite, actualite, deleteActualite};
+    return { errors, generalError, actualitesIndex, fetchActualitesIndex, actualites, fetchActualites, actualitesLinks, form, submitAddActualite, handleFileUpload, fetchActualite, actualite, deleteActualite};
 }

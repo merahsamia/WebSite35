@@ -1,23 +1,23 @@
 <template>
       <!-- ======= Breadcrumbs ======= -->
-      <section id="breadcrumbs" class="breadcrumbs">
-            <div class="container">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
 
-                <div class="d-flex justify-content-between align-items-center">
-                <h2>Actualités Details</h2>
-                <ol>
-                    <li><a href="\">Accueil</a></li>
-                    <li>Actualités</li>
-                </ol>
-                </div>
+          <div class="d-flex justify-content-between align-items-center">
+          <h2>Actualités Details</h2>
+          <ol>
+              <li><a href="\">Accueil</a></li>
+              <li>Actualités</li>
+          </ol>
+          </div>
 
-            </div>
-        </section><!-- End Breadcrumbs -->
+      </div>
+    </section><!-- End Breadcrumbs -->
 
 
      <!-- ======= Portfolio Details Section ======= -->
      <section id="portfolio-details" class="portfolio-details">
-      <div class="container" v-for="actualite in actualites" :key="actualite.id">
+      <div class="container" v-for="actualite in actualites.data" :key="actualite.id">
 
         <div class="row gy-4">
 
