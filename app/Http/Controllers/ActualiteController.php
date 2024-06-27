@@ -26,7 +26,7 @@ class ActualiteController extends Controller
     
     public function actualites()
     {
-        $actualites = Actualite::with('images')->latest()->get();
+        $actualites = Actualite::with('images')->latest()->paginate(3);
 
         return response()->json($actualites, 200);
     }

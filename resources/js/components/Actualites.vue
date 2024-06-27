@@ -76,16 +76,29 @@
 
       </div>
     </section><!-- End Portfolio Details Section -->
+
+    <div class="d-flex justify-content-center">
+      <ul class="pagination">
+        
+        <li :class="`page-item ${link.active ? 'active': ''} ${ !link.url ? 'disabled': ''}`"
+        v-for="(link, index) in filteredLinks" :key="index">
+        <a class="page-link" href="#" v-html="link.label"
+         @click.prevent="getResults(link)"></a>
+        </li>
+        
+        
+      </ul>
+    </div >
 </template>
 
  <script>
-  import { ref, onMounted } from 'vue';
+  import { ref, onMounted, computed } from 'vue';
   import { useRoute, useRouter } from 'vue-router';
   import useActualites from '../composition-api/useActualites';
   
   export default {
     setup() {
-      const { actualites, fetchActualites } = useActualites();
+      const { actualites, fetchActualites, actualitesLinks } = useActualites();
       const route = useRoute();
       const router = useRouter();
 
@@ -98,7 +111,54 @@
       router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
     };
 
-      return { actualites, fetchActualites, readMore };
+      const getResults = async (link) => {
+            if (!link.url || link.active) {
+                return;
+            } else {
+                try {
+                    const response = await fetch(link.url);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch actualites');
+                    }
+                    const data = await response.json();
+                    console.log(data);
+                    actualites.value = data;
+                    actualitesLinks.value = data.links;
+                    console.log(actualitesLinks.value);
+                } catch (error) {
+                    console.error('Error fetching actualites:', error);
+                }
+            }
+        };
+
+
+      // Filter links for pagination display
+      const filteredLinks = computed(() => {
+        const links = actualitesLinks.value;
+        if (links.length <= 7) {
+          return links;  // Show all if there are 7 or fewer links
+        }
+
+        const currentPage = parseInt(links.find(link => link.active)?.label, 10) || 1;
+        const maxPagesToShow = 5;
+        const halfRange = Math.floor(maxPagesToShow / 2);
+
+        return links.filter((link, index) => {
+          const pageLabel = parseInt(link.label, 10);
+          const isFirst = index === 0;
+          const isLast = index === links.length - 1;
+          const isNearCurrentPage = !isNaN(pageLabel) && Math.abs(pageLabel - currentPage) <= halfRange;
+
+          return isFirst || isLast || isNearCurrentPage;
+        });
+      });
+
+
+
+
+
+
+      return { actualites, fetchActualites, readMore, actualitesLinks, getResults, filteredLinks };
     }
   }
   </script>
