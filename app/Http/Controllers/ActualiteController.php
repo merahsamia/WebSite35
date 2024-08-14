@@ -111,4 +111,48 @@ class ActualiteController extends Controller
         return response()->json(['message' => 'Actualité supprimée avec succès.'], 200);
     }
 
+    public function update(Request $request, $id)
+    {
+        // Trouver l'actualité par ID
+        $actualite = Actualite::find($id);
+        if (!$actualite) {
+            return response()->json(['error' => 'Actualite not found'], 404);
+        }
+
+        // Valider les données de la requête
+        $validator = Validator::make($request->all(), [
+            'title' => 'required|string|max:255',
+            'content' => 'required|string',
+            'images' => 'sometimes|array', // Les images sont maintenant optionnelles
+            'images.*' => 'image|mimes:jpg,jpeg,png,gif|max:2048',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
+        try {
+            // Mettre à jour l'actualité
+            $actualite->update($validator->validated());
+
+            // Ajouter les nouvelles images uniquement si elles sont fournies
+            if ($request->hasFile('images')) {
+                foreach ($request->file('images') as $imageFile) {
+                    $image = new Image;
+                    $path = $imageFile->store('actualites', 'public');
+                    $image->url = $path;
+                    $image->actualite_id = $actualite->id;
+                    $image->save();
+                }
+            }
+
+            // Charger les relations d'images et retourner l'actualité mise à jour
+            return response()->json($actualite->load('images'), 200);
+
+        } catch (\Exception $e) {
+            return response()->json(['error' => 'Server Error', 'message' => $e->getMessage()], 500);
+        }
+    }
+
+
 }
