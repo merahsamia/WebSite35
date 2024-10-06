@@ -17,19 +17,19 @@ class ImageSeeder extends Seeder
     public function run()
     {
         Image::factory()->create([
-            'url' =>'Actualites/actualite1.png',
+            'url' =>'Actualites/relogement-2.jpg',
             'actualite_id' => 1,
 
         ]);
 
         Image::factory()->create([
-            'url' =>'Actualites/actualite2.jpg',
+            'url' =>'Actualites/relogement-3.jpg',
             'actualite_id' => 1,
 
         ]);
 
         Image::factory()->create([
-            'url' =>'Actualites/journal.jpg',
+            'url' =>'Actualites/KJWEUlftB1It3JiNAGRMX967tCdCd184YfBPhJca.jpg',
             'actualite_id' => 2,
 
         ]);

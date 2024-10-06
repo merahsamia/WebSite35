@@ -18,14 +18,15 @@ class ActualiteSeeder extends Seeder
     {
         Actualite::factory()->create([
             'title' =>'Actualite1',
-            'content' => 'Lorem Ipsum is simply dummy text of the printing',
+            'content' => 'عملية توزيـع 347 وحـدة سكنيـة عموميـة إيجاريـة ببلديـة بنـي عمـران',
 
         ]);
 
 
         Actualite::factory()->create([
             'title' =>'Actualite2',
-            'content' => 'Lorem Ipsum is simply dummy text of the printing',
+            'content' => 'إعـــلان عـن بيـع محـلات تجاريـة
+',
 
         ]);
 

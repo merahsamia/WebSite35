@@ -31,7 +31,19 @@ class ActualiteController extends Controller
         return response()->json($actualites, 200);
     }
 
+    public function show($id)
+    {
 
+        $actualite = Actualite::with('images')->find($id);
+
+
+        if (!$actualite) {
+            return response()->json(['error' => 'Actualite not found'], 404);
+        }
+
+        return response()->json($actualite, 200);
+
+    }
     public function store(Request $request)
     {
         $validator = Validator::make($request->all(), [
@@ -68,19 +80,7 @@ class ActualiteController extends Controller
     }
     
 
-    public function show($id)
-    {
-
-        $actualite = Actualite::with('images')->find($id);
-
-
-        if (!$actualite) {
-            return response()->json(['error' => 'Actualite not found'], 404);
-        }
-
-        return response()->json($actualite, 200);
-
-    }
+    
 
     
 

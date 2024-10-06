@@ -38,6 +38,12 @@
             </li> -->
             <li><a class="nav-link scrollto" href="#contact"><h5>Contact</h5></a></li>
             <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>Paiement en ligne </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px;"></a></li>
+            <li v-if="isAuthenticated">
+                <a class="nav-link scrollto" @click.prevent="logout">
+                    <h5>Logout</h5>
+                </a>
+            </li>
+
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
@@ -47,3 +53,41 @@
       </div>
     </header>
 </template>
+
+<script>
+import axios from 'axios';
+
+export default {
+    data() {
+        return {
+            isAuthenticated: false,
+        };
+    },
+    mounted() {
+        this.checkAuth();
+    },
+    methods: {
+        checkAuth() {
+            axios.get('/api/user')
+                .then(response => {
+                    this.isAuthenticated = !!response.data;  // S'assurer que l'utilisateur est connecté
+                })
+                .catch(() => {
+                    this.isAuthenticated = false;
+                });
+        },
+        async logout() {
+            try {
+                await axios.post('/logout', {
+                    _token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                });
+                window.location.href = '/login';
+            } catch (error) {
+                console.error('Error logging out:', error);
+            }
+        }
+    }
+}
+
+
+</script>

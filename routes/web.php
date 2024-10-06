@@ -31,6 +31,10 @@ Route::get('/storage/{path}', function ($path) {
 })->where('path', '.*');
 
 
+Route::view('/login', 'auth.login')->name('login');
+Route::view('/register', 'auth.register')->name('register');
+
+
 
 Route::get('/{any}', function () {
     return view('layouts/template');
