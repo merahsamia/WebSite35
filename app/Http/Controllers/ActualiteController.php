@@ -15,6 +15,11 @@ use Illuminate\Support\Facades\Storage;
 class ActualiteController extends Controller
 {
 
+    // function _construct() {
+
+    //     $this->middleware('auth:api');
+
+    // }
 
     public function index()
     {
@@ -46,6 +51,7 @@ class ActualiteController extends Controller
     }
     public function store(Request $request)
     {
+
         $validator = Validator::make($request->all(), [
             'title' => 'required|string|max:255',
             'content' => 'required|string',
@@ -80,12 +86,9 @@ class ActualiteController extends Controller
     }
     
 
-    
-
-    
-
     public function destroy($id)
     {
+
         $actualite = Actualite::findOrFail($id);
 
         // Supprimer chaque image et son fichier associé du système de fichiers
@@ -113,6 +116,7 @@ class ActualiteController extends Controller
 
     public function update(Request $request, $id)
     {
+
         // Trouver l'actualité par ID
         $actualite = Actualite::find($id);
         if (!$actualite) {

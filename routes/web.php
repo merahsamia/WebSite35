@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +37,12 @@ Route::view('/login', 'auth.login')->name('login');
 Route::view('/register', 'auth.register')->name('register');
 
 
+Route::get('/auth-check', function() {
+    return response()->json(['authenticated' => Auth::check()]);
+});
+
 
 Route::get('/{any}', function () {
     return view('layouts/template');
     })->where('any', '.*');
+

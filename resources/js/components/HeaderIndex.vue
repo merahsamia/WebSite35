@@ -68,9 +68,11 @@ export default {
     },
     methods: {
         checkAuth() {
-            axios.get('/api/user')
+            axios.get('/auth-check')
                 .then(response => {
-                    this.isAuthenticated = !!response.data;  // S'assurer que l'utilisateur est connecté
+                    this.isAuthenticated = response.data.authenticated;
+                    console.log(response.data);  // Ajoutez ceci pour voir ce qui est renvoyé
+
                 })
                 .catch(() => {
                     this.isAuthenticated = false;
@@ -88,6 +90,4 @@ export default {
         }
     }
 }
-
-
 </script>

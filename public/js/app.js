@@ -21164,8 +21164,9 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   methods: {
     checkAuth: function checkAuth() {
       var _this = this;
-      axios__WEBPACK_IMPORTED_MODULE_0___default().get('/api/user').then(function (response) {
-        _this.isAuthenticated = !!response.data; // S'assurer que l'utilisateur est connecté
+      axios__WEBPACK_IMPORTED_MODULE_0___default().get('/auth-check').then(function (response) {
+        _this.isAuthenticated = response.data.authenticated;
+        console.log(response.data); // Ajoutez ceci pour voir ce qui est renvoyé
       })["catch"](function () {
         _this.isAuthenticated = false;
       });
