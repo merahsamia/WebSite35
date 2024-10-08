@@ -38,9 +38,10 @@
             </li> -->
             <li><a class="nav-link scrollto" href="#contact"><h5>Contact</h5></a></li>
             <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>Paiement en ligne </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px;"></a></li>
-            <li>
-              <LogoutComponent />
-              <!-- Composant de déconnexion (si nécessaire pour des interactions supplémentaires) -->
+            <li v-if="isAuthenticated">
+                <a class="nav-link scrollto" @click.prevent="logout">
+                    <h5>Logout</h5>
+                </a>
             </li>
 
           </ul>
@@ -54,12 +55,39 @@
 </template>
 
 <script>
-import LogoutComponent from './auth/LogoutComponent.vue';
+import axios from 'axios';
 
 export default {
-    components: {
-        LogoutComponent,
+    data() {
+        return {
+            isAuthenticated: false,
+        };
     },
-};
+    mounted() {
+        this.checkAuth();
+    },
+    methods: {
+        checkAuth() {
+            axios.get('/auth-check')
+                .then(response => {
+                    this.isAuthenticated = response.data.authenticated;
+                    console.log(response.data);  // Ajoutez ceci pour voir ce qui est renvoyé
 
+                })
+                .catch(() => {
+                    this.isAuthenticated = false;
+                });
+        },
+        async logout() {
+            try {
+                await axios.post('/logout', {
+                    _token: document.querySelector('meta[name="csrf-token"]').getAttribute('content'),
+                });
+                window.location.href = '/login';
+            } catch (error) {
+                console.error('Error logging out:', error);
+            }
+        }
+    }
+}
 </script>

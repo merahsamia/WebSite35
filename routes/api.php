@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActualiteController ;
 use App\Http\Controllers\ContactController ;
+use App\Http\Controllers\AuthController;
+
 
 
 /*
@@ -39,3 +41,5 @@ Route::group(['middleware', ['forcetojson', 'auth:api']], function () {
     Route::delete('/actualites/{actualite}', [ActualiteController::class, 'destroy'])->name('actualites.destroy');   // Supprimer une actualité
     
 });
+
+

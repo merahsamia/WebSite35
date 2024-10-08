@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\AuthController;
 
 
 /*
@@ -33,8 +34,10 @@ Route::get('/storage/{path}', function ($path) {
 })->where('path', '.*');
 
 
-Route::view('/login', 'auth.login')->name('login');
-Route::view('/register', 'auth.register')->name('register');
+Route::controller(AuthController::class)->group(function() {
+    Route::post('/login', 'login')->name('login');
+    Route::post('/logout', 'logout')->name('logout')->middleware('auth');
+});
 
 
 Route::get('/auth-check', function() {

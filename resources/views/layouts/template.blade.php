@@ -136,6 +136,13 @@
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  @auth
+        <script>
+            window.token = {!! json_encode(session()->get('token')) !!}
+            console.log(window.token);
+        </script>
+        
+  @endauth
   <script src="{{asset('js/app.js')}}"></script>
   
 
@@ -156,6 +163,8 @@
         // Initialisez PureCounter
         new PureCounter();
     </script>
+
+
 
 </body>
 

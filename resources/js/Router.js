@@ -3,6 +3,7 @@ import Index from "./components/Index.vue";
 import Actualites from "./components/Actualites.vue";
 import AddActualite from "./components/AddActualite.vue";
 import Actualite from "./components/Actualite.vue";
+import LogoutComponent from "./components/auth/LogoutComponent.vue";
 
 
 
@@ -30,6 +31,11 @@ const routes = [
         path: "/actualites/actualite/:actualiteId",
         name: "Actualite",
         component: Actualite,
+    },
+    {
+        path: "/logout",
+        name: "Logout",
+        component: LogoutComponent,
     },
 ];
 

@@ -8,6 +8,7 @@ import Actualites from './components/Actualites.vue';
 import AddActualite from './components/AddActualite.vue';
 import Actualite from './components/Actualite.vue';
 import Contact from './components/Contact.vue';
+import LogoutComponent from './components/auth/LogoutComponent.vue';
 
 // Swiper imports
 
@@ -47,6 +48,7 @@ const app = createApp({
         AddActualite,
         Actualite,
         Contact,
+        LogoutComponent,
        
     }
 });
