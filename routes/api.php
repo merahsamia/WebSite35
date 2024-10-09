@@ -35,11 +35,14 @@ Route::get('/actualites/{actualite}', [ActualiteController::class, 'show'])->nam
 
 Route::post('storeContact', [ContactController::class, 'storeContact']);
 
-Route::group(['middleware', ['forcetojson', 'auth:api']], function () {
+Route::middleware(['forcetojson', 'auth:api'])->group(function () {
     Route::post('/actualites', [ActualiteController::class, 'store'])->name('actualites.store');   // Enregistrer une nouvelle actualité
     Route::put('/actualites/{actualite}', [ActualiteController::class, 'update'])->name('actualites.update');   // Mettre à jour une actualité
     Route::delete('/actualites/{actualite}', [ActualiteController::class, 'destroy'])->name('actualites.destroy');   // Supprimer une actualité
     
 });
+
+
+
 
 

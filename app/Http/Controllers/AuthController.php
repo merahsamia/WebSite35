@@ -46,4 +46,23 @@ class AuthController extends Controller
         $request->session()->regenerateToken();
         return redirect('/login');
     }
+
+
+    public function register(Request $request)
+    {
+        $request->validate([
+            'email'         => ['required', 'email'],
+            'name'          => ['required'],
+            'password'      => ['required', 'confirmed', 'min:6'],
+        ]);
+
+        User::create([
+            'name'              => $request->name,
+            'email'             => $request->email,
+            'password'          => Hash::make($request->password),
+        ]);
+
+        Session::flash('success-message', 'Account created successfully!');
+        
+}
 }

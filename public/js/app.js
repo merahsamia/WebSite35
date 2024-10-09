@@ -21150,6 +21150,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
     LogoutComponent: _auth_LogoutComponent_vue__WEBPACK_IMPORTED_MODULE_0__["default"]
+  },
+  data: function data() {
+    return {
+      isAuthenticated: false // Etat d'authentification
+    };
+  },
+  mounted: function mounted() {
+    // Vérifiez si l'utilisateur est authentifié en vérifiant le token
+    this.isAuthenticated = !!window.token; // Si un token existe, l'utilisateur est authentifié
   }
 });
 
@@ -21267,7 +21276,17 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
   },
   methods: {
     parseToJson: function parseToJson(tokenValue) {
+      if (!tokenValue) {
+        console.error("Token is undefined or null");
+        return {}; // Retournez un objet vide si le token est invalide
+      }
+
+      // Séparez et décodez le token
       var base64Url = tokenValue.split('.')[1];
+      if (!base64Url) {
+        console.error("Invalid token format");
+        return {};
+      }
       var base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
       var jsonPayload = decodeURIComponent(window.atob(base64).split('').map(function (c) {
         return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
@@ -21277,32 +21296,50 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
     logout: function logout() {
       var _this = this;
       return _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee() {
+        var tokenData;
         return _regeneratorRuntime().wrap(function _callee$(_context) {
           while (1) switch (_context.prev = _context.next) {
             case 0:
-              _context.prev = 0;
-              _context.next = 3;
+              if (window.token) {
+                _context.next = 3;
+                break;
+              }
+              console.error("Token is missing");
+              return _context.abrupt("return");
+            case 3:
+              // Obtenez l'ID du token avant la déconnexion
+              tokenData = _this.parseToJson(window.token);
+              _this.token_id = tokenData.jti;
+              if (_this.token_id) {
+                _context.next = 8;
+                break;
+              }
+              console.error("Token ID is missing");
+              return _context.abrupt("return");
+            case 8:
+              _context.prev = 8;
+              _context.next = 11;
               return axios__WEBPACK_IMPORTED_MODULE_0___default().post('/logout', {
-                token_id: _this.token_id // Envoyez le token ID
+                token_id: _this.token_id
               }, {
                 headers: {
-                  'Authorization': "Bearer ".concat(window.token) // Envoyez le token dans l'en-tête Authorization
+                  'Authorization': "Bearer ".concat(window.token) // Token envoyé dans les headers
                 }
               });
-            case 3:
-              // Redirigez après la déconnexion
+            case 11:
+              // Redirection après déconnexion
               window.location.href = '/login';
-              _context.next = 9;
+              _context.next = 17;
               break;
-            case 6:
-              _context.prev = 6;
-              _context.t0 = _context["catch"](0);
+            case 14:
+              _context.prev = 14;
+              _context.t0 = _context["catch"](8);
               console.error('Error logging out:', _context.t0.response.data);
-            case 9:
+            case 17:
             case "end":
               return _context.stop();
           }
-        }, _callee, null, [[0, 6]]);
+        }, _callee, null, [[8, 14]]);
       }))();
     }
   }
@@ -21800,16 +21837,19 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
     "margin-left": "5px"
   }
 })])], -1 /* HOISTED */);
-var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_12 = {
+  key: 0
+};
+var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-list mobile-nav-toggle"
 }, null, -1 /* HOISTED */);
-var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "#about",
   "class": "get-started-btn scrollto"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, "Commencer")], -1 /* HOISTED */);
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_LogoutComponent = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("LogoutComponent");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Uncomment below if you prefer to use an image logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"index.html\" class=\"logo me-auto me-lg-0\"><img src=\"assets/img/logo.png\" alt=\"\" class=\"img-fluid\"></a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <li class=\"dropdown\"><a href=\"#\"><span>Drop Down</span> <i class=\"bi bi-chevron-down\"></i></a>\r\n              <ul>\r\n                <li><a href=\"#\">Drop Down 1</a></li>\r\n                <li class=\"dropdown\"><a href=\"#\"><span>Deep Drop Down</span> <i class=\"bi bi-chevron-right\"></i></a>\r\n                  <ul>\r\n                    <li><a href=\"#\">Deep Drop Down 1</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 2</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 3</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 4</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 5</a></li>\r\n                  </ul>\r\n                </li>\r\n                <li><a href=\"#\">Drop Down 2</a></li>\r\n                <li><a href=\"#\">Drop Down 3</a></li>\r\n                <li><a href=\"#\">Drop Down 4</a></li>\r\n              </ul>\r\n            </li> "), _hoisted_10, _hoisted_11, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LogoutComponent), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Composant de déconnexion (si nécessaire pour des interactions supplémentaires) ")])]), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .navbar "), _hoisted_13])]);
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("header", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Uncomment below if you prefer to use an image logo "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <a href=\"index.html\" class=\"logo me-auto me-lg-0\"><img src=\"assets/img/logo.png\" alt=\"\" class=\"img-fluid\"></a>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("nav", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <li class=\"dropdown\"><a href=\"#\"><span>Drop Down</span> <i class=\"bi bi-chevron-down\"></i></a>\r\n              <ul>\r\n                <li><a href=\"#\">Drop Down 1</a></li>\r\n                <li class=\"dropdown\"><a href=\"#\"><span>Deep Drop Down</span> <i class=\"bi bi-chevron-right\"></i></a>\r\n                  <ul>\r\n                    <li><a href=\"#\">Deep Drop Down 1</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 2</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 3</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 4</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 5</a></li>\r\n                  </ul>\r\n                </li>\r\n                <li><a href=\"#\">Drop Down 2</a></li>\r\n                <li><a href=\"#\">Drop Down 3</a></li>\r\n                <li><a href=\"#\">Drop Down 4</a></li>\r\n              </ul>\r\n            </li> "), _hoisted_10, _hoisted_11, $data.isAuthenticated ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_12, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LogoutComponent), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Composant de déconnexion (si nécessaire pour des interactions supplémentaires) ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_13]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .navbar "), _hoisted_14])]);
 }
 
 /***/ }),

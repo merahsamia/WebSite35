@@ -38,7 +38,7 @@
             </li> -->
             <li><a class="nav-link scrollto" href="#contact"><h5>Contact</h5></a></li>
             <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>Paiement en ligne </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px;"></a></li>
-            <li>
+            <li v-if="isAuthenticated">
               <LogoutComponent />
               <!-- Composant de déconnexion (si nécessaire pour des interactions supplémentaires) -->
             </li>
@@ -54,12 +54,23 @@
 </template>
 
 <script>
-import LogoutComponent from './auth/LogoutComponent.vue';
 
-export default {
-    components: {
-        LogoutComponent,
-    },
-};
+  import LogoutComponent from './auth/LogoutComponent.vue';
+
+  export default {
+      components: {
+          LogoutComponent,
+      },
+      data() {
+          return {
+              isAuthenticated: false, // Etat d'authentification
+          };
+      },
+      mounted() {
+          // Vérifiez si l'utilisateur est authentifié en vérifiant le token
+          this.isAuthenticated = !!window.token; // Si un token existe, l'utilisateur est authentifié
+      },
+  };
+
 
 </script>

@@ -139,7 +139,7 @@
   @auth
         <script>
             window.token = {!! json_encode(session()->get('token')) !!}
-            console.log(window.token);
+            //console.log(window.token);
         </script>
         
   @endauth
