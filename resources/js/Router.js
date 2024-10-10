@@ -28,14 +28,13 @@ const routes = [
         meta: { requiresAuth: true }, // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
 
     },
-   
-  
 
     {
         path: "/actualites/actualite/:actualiteId",
         name: "Actualite",
         component: Actualite,
     },
+    
     {
         path: "/logout",
         name: "Logout",

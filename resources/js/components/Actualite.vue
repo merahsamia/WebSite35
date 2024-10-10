@@ -39,8 +39,8 @@
 
             <ul>
               <li>  
-                <button  class="btn btn-primary me-2">Modifier</button>
-                <button  @click="deleteActualite(actualite.id)" class="btn btn-danger">Supprimer</button>
+                <button  class="btn btn-primary me-2" v-if="isAuthenticated">Modifier</button>
+                <button  @click="deleteActualite(actualite.id)" class="btn btn-danger" v-if="isAuthenticated">Supprimer</button>
               </li>
               <li><strong>Titre</strong>: {{ actualite.title }}  </li>
               <li><strong>Contenu</strong>: {{ actualite.content }}</li>
@@ -70,7 +70,7 @@
 
 <script>
 import useActualites from '../composition-api/useActualites';
-import { onMounted } from 'vue';
+import { onMounted, computed } from 'vue';
 import { useRoute } from 'vue-router';
 
 import {Pagination, Autoplay} from 'swiper';
@@ -79,22 +79,21 @@ import {Pagination, Autoplay} from 'swiper';
 
 export default {
   setup() {
-
     const { actualite, fetchActualite, deleteActualite } = useActualites();
     const route = useRoute();
     const id = route.params.actualiteId;
 
     onMounted(() => {
-        fetchActualite(id); // Passez l'ID à la fonction fetchActualite
+      fetchActualite(id); // Passez l'ID à la fonction fetchActualite
     });
-   
-    
-  
 
-    return { actualite, fetchActualite, modules: [Pagination, Autoplay], deleteActualite };
+    // Vérifie si l'utilisateur est authentifié
+    const isAuthenticated = computed(() => {
+      return !!window.token; // Retourne true si le token existe, false sinon
+    });
 
-  
-   
+    return { actualite, fetchActualite, modules: [Pagination, Autoplay], deleteActualite, isAuthenticated };
   }
 };
+
 </script>

@@ -19,6 +19,7 @@ class AuthController extends Controller
         ]);
 
         if(Auth::attempt($credentials)) {
+
             $request->session()->regenerate();
             $user = User::where('email', $request->email)->first();
 
@@ -63,6 +64,7 @@ class AuthController extends Controller
         ]);
 
         Session::flash('success-message', 'Account created successfully!');
-        
+        return redirect('/login');
+
 }
 }
