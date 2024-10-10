@@ -22283,7 +22283,10 @@ var routes = [{
 }, {
   path: "/addActualite",
   component: _components_AddActualite_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
-  name: "AddActualite"
+  name: "AddActualite",
+  meta: {
+    requiresAuth: true
+  } // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
 }, {
   path: "/actualites/actualite/:actualiteId",
   name: "Actualite",
@@ -22296,6 +22299,26 @@ var routes = [{
 var router = (0,vue_router__WEBPACK_IMPORTED_MODULE_5__.createRouter)({
   history: (0,vue_router__WEBPACK_IMPORTED_MODULE_5__.createWebHistory)(),
   routes: routes
+});
+
+// Guard de navigation pour vérifier si l'utilisateur est authentifié
+router.beforeEach(function (to, from, next) {
+  // Vérifie si la route nécessite une authentification
+  if (to.matched.some(function (record) {
+    return record.meta.requiresAuth;
+  })) {
+    // Si l'utilisateur n'est pas authentifié (token manquant)
+    if (!window.token) {
+      // Redirige vers la page de connexion
+      next({
+        path: '/login'
+      });
+    } else {
+      next(); // Continue la navigation si l'utilisateur est authentifié
+    }
+  } else {
+    next(); // Si la route ne nécessite pas d'authentification, continue normalement
+  }
 });
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (router);
 
@@ -22479,19 +22502,20 @@ function useActualites() {
             return response.json();
           case 8:
             data = _context.sent;
-            console.log(data);
+            //console.log(data)
+
             actualitesIndex.value = data;
-            _context.next = 16;
+            _context.next = 15;
             break;
-          case 13:
-            _context.prev = 13;
+          case 12:
+            _context.prev = 12;
             _context.t0 = _context["catch"](0);
             console.error('Error fetching Index actualites:', _context.t0);
-          case 16:
+          case 15:
           case "end":
             return _context.stop();
         }
-      }, _callee, null, [[0, 13]]);
+      }, _callee, null, [[0, 12]]);
     }));
     return function fetchActualitesIndex() {
       return _ref.apply(this, arguments);
@@ -22520,20 +22544,21 @@ function useActualites() {
             return response.json();
           case 8:
             data = _context2.sent;
-            console.log(data);
+            //console.log(data)
+
             actualites.value = data;
             actualitesLinks.value = data.links;
-            _context2.next = 17;
+            _context2.next = 16;
             break;
-          case 14:
-            _context2.prev = 14;
+          case 13:
+            _context2.prev = 13;
             _context2.t0 = _context2["catch"](0);
             console.error('Error fetching actualites:', _context2.t0);
-          case 17:
+          case 16:
           case "end":
             return _context2.stop();
         }
-      }, _callee2, null, [[0, 14]]);
+      }, _callee2, null, [[0, 13]]);
     }));
     return function fetchActualites() {
       return _ref2.apply(this, arguments);
@@ -22558,7 +22583,10 @@ function useActualites() {
             _context3.next = 7;
             return fetch('/api/actualites', {
               method: "POST",
-              body: formData
+              body: formData,
+              headers: {
+                'Authorization': "Bearer ".concat(window.token) // Ajoute le token ici
+              }
             });
           case 7:
             response = _context3.sent;
@@ -22629,19 +22657,20 @@ function useActualites() {
             return response.json();
           case 8:
             data = _context4.sent;
-            console.log(data);
+            //console.log(data);
+
             actualite.value = data;
-            _context4.next = 16;
+            _context4.next = 15;
             break;
-          case 13:
-            _context4.prev = 13;
+          case 12:
+            _context4.prev = 12;
             _context4.t0 = _context4["catch"](0);
             console.error('Error fetching Actualite:', _context4.t0);
-          case 16:
+          case 15:
           case "end":
             return _context4.stop();
         }
-      }, _callee4, null, [[0, 13]]);
+      }, _callee4, null, [[0, 12]]);
     }));
     return function fetchActualite(_x) {
       return _ref4.apply(this, arguments);
@@ -22673,7 +22702,10 @@ function useActualites() {
                       _context5.prev = 1;
                       _context5.next = 4;
                       return fetch("/api/actualites/".concat(id), {
-                        method: "DELETE"
+                        method: "DELETE",
+                        headers: {
+                          'Authorization': "Bearer ".concat(window.token) // Ajoute le token ici
+                        }
                       });
                     case 4:
                       response = _context5.sent;

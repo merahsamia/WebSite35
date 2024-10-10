@@ -29,7 +29,7 @@ export default function useActualites() {
                 throw new Error('Failed to fetch Index actualites');
             }
             const data = await response.json();
-            console.log(data)
+            //console.log(data)
 
             actualitesIndex.value = data;
         } catch (error) {
@@ -45,7 +45,7 @@ export default function useActualites() {
                 throw new Error('Failed to fetch actualites');
             }
             const data = await response.json();
-            console.log(data)
+            //console.log(data)
 
             actualites.value = data;
             actualitesLinks.value = data.links
@@ -69,6 +69,9 @@ export default function useActualites() {
             const response = await fetch('/api/actualites', {
                 method: "POST",
                 body: formData,
+                headers: {
+                    'Authorization': `Bearer ${window.token}` // Ajoute le token ici
+                },
             });
 
             const data = await response.json();
@@ -113,7 +116,7 @@ export default function useActualites() {
             throw new Error('Failed to fetch Actualite');
           }
           const data = await response.json();
-          console.log(data);
+          //console.log(data);
       
           actualite.value = data;
         } catch (error) {
@@ -136,6 +139,9 @@ export default function useActualites() {
                 try {
                     const response = await fetch(`/api/actualites/${id}`, {
                         method: "DELETE",
+                        headers: {
+                            'Authorization': `Bearer ${window.token}` // Ajoute le token ici
+                        },
                     });
 
                     if (!response.ok) {

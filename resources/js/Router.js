@@ -24,8 +24,12 @@ const routes = [
     { 
         path: "/addActualite", 
         component: AddActualite,
-        name: "AddActualite"
+        name: "AddActualite",
+        meta: { requiresAuth: true }, // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
+
     },
+   
+  
 
     {
         path: "/actualites/actualite/:actualiteId",
@@ -43,6 +47,22 @@ const routes = [
 const router = createRouter({
     history: createWebHistory(),
     routes,
+});
+
+ // Guard de navigation pour vérifier si l'utilisateur est authentifié
+ router.beforeEach((to, from, next) => {
+    // Vérifie si la route nécessite une authentification
+    if (to.matched.some(record => record.meta.requiresAuth)) {
+    // Si l'utilisateur n'est pas authentifié (token manquant)
+    if (!window.token) {
+        // Redirige vers la page de connexion
+        next({ path: '/login' });
+    } else {
+        next(); // Continue la navigation si l'utilisateur est authentifié
+    }
+    } else {
+    next(); // Si la route ne nécessite pas d'authentification, continue normalement
+    }
 });
 
 export default router;
