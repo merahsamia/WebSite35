@@ -4,6 +4,7 @@ import Actualites from "./components/Actualites.vue";
 import AddActualite from "./components/AddActualite.vue";
 import Actualite from "./components/Actualite.vue";
 import LogoutComponent from "./components/auth/LogoutComponent.vue";
+import EditActualite from "./components/EditActualite.vue";
 
 
 
@@ -39,6 +40,14 @@ const routes = [
         path: "/logout",
         name: "Logout",
         component: LogoutComponent,
+    },
+
+    { 
+        path: "/editActualite", 
+        component: EditActualite,
+        name: "EditActualite",
+         // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
+
     },
 ];
 

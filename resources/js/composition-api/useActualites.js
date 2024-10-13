@@ -70,7 +70,7 @@ export default function useActualites() {
                 method: "POST",
                 body: formData,
                 headers: {
-                    'Authorization': `Bearer ${window.token}` // Ajoute le token ici
+                    'Authorization': `Bearer ${window.token}` // le token 
                 },
             });
 
@@ -79,7 +79,7 @@ export default function useActualites() {
             if (!response.ok) {
                 if (response.status === 422) {
                     errors.value = data.errors;  // Set validation errors
-                    console.log(data.errors); // Ajoutez ceci pour déboguer
+                    console.log(data.errors); // déboguage
 
                 } else {
                     generalError.value = "Failed to create actualité. Please try again.";  // Set general error message

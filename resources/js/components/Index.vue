@@ -558,13 +558,13 @@
                       <div class="email">
                           <i class="bi bi-envelope"></i>
                           <h4>Email:</h4>
-                          <p>contact@opgi-boumerdes.dz</p>
+                          <p><a href="mailto:info@fitz-restaurant.de"> contact@opgi-boumerdes.dz</a></p>
                       </div>
 
                       <div class="phone">
                           <i class="bi bi-phone"></i>
                           <h4>Téléphone:</h4>
-                          <p>+213 (0) 24 79 58 58</p>
+                          <p><a href="tel:024795858"> +213 (0) 24 79 58 58 </a></p>
                       </div>
                   </div>
 

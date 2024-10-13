@@ -4,11 +4,18 @@
       <div class="container">
 
           <div class="d-flex justify-content-between align-items-center">
-          <h2>Actualités Details</h2>
-          <ol>
-              <li><a href="\">Accueil</a></li>
-              <li>Actualités</li>
-          </ol>
+           <!-- Conteneur pour le titre et le bouton -->
+            <div class="d-flex align-items-center">
+              <h2 class="me-3">Toutes les Actualités</h2> <!-- Ajoute un margin-right pour espacer -->
+              
+              <!-- Bouton d'ajout d'actualité (visible seulement si l'utilisateur est authentifié) -->
+              <button v-if="isAuthenticated" @click="goToAddActualite" class="btn btn-primary">Ajouter une actualité</button>
+            </div>
+
+            <ol>
+                <li><a href="\">Accueil</a></li>
+                <li>Actualités</li>
+            </ol>
           </div>
 
       </div>
@@ -109,7 +116,7 @@
 
       const readMore = (actualite) => {
       router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
-    };
+        };
 
       const getResults = async (link) => {
             if (!link.url || link.active) {
@@ -153,12 +160,22 @@
         });
       });
 
+       // Vérifie si l'utilisateur est authentifié
+      const isAuthenticated = computed(() => {
+        return !!window.token; // Retourne true si le token existe
+      });
+
+      // Fonction pour rediriger vers la page d'ajout d'actualité
+      const goToAddActualite = () => {
+          router.push({ name: 'AddActualite' });
+        };
 
 
 
 
 
-      return { actualites, fetchActualites, readMore, actualitesLinks, getResults, filteredLinks };
+
+      return { actualites, fetchActualites, readMore, actualitesLinks, getResults, filteredLinks, isAuthenticated, goToAddActualite };
     }
   }
   </script>
