@@ -558,7 +558,7 @@
                       <div class="email">
                           <i class="bi bi-envelope"></i>
                           <h4>Email:</h4>
-                          <p><a href="mailto:info@fitz-restaurant.de"> contact@opgi-boumerdes.dz</a></p>
+                          <p><a href="mailto:contact@opgi-boumerdes.dz"> contact@opgi-boumerdes.dz</a></p>
                       </div>
 
                       <div class="phone">

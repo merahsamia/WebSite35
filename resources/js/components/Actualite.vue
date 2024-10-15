@@ -39,7 +39,7 @@
 
             <ul>
               <li>  
-                <button  class="btn btn-primary me-2" v-if="isAuthenticated" @click="goToEditActualite"> 
+                <button  class="btn btn-primary me-2" v-if="isAuthenticated"  @click="editActualite(actualite.id)"> 
                   Modifier</button>
                 <button  @click="deleteActualite(actualite.id)" class="btn btn-danger" v-if="isAuthenticated">Supprimer</button>
               </li>
@@ -94,11 +94,12 @@ export default {
       return !!window.token; // Retourne true si le token existe, false sinon
     });
 
-    const goToEditActualite = () => {
-          router.push({ name: 'EditActualite' });
-        };
+    const editActualite = (id) => {
+      router.push({ name: 'EditActualite', params: { actualiteId: id } });
+    };
 
-    return { actualite, fetchActualite, modules: [Pagination, Autoplay], deleteActualite, isAuthenticated, goToEditActualite };
+
+    return { actualite, fetchActualite, modules: [Pagination, Autoplay], deleteActualite, isAuthenticated, editActualite };
   }
 };
 

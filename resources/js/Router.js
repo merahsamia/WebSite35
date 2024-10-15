@@ -43,10 +43,10 @@ const routes = [
     },
 
     { 
-        path: "/editActualite", 
+        path: "/editActualite/:actualiteId", 
         component: EditActualite,
         name: "EditActualite",
-         // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
+        meta: { requiresAuth: true }, // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
 
     },
 ];

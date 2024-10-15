@@ -69,7 +69,7 @@
                   Cité Administrative, <br>
                   Boumerdes, Algerie.<br><br>
                   <strong>Téléphone:</strong><a href="tel:024795858"> +213 (0) 24 79 58 58 </a><br>
-                  <strong>Email:</strong> <a href="mailto:info@fitz-restaurant.de"> contact@opgi-boumerdes.dz</a><br>
+                  <strong>Email:</strong> <a href="mailto:contact@opgi-boumerdes.dz"> contact@opgi-boumerdes.dz</a><br>
                 </h6>
                 </p>
                 <div class="social-links mt-3">
