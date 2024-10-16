@@ -5,6 +5,8 @@ import AddActualite from "./components/AddActualite.vue";
 import Actualite from "./components/Actualite.vue";
 import LogoutComponent from "./components/auth/LogoutComponent.vue";
 import EditActualite from "./components/EditActualite.vue";
+import Documents from "./components/documents/Documents.vue";
+import AddDocument from "./components/documents/AddDocument.vue";
 
 
 
@@ -49,6 +51,17 @@ const routes = [
         meta: { requiresAuth: true }, // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
 
     },
+    { 
+        path: "/documents", 
+        component: Documents,
+        name: "Documents"
+    },
+    { 
+        path: "/AddDocument", 
+        component: AddDocument,
+        name: "AddDocument"
+    },
+
 ];
 
 

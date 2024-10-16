@@ -22,6 +22,7 @@ export default function useActualites() {
     const id = ref('');
     
 //Index.vue 4 Latest actualities
+
     const fetchActualitesIndex = async () => {
         try {
             const response = await fetch('/api/actualites'); 

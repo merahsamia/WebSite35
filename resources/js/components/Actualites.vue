@@ -137,8 +137,7 @@
                 }
             }
         };
-
-
+        
       // Filter links for pagination display
       const filteredLinks = computed(() => {
         const links = actualitesLinks.value;

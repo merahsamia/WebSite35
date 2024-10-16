@@ -16,8 +16,9 @@
             <li><a class="nav-link scrollto active" href="#hero"><h5>Accueil</h5></a></li>
             <li><a class="nav-link scrollto" href="#about"><h5>À propos</h5></a></li>
             <li><a class="nav-link scrollto" href="#testimonials"><h5>Actualités</h5></a></li>
-            <li><a class="nav-link scrollto" href="#services"><h5>Programmes</h5></a></li>
+           <!--  <li><a class="nav-link scrollto" href="#services"><h5>Programmes</h5></a></li>-->
             <li><a class="nav-link scrollto " href="#portfolio"><h5>Projets</h5></a></li>
+            <li><a class="nav-link scrollto " href="#portfolio"><router-link to="/documents" ><h5>Fond Documentaire</h5></router-link></a></li>
             
            <!--  <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
@@ -37,7 +38,7 @@
               </ul>
             </li> -->
             <li><a class="nav-link scrollto" href="#contact"><h5>Contact</h5></a></li>
-            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>Paiement en ligne </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px;"></a></li>
+            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>E-Paiement </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px;"></a></li>
             <li v-if="isAuthenticated">
               <LogoutComponent />
               <!-- Composant de déconnexion (si nécessaire pour des interactions supplémentaires) -->

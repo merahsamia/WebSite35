@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ActualiteController ;
 use App\Http\Controllers\ContactController ;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\DocumentController;
 
 
 
@@ -41,6 +42,10 @@ Route::middleware(['forcetojson', 'auth:api'])->group(function () {
     Route::delete('/actualites/{actualite}', [ActualiteController::class, 'destroy'])->name('actualites.destroy');   // Supprimer une actualité
     
 });
+
+
+Route::post('/AddDocument', [DocumentController::class, 'store'])->name('documents.store');  
+Route::get('/AllDocuments', [DocumentController::class, 'index'])->name('documents.index');  
 
 
 
