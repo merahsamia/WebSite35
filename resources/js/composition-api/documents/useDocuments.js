@@ -37,7 +37,7 @@ export default function useDocuments() {
         }
     };
 
-//AddActualite.vue
+//AddDocument.vue
 
     const submitAddDocument = async () => {
         const formData = new FormData();
@@ -54,7 +54,10 @@ export default function useDocuments() {
                 body: formData,
                 headers: {
                     // 'Content-Type': 'multipart/form-data', // Pas nécessaire avec FormData, le navigateur le fait automatiquement
+                    'Authorization': `Bearer ${window.token}` // le token 
+
                 },
+               
             });
 
             const data = await response.json();

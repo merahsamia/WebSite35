@@ -59,7 +59,9 @@ const routes = [
     { 
         path: "/AddDocument", 
         component: AddDocument,
-        name: "AddDocument"
+        name: "AddDocument",
+        meta: { requiresAuth: true }, // Ajout d'une propriété meta pour indiquer que cette route nécessite une auth
+
     },
 
 ];

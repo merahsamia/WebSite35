@@ -40,3 +40,14 @@
         </div>
     </div>
 </template>
+
+<script>
+  import useDocuments from '../../composition-api/documents/useDocuments';
+
+  export default {
+    setup() {
+      const { form, submitAddActualite, handleFileUpload, errors, generalError } = useDocuments();
+      return { form, submitAddActualite, handleFileUpload, errors, generalError };
+    }
+  }
+</script>

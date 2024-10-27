@@ -5,7 +5,9 @@ import router from "./Router";
 
 import Index from './components/Index.vue';
 import Actualites from './components/Actualites.vue';
+import Documents from './components/documents/Documents';
 import AddActualite from './components/AddActualite.vue';
+import AddDocument from './components/documents/AddDocument.vue';
 import Actualite from './components/Actualite.vue';
 import Contact from './components/Contact.vue';
 import LogoutComponent from './components/auth/LogoutComponent.vue';
@@ -45,7 +47,9 @@ const app = createApp({
     components: {
         Index,
         Actualites,
+        Documents,
         AddActualite,
+        AddDocument,
         Actualite,
         Contact,
         LogoutComponent,
