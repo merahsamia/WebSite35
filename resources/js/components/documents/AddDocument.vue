@@ -30,7 +30,7 @@
 
                     </div>
                     <div class="form-group mt-3">
-                        <input v-model="form.file_path" type="text" name="file_path" class="form-control" id="file_path" placeholder="Titre" required>
+                        <input @change="handleFileUpload" type="file" name="file_path" class="form-control" id="file_path" placeholder="Titre" required>
                         <div v-if="errors.file_path" class="text-danger">{{ errors.file_path[0] }}</div>
 
                      </div>
@@ -46,8 +46,8 @@
 
   export default {
     setup() {
-      const { form, submitAddActualite, handleFileUpload, errors, generalError } = useDocuments();
-      return { form, submitAddActualite, handleFileUpload, errors, generalError };
+      const { form, submitAddDocument, handleFileUpload, errors, generalError } = useDocuments();
+      return { form, submitAddDocument, handleFileUpload, errors, generalError };
     }
   }
 </script>

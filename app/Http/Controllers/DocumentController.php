@@ -3,13 +3,19 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\Document;
+use App\Models\Document;
+
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Storage;
+
 
 class DocumentController extends Controller
 {
+
     public function index()
     {
         $documents = Document::all();
+        //dd($documents);
         return response()->json($documents, 200);
 
     }
@@ -18,8 +24,8 @@ class DocumentController extends Controller
 {
     $validator = Validator::make($request->all(), [
         'title' => 'required|string|max:255',
-        'file_path' => 'required|file|mimes:pdf,doc,docx|max:2048', // Validation du fichier
         'description' => 'required|string',
+        'file_path' => 'required|file|mimes:pdf,doc,docx|max:4048', // Validation du fichier
     ]);
 
     if ($validator->fails()) {
@@ -27,6 +33,12 @@ class DocumentController extends Controller
     }
 
     try {
+
+        if (!$request->hasFile('file_path')) {
+            \Log::error("Aucun fichier trouvé dans le champ 'file_path'");
+            return response()->json(['errors' => ['file_path' => ['Le fichier est requis.']]], 422);
+        }
+    
         // Sauvegarder le fichier dans public/documents
         $filePath = $request->file('file_path')->store('documents', 'public');
 

@@ -45,7 +45,7 @@ Route::middleware(['forcetojson', 'auth:api'])->group(function () {
 
 
 Route::post('/AddDocument', [DocumentController::class, 'store'])->name('documents.store');  
-Route::get('/AllDocuments', [DocumentController::class, 'index'])->name('documents.index');  
+Route::get('/documents', [DocumentController::class, 'index'])->name('documents.index');  
 
 
 

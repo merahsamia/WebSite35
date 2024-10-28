@@ -115,7 +115,7 @@
   
 
       const readMore = (actualite) => {
-      router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
+        router.push({ name: 'Actualite', params: { actualiteId: actualite.id } });
         };
 
       const getResults = async (link) => {

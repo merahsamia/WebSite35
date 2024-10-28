@@ -18,7 +18,7 @@
             <li><a class="nav-link scrollto" href="#testimonials"><h5>Actualités</h5></a></li>
            <!--  <li><a class="nav-link scrollto" href="#services"><h5>Programmes</h5></a></li>-->
             <li><a class="nav-link scrollto " href="#portfolio"><h5>Projets</h5></a></li>
-            <li><a class="nav-link scrollto " href="#portfolio"><router-link to="/documents" ><h5>Fond Documentaire</h5></router-link></a></li>
+            <li><a class="nav-link scrollto " href="#portfolio"><router-link to="/AllDocuments" ><h5>Fond Documentaire</h5></router-link></a></li>
             
            <!--  <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
               <ul>

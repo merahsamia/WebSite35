@@ -22,12 +22,12 @@ export default function useDocuments() {
 //Documents.vue 
     const fetchDocuments = async () => {
         try {
-            const response = await fetch('/api/AllDocuments'); 
+            const response = await fetch('/api/documents'); 
             if (!response.ok) {
                 throw new Error('Failed to fetch Documents');
             }
             const data = await response.json();
-            //console.log(data)
+            console.log(data)
 
             documents.value = data;
             documentsLinks.value = data.links
@@ -46,6 +46,8 @@ export default function useDocuments() {
         
         if (form.value.file_path instanceof File) {
             formData.append("file_path", form.value.file_path);  // Ajoute le fichier au FormData
+        } else {
+            console.error("file_path is not a File instance or is undefined.");
         }
 
         try {

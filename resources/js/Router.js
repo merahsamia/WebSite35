@@ -52,7 +52,7 @@ const routes = [
 
     },
     { 
-        path: "/documents", 
+        path: "/AllDocuments", 
         component: Documents,
         name: "Documents"
     },
