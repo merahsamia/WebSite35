@@ -1,9 +1,20 @@
 <template>
-    <div>
+    <div class="logout-wrapper">
         <input type="hidden" v-model="token_id">
-        <a class="nav-link" href="#" @click.prevent="logout">Logout</a>
+        <a class="nav-link logout-btn" href="#" @click.prevent="logout">Logout</a>
     </div>
 </template>
+
+<style scoped>
+.logout-wrapper {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+</style>
+
+
 
 <script>
 import axios from 'axios';
