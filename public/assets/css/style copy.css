@@ -24,6 +24,10 @@
   transform: rotate(360deg); /* Rotation de 90 degrés au survol */
 }
 
+.arrow-img:hover {
+  transform: rotate(360deg); /* Rotation de 90 degrés au survol */
+}
+
 
 body {
   font-family: "Open Sans", sans-serif;
