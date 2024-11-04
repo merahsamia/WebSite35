@@ -17,7 +17,7 @@
 
   <div class="container mt-5" id="document-list">
     <div class="row">
-      <div class="col-lg-8 mx-auto" v-for="document in documents" :key="document.id">
+      <div class="col-lg-8 mx-auto" v-for="document in documents.data" :key="document.id">
         <div class="card mb-3 text-center">
           <div class="card-body">
             <h5 class="card-title">{{ document.title }}</h5>
@@ -30,6 +30,20 @@
       </div>
     </div>
   </div>
+
+
+  <div class="d-flex justify-content-center">
+      <ul class="pagination">
+        
+        <li :class="`page-item ${link.active ? 'active': ''} ${ !link.url ? 'disabled': ''}`"
+        v-for="(link, index) in filteredLinks" :key="index">
+        <a class="page-link" href="#" v-html="link.label"
+         @click.prevent="getResults(link)"></a>
+        </li>
+        
+        
+      </ul>
+    </div >
 </template>
 
 <style scoped>
@@ -64,7 +78,7 @@
   
   export default {
     setup() {
-      const { documents, fetchDocuments } = useDocuments();
+      const { documents, fetchDocuments, documentsLinks } = useDocuments();
 
       const route = useRoute();
       const router = useRouter();
@@ -79,12 +93,53 @@
           router.push({ name: 'AddDocument' });
         };
 
+      onMounted(fetchDocuments);
 
-        onMounted(fetchDocuments);
+      // Filter links for pagination display
+      const filteredLinks = computed(() => {
+            const links = documentsLinks.value;
+            if (links.length <= 7) {
+              return links;  // Show all if there are 7 or fewer links
+            }
+
+            const currentPage = parseInt(links.find(link => link.active)?.label, 10) || 1;
+            const maxPagesToShow = 5;
+            const halfRange = Math.floor(maxPagesToShow / 2);
+
+            return links.filter((link, index) => {
+              const pageLabel = parseInt(link.label, 10);
+              const isFirst = index === 0;
+              const isLast = index === links.length - 1;
+              const isNearCurrentPage = !isNaN(pageLabel) && Math.abs(pageLabel - currentPage) <= halfRange;
+
+              return isFirst || isLast || isNearCurrentPage;
+            });
+      });
+
+      const getResults = async (link) => {
+            if (!link.url || link.active) {
+                return;
+            } else {
+                try {
+                    const response = await fetch(link.url);
+                    if (!response.ok) {
+                        throw new Error('Failed to fetch documents');
+                    }
+                    const data = await response.json();
+                    //console.log(data);
+                    documents.value = data;
+                    documentsLinks.value = data.links;
+                    //console.log(documentsLinks.value);
+                } catch (error) {
+                    console.error('Error fetching documents:', error);
+                }
+            }
+        };
+        
 
 
 
-      return { isAuthenticated, goToAddDocument, documents, fetchDocuments };
+      return { isAuthenticated, goToAddDocument, documents, fetchDocuments, documentsLinks, filteredLinks, getResults };
     }
   }
 </script>

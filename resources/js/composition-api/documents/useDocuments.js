@@ -27,7 +27,7 @@ export default function useDocuments() {
                 throw new Error('Failed to fetch Documents');
             }
             const data = await response.json();
-            console.log(data)
+            //console.log(data)
 
             documents.value = data;
             documentsLinks.value = data.links

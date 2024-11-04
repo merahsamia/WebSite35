@@ -14,7 +14,7 @@ class DocumentController extends Controller
 
     public function index()
     {
-        $documents = Document::all();
+        $documents = Document::paginate(5);
         //dd($documents);
         return response()->json($documents, 200);
 
