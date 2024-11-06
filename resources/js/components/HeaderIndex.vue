@@ -7,18 +7,19 @@
           
           
           
-          <span></span></a></h1>
+          <span></span></a>
+        </h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
             <li><a class="nav-link scrollto active" href="#hero"><h5>Accueil</h5></a></li>
-            <li><a class="nav-link scrollto" href="#about"><h5>À propos</h5></a></li>
+          <!--    <li><a class="nav-link scrollto" href="#about"><h5>À propos</h5></a></li>-->
             <li><a class="nav-link scrollto" href="#testimonials"><h5>Actualités</h5></a></li>
            <!--  <li><a class="nav-link scrollto" href="#services"><h5>Programmes</h5></a></li>-->
             <li><a class="nav-link scrollto " href="#portfolio"><h5>Projets</h5></a></li>
-            <li><a class="nav-link scrollto " href="#portfolio"><router-link to="/AllDocuments" ><h5>Fond Documentaire</h5></router-link></a></li>
+            <li><a class="nav-link scrollto " @click="goToAllDocuments"><h5>Fond Documentaire</h5></a></li>
             
            <!--  <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
@@ -70,6 +71,14 @@
       mounted() {
           // Vérifiez si l'utilisateur est authentifié en vérifiant le token
           this.isAuthenticated = !!window.token; // Si un token existe, l'utilisateur est authentifié
+      },
+
+      methods: {
+         goToAllDocuments() {
+          this.$router.push({ name: 'Documents' });
+          
+        }
+
       },
   };
 
