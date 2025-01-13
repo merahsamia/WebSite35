@@ -22223,7 +22223,8 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   alt: "",
   style: {
     "border-radius": "5px",
-    "margin-left": "5px"
+    "margin-left": "5px",
+    "margin-right": "5px"
   }
 })])], -1 /* HOISTED */);
 var _hoisted_12 = {
