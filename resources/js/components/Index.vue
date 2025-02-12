@@ -7,8 +7,8 @@
 
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
           <div class="col-xl-6 col-lg-8">
-            <h1>Office de Promotion et de Gestion Immobilière<span>.</span></h1>
-            <h2>Wilaya de BOUMERDES</h2>
+            <h1>{{ $t("Office de Promotion et de Gestion Immobilière") }}<span>.</span></h1>
+            <h2>{{ $t("Wilaya de BOUMERDES")}}</h2>
           </div>
         </div>
 
@@ -16,7 +16,7 @@
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-bank"></i>
-              <h3><a href="">01 Direction Générale</a></h3>
+              <h3><a href="">01  {{ $t("Direction Générale") }}</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
@@ -24,14 +24,14 @@
               <i class="bi bi-building-gear"></i>
 
               <h3><a href=""><span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="4" class="purecounter"></span>
-                Unités réparties dans la wilaya rapprochant l'administration des citoyens.</a></h3>
+               {{ $t("Unités réparties dans la wilaya rapprochant l'administration des citoyens") }} .</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-house-gear"></i>
               <h3><a href=""> <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="4" class="purecounter"></span>
-                Caisses réparties dans la wilaya facilitant le paiement pour les locataires.</a></h3>
+                {{$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')}}.</a></h3>
             </div>
           </div>
           <!-- 
@@ -68,12 +68,12 @@
               <img src="assets/img/about.jpg" class="img-fluid" alt="" height="auto"  width="100%">
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-              <h3>Présentation</h3>
+              <h3>{{$t('Présentation')}}</h3>
               <p class="fst-italic">
-                L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI.
-                <br> <br> Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI.
+               {{ $t("L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI") }} .
+                <br> <br> {{ $t("Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI")}}.
                 
-                <br> <br>Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial.    
+                <br> <br>{{ $t("Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial")}}.    
               </p> 
               
               

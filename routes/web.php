@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\AuthController;
+use Illuminate\Support\Facades\Session;
+
 
 
 /*
@@ -19,6 +21,13 @@ use App\Http\Controllers\AuthController;
 // Route::get('/', function () {
 //     return view('index');
 // });
+
+
+Route::get('language/{locale}', function($locale) {
+    app()->setLocale($locale);
+    Session()->put('locale', $locale);
+    return redirect()->back();
+})->name('localization');
 
 Route::get('/storage/{path}', function ($path) {
     // Vérifie si le chemin du fichier est valide
@@ -53,4 +62,3 @@ Route::controller(AuthController::class)->group(function() {
 Route::get('/{any}', function () {
     return view('layouts/template');
     })->where('any', '.*');
-

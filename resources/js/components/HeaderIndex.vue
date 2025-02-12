@@ -14,12 +14,12 @@
 
         <nav id="navbar" class="navbar order-last order-lg-0">
           <ul>
-            <li><a class="nav-link scrollto active" href="#hero"><h5>Accueil</h5></a></li>
+            <li><a class="nav-link scrollto active" href="#hero"><h5>{{ $t("Accueil") }}</h5></a></li> 
           <!--    <li><a class="nav-link scrollto" href="#about"><h5>À propos</h5></a></li>-->
-            <li><a class="nav-link scrollto" href="#testimonials"><h5>Actualités</h5></a></li>
+            <li><a class="nav-link scrollto" href="#testimonials"><h5>{{ $t("Actualités") }}</h5></a></li>
            <!--  <li><a class="nav-link scrollto" href="#services"><h5>Programmes</h5></a></li>-->
-            <li><a class="nav-link scrollto " href="#portfolio"><h5>Projets</h5></a></li>
-            <li><a class="nav-link scrollto " @click="goToAllDocuments"><h5>Fond Documentaire</h5></a></li>
+            <li><a class="nav-link scrollto " href="#portfolio"><h5>{{ $t("Projets") }}</h5></a></li>
+            <li><a class="nav-link scrollto " @click="goToAllDocuments"><h5>{{ $t("Fond Documentaire") }}</h5></a></li>
             
            <!--  <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
               <ul>
@@ -38,8 +38,8 @@
                 <li><a href="#">Drop Down 4</a></li>
               </ul>
             </li> -->
-            <li><a class="nav-link scrollto" href="#contact"><h5>Contact</h5></a></li>
-            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>E-Paiement </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px; margin-right: 5px;"></a></li>
+            <li><a class="nav-link scrollto" href="#contact"><h5>{{ $t("Contact") }}</h5></a></li>
+            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>{{ $t("E-Paiement") }} </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px; margin-right: 5px;"></a></li>
             <li v-if="isAuthenticated">
               <LogoutComponent />
               <!-- Composant de déconnexion (si nécessaire pour des interactions supplémentaires) -->
@@ -49,7 +49,7 @@
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav><!-- .navbar -->
 
-        <a href="#about" class="get-started-btn scrollto"><h5>Commencer</h5></a>
+        <a href="#about" class="get-started-btn scrollto"><h5>{{ $t("Commencer")}}</h5></a>
 
       </div>
     </header>
