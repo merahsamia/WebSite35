@@ -16,6 +16,9 @@ const messages = {
         "L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI": "L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI.",
         "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI": "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI",
         "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial": "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial",
+        "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :": "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :",
+        "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies",
+
     },
     ar: {
         Accueil: 'صفحة',
@@ -34,6 +37,8 @@ const messages = {
         "L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI": "تم إنشاء ديوان الترقية والتسيير العقاري لولاية بومرداس (O.P.G.I بومرداس) على غرار باقي الدواوين المنتشرة عبر التراب الوطني، بموجب المرسوم 76/93 المؤرخ في 23/10/1976 الذي يحدد شروط إنشاء دواوين الترقية والتسيير العقاري",
         "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI": "تم تغيير طبيعته القانونية بموجب المرسوم التنفيذي رقم 91/147 الصادر في 21 مايو 1991، المتعلق بتعديل الطبيعة القانونية لنظام دواوين الترقية والتسيير العقاري",
         "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial": "وفقًا للمادة 1 من المرسوم التنفيذي المذكور أعلاه، فإن ديوان الترقية والتسيير العقاري هو مؤسسة عمومية ذات طابع صناعي وتجاري، ويُعدّ تاجرًا في علاقاته مع الغير، ويخضع لأحكام القانون التجاري",
+        "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :": "بموجب المادة 4 من المرسوم التنفيذي رقم 91/147 تاريخ 05/12/1991، تتولى منظمة OPGI المهام التالية:",
+        "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "تعزيز الخدمة العامة في مجال الإسكان، وخاصة للفئات الاجتماعية الأكثر حرماناً",
     },
 };
 

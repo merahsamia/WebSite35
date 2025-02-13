@@ -2,3 +2,14 @@
     direction: rtl;
     text-align: right;
 }
+
+
+.ltr-text {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+}
+
+
+.bx-chevron-right {
+    transform: rotate(180deg);
+}

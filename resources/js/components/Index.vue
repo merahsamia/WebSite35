@@ -16,7 +16,7 @@
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-bank"></i>
-              <h3><a href="">01  {{ $t("Direction Générale") }}</a></h3>
+              <h3><a href="">{{ $t("Direction Générale") }}</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
@@ -90,9 +90,9 @@
         <div class="container" data-aos="fade-up">
 
           <div class="row">
-            Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :
+            {{$t('Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :')}}
               <ul>
-                <li><i class="ri-check-double-line"></i> Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies.</li>
+                <li><i class="ri-check-double-line"></i> {{$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')}}.</li>
                 
               </ul>
               À titre d'accessoire, il est chargé de: 

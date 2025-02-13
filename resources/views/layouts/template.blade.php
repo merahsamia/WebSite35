@@ -70,13 +70,13 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-info">
-                            <h3>OPGI Boumerdes<span>.</span></h3>
+                            <h3>{{__('OPGI Boumerdes')}}<span>.</span></h3>
                             <p>
                             <h6>
-                                Cité Administrative, <br>
-                                Boumerdes, Algerie.<br><br>
-                                <strong>Téléphone:</strong><a href="tel:024795858"> +213 (0) 24 79 58 58 </a><br>
-                                <strong>Email:</strong> <a href="mailto:contact@opgi-boumerdes.dz">
+                                {{__('Cité Administrative')}}, <br>
+                               {{__('Boumerdes, Algerie')}}.<br><br>
+                                <strong>{{__('Téléphone')}}:</strong><a href="tel:024795858" class="ltr-text"> {{__('+213 (0) 24 79 58 58')}} </a><br>
+                                <strong>{{__('Email')}}:</strong> <a href="mailto:contact@opgi-boumerdes.dz">
                                     contact@opgi-boumerdes.dz</a><br>
                             </h6>
                             </p>
@@ -91,24 +91,24 @@
                     </div>
 
                     <div class="col-lg-2 col-md-6 footer-links">
-                        <h4>Liens</h4>
+                        <h4>{{__('Liens')}}</h4>
                         <ul>
                             <h6>
                                 <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('Accueil')}} </a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">À propos</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Programmes</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Actualités</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Paiement en ligne</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('À propos')}}</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('Programmes')}}</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('Actualités')}}</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('Paiement en ligne')}}</a></li>
                             </h6>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Nos Services</h4>
+                        <h4>{{__('Nos Services')}}</h4>
                         <ul>
                             <h6>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Appels d'offres</a></li>
-                                <li><i class="bx bx-chevron-right"></i> <a href="#">Vente de locaux</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__("Appels d'offres")}}</a></li>
+                                <li><i class="bx bx-chevron-right"></i> <a href="#">{{__('Vente de locaux')}}</a></li>
                             </h6>
                         </ul>
                     </div>
@@ -128,7 +128,7 @@
 
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>OPGI - Boumerdes</span></strong>. Tous droits réservés
+                {{__("Copyright")}} &copy; <strong><span>{{__("OPGI - Boumerdes")}}</span></strong>. {{__("Tous droits réservés")}}
             </div>
             <div class="credits">
                 <!-- All the links in the footer should remain intact. -->

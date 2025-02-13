@@ -11,8 +11,8 @@
 <style>
     .language-switcher {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
+        bottom: 70px;
+        right: 15px;
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -21,7 +21,7 @@
     .language-btn {
         width: 50px;
         height: 50px;
-        background-color: #FFC107; /* Jaune */
+        background-color: #ffc451; /* Jaune */
         color: black;
         font-weight: bold;
         text-align: center;
@@ -33,7 +33,7 @@
     }
 
     .language-btn:hover {
-        background-color: #E0A800; /* Jaune plus foncé au survol */
+        background-color: #ffc451; /* Jaune plus foncé au survol */
         transform: scale(1.1);
     }
 </style>
