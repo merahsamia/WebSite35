@@ -23636,29 +23636,33 @@ var _hoisted_1 = {
 var _hoisted_2 = {
   "class": "col-md-6 form-group"
 };
-var _hoisted_3 = {
+var _hoisted_3 = ["placeholder"];
+var _hoisted_4 = {
   "class": "col-md-6 form-group mt-3 mt-md-0"
 };
-var _hoisted_4 = {
-  "class": "form-group mt-3"
-};
-var _hoisted_5 = {
-  "class": "form-group mt-3"
-};
+var _hoisted_5 = ["placeholder"];
 var _hoisted_6 = {
+  "class": "form-group mt-3"
+};
+var _hoisted_7 = ["placeholder"];
+var _hoisted_8 = {
+  "class": "form-group mt-3"
+};
+var _hoisted_9 = ["placeholder"];
+var _hoisted_10 = {
   key: 0,
   "class": "mt-2 text-danger text-sm"
 };
-var _hoisted_7 = {
+var _hoisted_11 = {
   "class": "text-center"
 };
-var _hoisted_8 = {
+var _hoisted_12 = {
   key: 0,
   "class": "spinner-border text-success me-2 mt-2",
   id: "email-spinner",
   role: "status"
 };
-var _hoisted_9 = ["disabled"];
+var _hoisted_13 = ["disabled"];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("form", {
     onSubmit: _cache[4] || (_cache[4] = (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function () {
@@ -23674,9 +23678,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     name: "name",
     "class": "form-control",
     id: "name",
-    placeholder: "Nom",
+    placeholder: _ctx.$t('Nom'),
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, null, 8 /* PROPS */, _hoisted_3), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.name]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[1] || (_cache[1] = function ($event) {
       return $setup.contactData.email = $event;
     }),
@@ -23684,9 +23688,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "form-control",
     name: "email",
     id: "email",
-    placeholder: "Email",
+    placeholder: _ctx.$t('Email'),
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.email]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
+  }, null, 8 /* PROPS */, _hoisted_5), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.email]])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
     "onUpdate:modelValue": _cache[2] || (_cache[2] = function ($event) {
       return $setup.contactData.subject = $event;
     }),
@@ -23694,26 +23698,26 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "form-control",
     name: "subject",
     id: "subject",
-    placeholder: "Objet",
+    placeholder: _ctx.$t('Objet'),
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.subject]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
+  }, null, 8 /* PROPS */, _hoisted_7), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.subject]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.withDirectives)((0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("textarea", {
     "onUpdate:modelValue": _cache[3] || (_cache[3] = function ($event) {
       return $setup.contactData.message = $event;
     }),
     "class": "form-control",
     name: "message",
     rows: "5",
-    placeholder: "Message",
+    placeholder: _ctx.$t('Message'),
     required: ""
-  }, null, 512 /* NEED_PATCH */), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.message]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Affichage des erreurs "), $setup.errors ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_6, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.errors, function (error, index) {
+  }, null, 8 /* PROPS */, _hoisted_9), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelText, $setup.contactData.message]])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Affichage des erreurs "), $setup.errors ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_10, [((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.renderList)($setup.errors, function (error, index) {
     return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", {
       key: index
     }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(error), 1 /* TEXT */);
-  }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [$setup.email_loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_8)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
+  }), 128 /* KEYED_FRAGMENT */))])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [$setup.email_loading ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_12)) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
     type: "submit",
     "class": "btn btn-primary",
     disabled: $setup.email_loading
-  }, "Envoyer le message", 8 /* PROPS */, _hoisted_9)])], 32 /* NEED_HYDRATION */);
+  }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Envoyer le message")), 9 /* TEXT, PROPS */, _hoisted_13)])], 32 /* NEED_HYDRATION */);
 }
 
 /***/ }),
@@ -24060,71 +24064,156 @@ var _hoisted_34 = {
 var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "ri-check-double-line"
 }, null, -1 /* HOISTED */);
-var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<ul><li><i class=\"ri-check-double-line\"></i> La promotion Immobilière et Foncière.</li><li><i class=\"ri-check-double-line\"></i> La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur.</li><li><i class=\"ri-check-double-line\"></i> Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la restauration et la réhabilitation des biens immobiliers.</li><li><i class=\"ri-check-double-line\"></i> En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une convention déterminant les conditions et modalités de prise charge de cette mission. </li><li><i class=\"ri-check-double-line\"></i> L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997. </li><li><i class=\"ri-check-double-line\"></i> Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes). </li></ul>", 1);
-var _hoisted_37 = {
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_37 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "ri-check-double-line"
+}, null, -1 /* HOISTED */);
+var _hoisted_42 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_38 = {
+var _hoisted_43 = {
   "class": "section-title"
 };
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Actualités", -1 /* HOISTED */);
-var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Dernières Actualités", -1 /* HOISTED */);
-var _hoisted_41 = {
+var _hoisted_44 = {
   id: "testimonials",
   "class": "testimonials"
 };
-var _hoisted_42 = {
+var _hoisted_45 = {
   "class": "container",
   "data-aos": "zoom-in"
 };
-var _hoisted_43 = {
+var _hoisted_46 = {
   "class": "testimonials-slider swiper",
   "data-aos": "fade-up",
   "data-aos-delay": "100"
 };
-var _hoisted_44 = {
+var _hoisted_47 = {
   key: 0,
   "class": "testimonial-item"
 };
-var _hoisted_45 = ["src", "alt"];
-var _hoisted_46 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_48 = ["src", "alt"];
+var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bxs-quote-alt-left quote-icon-left"
 }, null, -1 /* HOISTED */);
-var _hoisted_48 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bxs-quote-alt-right quote-icon-right"
 }, null, -1 /* HOISTED */);
-var _hoisted_49 = ["onClick"];
-var _hoisted_50 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_52 = ["onClick"];
+var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "swiper-pagination swiper-pagination-custom"
 }, null, -1 /* HOISTED */);
-var _hoisted_52 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"services\" class=\"services\"><div class=\"container\" data-aos=\"fade-up\"><div class=\"section-title\"><h2>Programmes</h2><p>Nos Programmes</p></div><div class=\"row\"><div class=\"col-lg-4 col-md-6 align-items-stretch\" data-aos=\"zoom-in\" data-aos-delay=\"100\"><div class=\"icon-box\"><div class=\"icon\"><i class=\"bi bi-building\"></i></div><h4><a href=\"\">LPL</a></h4><p>Logements Publics Locatifs</p></div></div><div class=\"col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0\" data-aos=\"zoom-in\" data-aos-delay=\"200\"><div class=\"icon-box\"><div class=\"icon\"><i class=\"bi bi-building-add\"></i></div><h4><a href=\"\">LPA</a></h4><p>Logement Promotionnel Aidé </p></div></div><div class=\"col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"300\"><div class=\"icon-box\"><div class=\"icon\"><i class=\"bi bi-building-check\"></i></div><h4><a href=\"\">LP</a></h4><p> Logement Promotionnel</p></div></div><!-- &lt;div class=&quot;col-lg-4 col-md-6 d-flex align-items-stretch mt-4&quot; data-aos=&quot;zoom-in&quot; data-aos-delay=&quot;100&quot;&gt;\r\n              &lt;div class=&quot;icon-box&quot;&gt;\r\n                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;bx bx-world&quot;&gt;&lt;/i&gt;&lt;/div&gt;\r\n                &lt;h4&gt;&lt;a href=&quot;&quot;&gt;Nemo Enim&lt;/a&gt;&lt;/h4&gt;\r\n                &lt;p&gt;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis&lt;/p&gt;\r\n              &lt;/div&gt;\r\n            &lt;/div&gt;\r\n\r\n            &lt;div class=&quot;col-lg-4 col-md-6 d-flex align-items-stretch mt-4&quot; data-aos=&quot;zoom-in&quot; data-aos-delay=&quot;200&quot;&gt;\r\n              &lt;div class=&quot;icon-box&quot;&gt;\r\n                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;bx bx-slideshow&quot;&gt;&lt;/i&gt;&lt;/div&gt;\r\n                &lt;h4&gt;&lt;a href=&quot;&quot;&gt;Dele cardo&lt;/a&gt;&lt;/h4&gt;\r\n                &lt;p&gt;Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur&lt;/p&gt;\r\n              &lt;/div&gt;\r\n            &lt;/div&gt;\r\n\r\n            &lt;div class=&quot;col-lg-4 col-md-6 d-flex align-items-stretch mt-4&quot; data-aos=&quot;zoom-in&quot; data-aos-delay=&quot;300&quot;&gt;\r\n              &lt;div class=&quot;icon-box&quot;&gt;\r\n                &lt;div class=&quot;icon&quot;&gt;&lt;i class=&quot;bx bx-arch&quot;&gt;&lt;/i&gt;&lt;/div&gt;\r\n                &lt;h4&gt;&lt;a href=&quot;&quot;&gt;Divera don&lt;/a&gt;&lt;/h4&gt;\r\n                &lt;p&gt;Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur&lt;/p&gt;\r\n              &lt;/div&gt;\r\n            &lt;/div&gt; --></div></div></section>", 1);
-var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", {
-  id: "portfolio",
-  "class": "portfolio"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_55 = {
+  id: "services",
+  "class": "services"
+};
+var _hoisted_56 = {
   "class": "container",
   "data-aos": "fade-up"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_57 = {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Galerie"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Nos projets")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_58 = {
+  "class": "row"
+};
+var _hoisted_59 = {
+  "class": "col-lg-4 col-md-6 align-items-stretch",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "100"
+};
+var _hoisted_60 = {
+  "class": "icon-box"
+};
+var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "icon"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-building"
+})], -1 /* HOISTED */);
+var _hoisted_62 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: ""
+}, "LPL")], -1 /* HOISTED */);
+var _hoisted_63 = {
+  "class": "col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "200"
+};
+var _hoisted_64 = {
+  "class": "icon-box"
+};
+var _hoisted_65 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "icon"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-building-add"
+})], -1 /* HOISTED */);
+var _hoisted_66 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: ""
+}, "LPA")], -1 /* HOISTED */);
+var _hoisted_67 = {
+  "class": "col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "300"
+};
+var _hoisted_68 = {
+  "class": "icon-box"
+};
+var _hoisted_69 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "icon"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-building-check"
+})], -1 /* HOISTED */);
+var _hoisted_70 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: ""
+}, "LP")], -1 /* HOISTED */);
+var _hoisted_71 = {
+  id: "portfolio",
+  "class": "portfolio"
+};
+var _hoisted_72 = {
+  "class": "container",
+  "data-aos": "fade-up"
+};
+var _hoisted_73 = {
+  "class": "section-title"
+};
+var _hoisted_74 = {
   "class": "row",
   "data-aos": "fade-up",
   "data-aos-delay": "100"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_75 = {
   "class": "col-lg-12 d-flex justify-content-center"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", {
+};
+var _hoisted_76 = {
   id: "portfolio-flters"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+};
+var _hoisted_77 = {
   "data-filter": "*",
   "class": "filter-active"
-}, "Tous"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+};
+var _hoisted_78 = {
   "data-filter": ".filter-app"
-}, "Vidéos"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", {
+};
+var _hoisted_79 = {
   "data-filter": ".filter-card"
-}, "Photos")])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_80 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row portfolio-container",
   "data-aos": "fade-up",
   "data-aos-delay": "200"
@@ -24314,33 +24403,114 @@ var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   title: "More Details"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bx-link"
-})])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Card 3</h4>\r\n                  <p>Card</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Web 3</h4>\r\n                  <p>Web</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div> ")])])], -1 /* HOISTED */);
-var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+})])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Card 3</h4>\r\n                  <p>Card</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Web 3</h4>\r\n                  <p>Web</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div> ")], -1 /* HOISTED */);
+var _hoisted_81 = {
   "class": "container",
   "data-aos": "fade-up"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_82 = {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Plateforme en ligne"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Notre Espace Client")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+};
+var _hoisted_83 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "arrow-container"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
   src: "assets/img/arrow.jpg",
   alt: "Flèche",
   "class": "arrow-img"
-})])], -1 /* HOISTED */);
-var _hoisted_55 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"features\" class=\"features\"><div class=\"container\" data-aos=\"fade-up\"><div class=\"row\"><div class=\"image col-lg-6\" style=\"background-image:url(&quot;assets/img/client.png&quot;);\" data-aos=\"fade-right\"></div><div class=\"col-lg-6\" data-aos=\"fade-left\" data-aos-delay=\"100\"><div class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\"><i class=\"bi bi-credit-card\"></i><h4>Paiement en ligne </h4><p>Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB. </p></div><div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\"><i class=\"bi bi-list-ul\"></i><h4>Mes quittances de paiement</h4><p>Consultation des quittances réglées en ligne via l&#39;e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF.</p></div><div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\"><i class=\"bi bi-hourglass-split\"></i><h4>Préoccupations et Doléances</h4><p>Soumission des doléances (Réclamation, demande d&#39;achat et autres), Réception des réponses à chaque demande...</p></div><div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\"><i class=\"bi bi-sort-up\"></i><h4>Mouvement du contrat</h4><p>Suivi de l&#39;état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant... </p></div></div></div><br><div class=\"row\"><div class=\"sam\" data-aos=\"fade-left\" data-aos-delay=\"100\"><h4>Et bien plus de fonctionnalités via : </h4><a href=\"https://client.opgi-boumerdes.dz/Login\" target=\"_blank\" class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\"><i class=\"bi bi-arrow-right-circle-fill\"></i></a></div></div></div></section>", 1);
-var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"container\" data-aos=\"fade-up\"><div class=\"section-title\"><h2>Liens</h2><p>Liens utiles</p></div></div><section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.png\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 2);
-var _hoisted_58 = {
-  id: "contact",
-  "class": "contact"
+})], -1 /* HOISTED */);
+var _hoisted_84 = {
+  id: "features",
+  "class": "features"
 };
-var _hoisted_59 = {
+var _hoisted_85 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_60 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_86 = {
+  "class": "row"
+};
+var _hoisted_87 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "image col-lg-6",
+  style: {
+    "background-image": "url(\"assets/img/client.png\")"
+  },
+  "data-aos": "fade-right"
+}, null, -1 /* HOISTED */);
+var _hoisted_88 = {
+  "class": "col-lg-6",
+  "data-aos": "fade-left",
+  "data-aos-delay": "100"
+};
+var _hoisted_89 = {
+  "class": "icon-box mt-5 mt-lg-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_90 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-credit-card"
+}, null, -1 /* HOISTED */);
+var _hoisted_91 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_92 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-list-ul"
+}, null, -1 /* HOISTED */);
+var _hoisted_93 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_94 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-hourglass-split"
+}, null, -1 /* HOISTED */);
+var _hoisted_95 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_96 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-sort-up"
+}, null, -1 /* HOISTED */);
+var _hoisted_97 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_98 = {
+  "class": "row"
+};
+var _hoisted_99 = {
+  "class": "sam",
+  "data-aos": "fade-left",
+  "data-aos-delay": "100"
+};
+var _hoisted_100 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "https://client.opgi-boumerdes.dz/Login",
+  target: "_blank",
+  "class": "icon-box mt-5 mt-lg-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-arrow-right-circle-fill"
+})], -1 /* HOISTED */);
+var _hoisted_101 = {
+  "class": "container",
+  "data-aos": "fade-up"
+};
+var _hoisted_102 = {
   "class": "section-title"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, "Contact"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "Contactez-nous")], -1 /* HOISTED */);
-var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
+};
+var _hoisted_103 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.png\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 1);
+var _hoisted_104 = {
+  id: "contact",
+  "class": "contact"
+};
+var _hoisted_105 = {
+  "class": "container",
+  "data-aos": "fade-up"
+};
+var _hoisted_106 = {
+  "class": "section-title"
+};
+var _hoisted_107 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
   style: {
     "border": "0",
     "width": "100%",
@@ -24351,27 +24521,57 @@ var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   allowfullscreen: "",
   loading: "lazy"
 })], -1 /* HOISTED */);
-var _hoisted_62 = {
+var _hoisted_108 = {
   "class": "row mt-5"
 };
-var _hoisted_63 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"col-lg-4\"><div class=\"info\"><div class=\"address\"><i class=\"bi bi-geo-alt\"></i><h4>Adresse:</h4><p>Cité Administrative, Boumerdes, Algérie</p></div><div class=\"email\"><i class=\"bi bi-envelope\"></i><h4>Email:</h4><p><a href=\"mailto:contact@opgi-boumerdes.dz\"> contact@opgi-boumerdes.dz</a></p></div><div class=\"phone\"><i class=\"bi bi-phone\"></i><h4>Téléphone:</h4><p><a href=\"tel:024795858\"> +213 (0) 24 79 58 58 </a></p></div></div></div>", 1);
-var _hoisted_64 = {
+var _hoisted_109 = {
+  "class": "col-lg-4"
+};
+var _hoisted_110 = {
+  "class": "info"
+};
+var _hoisted_111 = {
+  "class": "address"
+};
+var _hoisted_112 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-geo-alt"
+}, null, -1 /* HOISTED */);
+var _hoisted_113 = {
+  "class": "email"
+};
+var _hoisted_114 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-envelope"
+}, null, -1 /* HOISTED */);
+var _hoisted_115 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "mailto:contact@opgi-boumerdes.dz"
+}, " contact@opgi-boumerdes.dz")], -1 /* HOISTED */);
+var _hoisted_116 = {
+  "class": "phone"
+};
+var _hoisted_117 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-phone"
+}, null, -1 /* HOISTED */);
+var _hoisted_118 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "tel:024795858",
+  "class": "ltr-text"
+}, " +213 (0) 24 79 58 58 ")], -1 /* HOISTED */);
+var _hoisted_119 = {
   "class": "col-lg-8 mt-5 mt-lg-0"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   var _component_swiper_slide = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper-slide");
   var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["HeaderIndex"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Office de Promotion et de Gestion Immobilière")), 1 /* TEXT */), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Wilaya de BOUMERDES")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Direction Générale")), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Unités réparties dans la wilaya rapprochant l'administration des citoyens")) + " .", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')) + ".", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-paint-brush-line\"></i>\r\n              <h3><a href=\"\">Magni Dolores</a></h3>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-database-2-line\"></i>\r\n              <h3><a href=\"\">Nemos Enimade</a></h3>\r\n            </div>\r\n          </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Présentation')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI")) + " . ", 1 /* TEXT */), _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI")) + ". ", 1 /* TEXT */), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial")) + ". ", 1 /* TEXT */)])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :')) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')) + ".", 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" À titre d'accessoire, il est chargé de: "), _hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"image col-lg-6\" style='background-image: url(\"assets/img/features.jpg\");' data-aos=\"fade-right\"></div>\r\n            <div class=\"col-lg-6\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-receipt\"></i>\r\n                <h4>Est labore ad</h4>\r\n                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-cube-alt\"></i>\r\n                <h4>Harum esse qui</h4>\r\n                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-images\"></i>\r\n                <h4>Aut occaecati</h4>\r\n                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-shield\"></i>\r\n                <h4>Beatae veritatis</h4>\r\n                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [_hoisted_39, _hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["HeaderIndex"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Office de Promotion et de Gestion Immobilière")), 1 /* TEXT */), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Wilaya de BOUMERDES")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_6, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [_hoisted_9, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Direction Générale")), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_12, [_hoisted_13, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Unités réparties dans la wilaya rapprochant l'administration des citoyens")) + " .", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_19, [_hoisted_20, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')) + ".", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-paint-brush-line\"></i>\r\n              <h3><a href=\"\">Magni Dolores</a></h3>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-database-2-line\"></i>\r\n              <h3><a href=\"\">Nemos Enimade</a></h3>\r\n            </div>\r\n          </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), _hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_23, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_24, [_hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Présentation')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI")) + " . ", 1 /* TEXT */), _hoisted_28, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI")) + ". ", 1 /* TEXT */), _hoisted_30, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial")) + ". ", 1 /* TEXT */)])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_34, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :')) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')) + ".", 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("À titre d'accessoire, il est chargé de")) + ": ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("La promotion Immobilière et Foncière")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_37, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_39, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)")) + ". ", 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"image col-lg-6\" style='background-image: url(\"assets/img/features.jpg\");' data-aos=\"fade-right\"></div>\r\n            <div class=\"col-lg-6\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-receipt\"></i>\r\n                <h4>Est labore ad</h4>\r\n                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-cube-alt\"></i>\r\n                <h4>Harum esse qui</h4>\r\n                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-images\"></i>\r\n                <h4>Aut occaecati</h4>\r\n                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-shield\"></i>\r\n                <h4>Beatae veritatis</h4>\r\n                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Dernières Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: {
       name: 'Actualites'
     }
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Voir toutes les actualités ")];
+      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Voir toutes les actualités")), 1 /* TEXT */)];
     }),
     _: 1 /* STABLE */
-  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_41, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
+  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
     modules: $setup.modules,
     pagination: {
       clickable: true,
@@ -24389,23 +24589,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           key: actualite === null || actualite === void 0 ? void 0 : actualite.id
         }, {
           "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-            return [actualite && actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_44, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+            return [actualite && actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
               src: '/storage/' + actualite.images[0].url,
               alt: actualite.images[0].caption,
               "class": "testimonial-img"
-            }, null, 8 /* PROPS */, _hoisted_45), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.title), 1 /* TEXT */), _hoisted_46, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [_hoisted_47, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.content) + " ", 1 /* TEXT */), _hoisted_48]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+            }, null, 8 /* PROPS */, _hoisted_48), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.title), 1 /* TEXT */), _hoisted_49, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, [_hoisted_50, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.content) + " ", 1 /* TEXT */), _hoisted_51]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
               href: "",
               onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
                 return $setup.readMore(actualite);
               }, ["prevent"])
-            }, " Lire plus", 8 /* PROPS */, _hoisted_49)]), _hoisted_50])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+            }, " Lire plus", 8 /* PROPS */, _hoisted_52)]), _hoisted_53])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
           }),
           _: 2 /* DYNAMIC */
         }, 1024 /* DYNAMIC_SLOTS */);
       }), 128 /* KEYED_FRAGMENT */))];
     }),
     _: 1 /* STABLE */
-  }), _hoisted_51])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), _hoisted_52, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS And VIDEOS ======= "), _hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), _hoisted_54, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), _hoisted_55, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), _hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, [_hoisted_60, _hoisted_61, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_62, [_hoisted_63, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Contact"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
+  }), _hoisted_54])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_55, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_56, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Programmes")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos Programmes")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_59, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_60, [_hoisted_61, _hoisted_62, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logements Publics Locatifs")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [_hoisted_65, _hoisted_66, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel Aidé")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_67, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_68, [_hoisted_69, _hoisted_70, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\r\n                <h4><a href=\"\">Nemo Enim</a></h4>\r\n                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\r\n                <h4><a href=\"\">Dele cardo</a></h4>\r\n                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"300\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\r\n                <h4><a href=\"\">Divera don</a></h4>\r\n                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS And VIDEOS ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_71, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_72, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_73, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Galerie")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos projets")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_74, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_75, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_76, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_77, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Tous")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_78, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Vidéos")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_79, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Photos")), 1 /* TEXT */)])])]), _hoisted_80])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_81, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_82, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Plateforme en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Espace Client")), 1 /* TEXT */)]), _hoisted_83]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_84, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_85, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_86, [_hoisted_87, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_88, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_89, [_hoisted_90, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_91, [_hoisted_92, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mes quittances de paiement")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_93, [_hoisted_94, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Préoccupations et Doléances")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_95, [_hoisted_96, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mouvement du contrat")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")), 1 /* TEXT */)])])]), _hoisted_97, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_98, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_99, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Et bien plus de fonctionnalités via")) + " : ", 1 /* TEXT */), _hoisted_100])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_101, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_102, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens utiles")), 1 /* TEXT */)])]), _hoisted_103, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_104, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_105, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_106, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contact")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contactez-nous")), 1 /* TEXT */)]), _hoisted_107, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_108, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_109, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_110, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_111, [_hoisted_112, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Adresse")) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Cité Administrative, Boumerdes, Algérie")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_113, [_hoisted_114, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Email")) + ":", 1 /* TEXT */), _hoisted_115]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_116, [_hoisted_117, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Téléphone")) + ":", 1 /* TEXT */), _hoisted_118])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_119, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Contact"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -25652,8 +25852,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+var _en, _ar;
+function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 var messages = {
-  en: {
+  en: (_en = {
     Accueil: 'Accueil',
     Actualités: 'Actualités',
     Projets: 'Projets',
@@ -25671,9 +25876,41 @@ var messages = {
     "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI": "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI",
     "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial": "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial",
     "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :": "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :",
-    "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies"
-  },
-  ar: {
+    "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies",
+    "À titre d'accessoire, il est chargé de": "À titre d'accessoire, il est chargé de",
+    "La promotion Immobilière et Foncière": "La promotion Immobilière et Foncière",
+    "La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur": "La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur",
+    "Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers": "Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers",
+    "En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission": "En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission",
+    "L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997": "L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997",
+    "Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)": "Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)",
+    "Dernières Actualités": "Dernières Actualités",
+    "Voir toutes les actualités": "Voir toutes les actualités",
+    "Programmes": "Programmes",
+    "Nos Programmes": "Nos Programmes",
+    "Logements Publics Locatifs": "Logements Publics Locatifs",
+    "Logement Promotionnel Aidé": "Logement Promotionnel Aidé",
+    "Logement Promotionnel": "Logement Promotionnel",
+    "Nos projets": "Nos projets",
+    "Galerie": "Galerie",
+    "Tous": "Tous",
+    "Vidéos": "Vidéos",
+    "Photos": "Photos",
+    "Plateforme en ligne": "Plateforme en ligne",
+    "Espace Client": "Espace Client",
+    "Paiement en ligne": "Paiement en ligne",
+    "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB": "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB",
+    "Mes quittances de paiement": "Mes quittances de paiement",
+    "Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF": "Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF",
+    "Préoccupations et Doléances": "Préoccupations et Doléances",
+    "Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...": "Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...",
+    "Mouvement du contrat": "Mouvement du contrat",
+    "Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...": "Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...",
+    "Et bien plus de fonctionnalités via": "Et bien plus de fonctionnalités via",
+    "Liens": "Liens",
+    "Liens utiles": "Liens utiles"
+  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_en, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_en, "Envoyer le message", "Envoyer le message")),
+  ar: (_ar = {
     Accueil: 'صفحة',
     Actualités: 'أخبار',
     Projets: 'مشاريع',
@@ -25686,13 +25923,45 @@ var messages = {
     "Wilaya de BOUMERDES": "ولاية بومرداس",
     "Unités réparties dans la wilaya rapprochant l'administration des citoyens": "وحدات موزعة في الولاية, لتقريب الإدارة من المواطنين",
     "Caisses réparties dans la wilaya facilitant le paiement pour les locataires": "وكالة موزعة في الولاية تسهل الدفع",
-    "Présentation": "عرض تقديمي",
+    "Présentation": "التعريف بالمؤسسة",
     "L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI": "تم إنشاء ديوان الترقية والتسيير العقاري لولاية بومرداس (O.P.G.I بومرداس) على غرار باقي الدواوين المنتشرة عبر التراب الوطني، بموجب المرسوم 76/93 المؤرخ في 23/10/1976 الذي يحدد شروط إنشاء دواوين الترقية والتسيير العقاري",
     "Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI": "تم تغيير طبيعته القانونية بموجب المرسوم التنفيذي رقم 91/147 الصادر في 21 مايو 1991، المتعلق بتعديل الطبيعة القانونية لنظام دواوين الترقية والتسيير العقاري",
     "Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial": "وفقًا للمادة 1 من المرسوم التنفيذي المذكور أعلاه، فإن ديوان الترقية والتسيير العقاري هو مؤسسة عمومية ذات طابع صناعي وتجاري، ويُعدّ تاجرًا في علاقاته مع الغير، ويخضع لأحكام القانون التجاري",
     "Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :": "بموجب المادة 4 من المرسوم التنفيذي رقم 91/147 تاريخ 05/12/1991، تتولى منظمة OPGI المهام التالية:",
-    "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "تعزيز الخدمة العامة في مجال الإسكان، وخاصة للفئات الاجتماعية الأكثر حرماناً"
-  }
+    "Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies": "تعزيز الخدمة العامة في مجال الإسكان، وخاصة للفئات الاجتماعية الأكثر حرماناً",
+    "À titre d'accessoire, il est chargé de": "وهي مسؤولة عن",
+    "La promotion Immobilière et Foncière": "العقارات وتطوير الأراضي",
+    "La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur": "الإدارة المفوضة للمشاريع من قبل الدولة",
+    "Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers": "إجراءات تقديم الخدمات لضمان صيانة العقارات وترميمها وإعادة تأهيلها",
+    "En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission": "كما يجوز له إدارة العقارات الموكلة إليه بموجب اتفاق يحدد شروط وأساليب تولي هذه المهمة",
+    "L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997": "إدارة العقارات طبقا لأحكام المرسوم التنفيذي رقم 97-154 المؤرخ في 10 مايو 1997",
+    "Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)": "إعادة بناء المساكن المهدمة إثر زلزال 21 ماي 2003 (الحي السكني 520/1200 ابن خلدون، بومرداس)",
+    "Dernières Actualités": "آخر الأخبار",
+    "Voir toutes les actualités": "عرض الكل",
+    "Programmes": "برامج الإسكان",
+    "Nos Programmes": "برامجنا",
+    "Logements Publics Locatifs": "سكن عمومي إيجاري",
+    "Logement Promotionnel Aidé": "السكن الترقوي المدعم",
+    "Logement Promotionnel": "السكن الترقوي",
+    "Nos projets": "مشاريعنا",
+    "Galerie": "معرض الصور",
+    "Tous": "عرض الكل",
+    "Vidéos": "فيديوهات",
+    "Photos": "صور",
+    "Plateforme en ligne": "المنصة الإلكترونية",
+    "Espace Client": "فضاء الزبون",
+    "Paiement en ligne": "الدفع الإلكتروني",
+    "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB": "الدفع الجزئي أو الكلي باستخدام البطاقة الذهبية أو بطاقة CIB",
+    "Mes quittances de paiement": "إيصالات الدفع",
+    "Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF": "عرض الإيصالات المدفوعة عبر الإنترنت عن طريق الدفع الإلكتروني، بالإضافة إلى الإيصالات المدفوعة نقدًا/TPE في مكاتب الدفع، مع خيار تصديرها بصيغة PDF",
+    "Préoccupations et Doléances": "الشواغل والشكاوى",
+    "Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...": "تقديم الشكاوى (شكوى، طلب شراء وغيرها)، واستقبال الردود على كل طلب...",
+    "Mouvement du contrat": "حركة ملف العقد",
+    "Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...": "مراقبة تقدم العقد، وموقعه الحالي في العملية، والإجراءات الجارية بشأنه...",
+    "Et bien plus de fonctionnalités via": "والعديد من الميزات الأخرى عبر",
+    "Liens": "روابط",
+    "Liens utiles": "روابط ذات صلة"
+  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_ar, "Contact", "الاتصال"), "Contactez-nous", "اتصل بنا"), "Adresse", "العنوان"), "Cité Administrative, Boumerdes, Algérie", "الحي الإداري, بومرداس, الجزائر"), "Email", "البريد الإلكتروني"), "Téléphone", "الهاتف"), "Nom", "الاسم واللقب"), "Email", "البريد الإلكتروني"), "Objet", "الموضوع"), "Message", "الرسالة"), _defineProperty(_ar, "Envoyer le message", "إرسال"))
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   messages: messages

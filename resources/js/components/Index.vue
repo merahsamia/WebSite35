@@ -95,19 +95,16 @@
                 <li><i class="ri-check-double-line"></i> {{$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')}}.</li>
                 
               </ul>
-              À titre d'accessoire, il est chargé de: 
+              {{$t("À titre d'accessoire, il est chargé de") }}: 
               <ul>  
-                <li><i class="ri-check-double-line"></i> La promotion Immobilière et Foncière.</li>
-                <li><i class="ri-check-double-line"></i> La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur.</li>
-                <li><i class="ri-check-double-line"></i> Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la 
-                  restauration et la réhabilitation des biens immobiliers.</li>
-                <li><i class="ri-check-double-line"></i> En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une 
-                  convention déterminant les conditions et modalités de prise charge de cette mission.
+                <li><i class="ri-check-double-line"></i> {{$t("La promotion Immobilière et Foncière") }}.</li>
+                <li><i class="ri-check-double-line"></i> {{$t("La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur") }}.</li>
+                <li><i class="ri-check-double-line"></i> {{$t("Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers") }}.</li>
+                <li><i class="ri-check-double-line"></i> {{$t("En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission") }}.
                 </li>
-                <li><i class="ri-check-double-line"></i> 	L’administration des biens immobiliers suivant les dispositions du décret exécutif
-                  n°97-154 du 10 mai 1997.
+                <li><i class="ri-check-double-line"></i> 	{{$t("L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997") }}.
                 </li>
-                <li><i class="ri-check-double-line"></i> Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes).
+                <li><i class="ri-check-double-line"></i> {{$t("Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)") }}.
                 </li>
               </ul>
             <!-- <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
@@ -143,9 +140,9 @@
     <!-- ======= Testimonials Section  ACTUALITES ======= -->
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Actualités</h2>
-          <p>Dernières Actualités</p>
-          <router-link :to="{ name: 'Actualites' }" >               Voir toutes les actualités        </router-link>
+          <h2>{{$t("Actualités")}}</h2>
+          <p>{{$t("Dernières Actualités")}}</p>
+          <router-link :to="{ name: 'Actualites' }" >               {{$t("Voir toutes les actualités")}}        </router-link>
         </div>
       </div>
 
@@ -189,8 +186,8 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
-            <h2>Programmes</h2>
-            <p>Nos Programmes</p>
+            <h2>{{$t("Programmes")}}</h2>
+            <p>{{$t("Nos Programmes")}}</p>
           </div>
 
           <div class="row">
@@ -198,7 +195,7 @@
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building"></i></div>
                 <h4><a href="">LPL</a></h4>
-                <p>Logements Publics Locatifs</p>
+                <p>{{$t("Logements Publics Locatifs")}}</p>
               </div>
             </div>
 
@@ -206,7 +203,7 @@
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building-add"></i></div>
                 <h4><a href="">LPA</a></h4>
-                <p>Logement Promotionnel Aidé </p>
+                <p>{{$t("Logement Promotionnel Aidé")}} </p>
               </div>
             </div>
 
@@ -214,7 +211,7 @@
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building-check"></i></div>
                 <h4><a href="">LP</a></h4>
-                <p> Logement Promotionnel</p>
+                <p> {{$t("Logement Promotionnel")}}</p>
               </div>
             </div>
 
@@ -268,16 +265,16 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
-            <h2>Galerie</h2>
-            <p>Nos projets</p>
+            <h2>{{$t("Galerie")}}</h2>
+            <p>{{$t("Nos projets")}}</p>
           </div>
 
           <div class="row" data-aos="fade-up" data-aos-delay="100">
             <div class="col-lg-12 d-flex justify-content-center">
               <ul id="portfolio-flters">
-                <li data-filter="*" class="filter-active">Tous</li>
-                <li data-filter=".filter-app">Vidéos</li>
-                <li data-filter=".filter-card">Photos</li>
+                <li data-filter="*" class="filter-active">{{$t("Tous")}}</li>
+                <li data-filter=".filter-app">{{$t("Vidéos")}}</li>
+                <li data-filter=".filter-card">{{$t("Photos")}}</li>
                 
               </ul>
             </div>
@@ -434,8 +431,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Plateforme en ligne</h2>
-          <p>Notre Espace Client</p>
+          <h2>{{$t("Plateforme en ligne")}}</h2>
+          <p>{{$t("Espace Client")}}</p>
         </div>
         <div class="arrow-container">
           <img src="assets/img/arrow.jpg" alt="Flèche" class="arrow-img">
@@ -457,25 +454,23 @@
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
 
                 <i class="bi bi-credit-card"></i>
-                <h4 >Paiement en ligne </h4> 
-                <p>Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB. </p> 
+                <h4 >{{$t("Paiement en ligne")}} </h4> 
+                <p>{{$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")}}. </p> 
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-list-ul"></i>
-              <h4>Mes quittances de paiement</h4>
-              <p>Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées
-                 en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF.</p>
+              <h4>{{$t("Mes quittances de paiement")}}</h4>
+              <p>{{$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")}}.</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-hourglass-split"></i>
-              <h4>Préoccupations et Doléances</h4>
-              <p>Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...</p>
+              <h4>{{$t("Préoccupations et Doléances")}}</h4>
+              <p>{{$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")}}</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-sort-up"></i>
-              <h4>Mouvement du contrat</h4>
-              <p>Suivi de l'état d’avancement du contrat, sa position actuelle 
-                dans le processus, les actions en cours le concernant...
+              <h4>{{$t("Mouvement du contrat")}}</h4>
+              <p>{{$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")}}
               </p>
             </div>
           </div>
@@ -483,7 +478,7 @@
         <br>
         <div class="row">
           <div class="sam" data-aos="fade-left" data-aos-delay="100">
-            <h4 >Et bien plus de fonctionnalités via : </h4>
+            <h4 >{{$t("Et bien plus de fonctionnalités via")}} : </h4>
             <a href="https://client.opgi-boumerdes.dz/Login" target="_blank" class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150" >
               <i class="bi bi-arrow-right-circle-fill"></i>
             </a>
@@ -504,8 +499,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Liens</h2>
-          <p>Liens utiles</p>
+          <h2>{{$t("Liens")}}</h2>
+          <p>{{$t("Liens utiles")}}</p>
         </div>
 
       </div>
@@ -536,8 +531,8 @@
       <div class="container" data-aos="fade-up">
 
             <div class="section-title">
-              <h2>Contact</h2>
-              <p>Contactez-nous</p>
+              <h2>{{$t("Contact")}}</h2>
+              <p>{{$t("Contactez-nous")}}</p>
             </div>
 
             <div>
@@ -551,20 +546,20 @@
                   <div class="info">
                       <div class="address">
                           <i class="bi bi-geo-alt"></i>
-                          <h4>Adresse:</h4>
-                          <p>Cité Administrative, Boumerdes, Algérie</p>
+                          <h4>{{$t("Adresse")}}:</h4>
+                          <p>{{$t("Cité Administrative, Boumerdes, Algérie")}}</p>
                       </div>
 
                       <div class="email">
                           <i class="bi bi-envelope"></i>
-                          <h4>Email:</h4>
+                          <h4>{{$t("Email")}}:</h4>
                           <p><a href="mailto:contact@opgi-boumerdes.dz"> contact@opgi-boumerdes.dz</a></p>
                       </div>
 
                       <div class="phone">
                           <i class="bi bi-phone"></i>
-                          <h4>Téléphone:</h4>
-                          <p><a href="tel:024795858"> +213 (0) 24 79 58 58 </a></p>
+                          <h4>{{$t("Téléphone")}}:</h4>
+                          <p><a href="tel:024795858" class="ltr-text"> +213 (0) 24 79 58 58 </a></p>
                       </div>
                   </div>
 

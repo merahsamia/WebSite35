@@ -1,6 +1,7 @@
 * {
     direction: rtl;
     text-align: right;
+
 }
 
 
@@ -12,4 +13,14 @@
 
 .bx-chevron-right {
     transform: rotate(180deg);
+}
+
+.features ul li {
+    padding: 0 26px 8px 0;
+    /* Inverse le padding pour RTL */
+}
+
+.features ul i {
+    left: auto;
+    right: 0;
 }
