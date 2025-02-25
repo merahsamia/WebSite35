@@ -8,7 +8,7 @@
         <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
           <div class="col-xl-6 col-lg-8">
             <h1>{{ $t("Office de Promotion et de Gestion Immobilière") }}<span>.</span></h1>
-            <h2>{{ $t("Wilaya de BOUMERDES")}}</h2>
+            <h2 id="wilaya">{{ $t("Wilaya de BOUMERDES")}}</h2>
           </div>
         </div>
 
