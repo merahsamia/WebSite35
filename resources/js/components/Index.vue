@@ -16,21 +16,21 @@
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-bank"></i>
-              <h3><a href="">{{ $t("Direction Générale") }}</a></h3>
+              <h3 id="center-arabic"><a href="">{{ $t("Direction Générale") }}</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-building-gear"></i>
 
-              <h3><a href=""><span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="4" class="purecounter"></span>
+              <h3 id="center-arabic"><a href=""><span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="4" class="purecounter"></span>
                {{ $t("Unités réparties dans la wilaya rapprochant l'administration des citoyens") }} .</a></h3>
             </div>
           </div>
           <div class="col-xl-2 col-md-4">
             <div class="icon-box">
               <i class="bi bi-house-gear"></i>
-              <h3><a href=""> <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="4" class="purecounter"></span>
+              <h3 id="center-arabic"><a href=""> <span data-purecounter-start="0" data-purecounter-end="17" data-purecounter-duration="4" class="purecounter"></span>
                 {{$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')}}.</a></h3>
             </div>
           </div>
@@ -159,15 +159,15 @@
               <swiper-slide v-for="actualite in actualitesIndex" :key="actualite?.id">
                 <div class="testimonial-item" v-if="actualite && actualite.images && actualite.images.length > 0">
                   <img :src="'/storage/' + actualite.images[0].url" :alt="actualite.images[0].caption" class="testimonial-img">
-                  <h3>{{ actualite.title }} </h3>
+                  <h3 id="center-arabic">{{ actualite.title }} </h3>
                   <br>
                   <p>
-                    <h2>
+                    <h2 id="center-arabic">
                       <i class="bx bxs-quote-alt-left quote-icon-left"></i>
                       {{ actualite.content }}
                       <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                     </h2>
-                    <h4> <a href="" @click.prevent="readMore(actualite)"> Lire plus</a></h4>
+                    <h4 id="center-arabic"> <a href="" @click.prevent="readMore(actualite)"> {{$t("Lire plus")}}</a></h4>
                     <br>
                   </p>
                 </div>
@@ -194,24 +194,24 @@
             <div class="col-lg-4 col-md-6 align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building"></i></div>
-                <h4><a href="">LPL</a></h4>
-                <p>{{$t("Logements Publics Locatifs")}}</p>
+                <h4 id="center-arabic"><a href="">LPL</a></h4>
+                <p id="center-arabic">{{$t("Logements Publics Locatifs")}}</p>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building-add"></i></div>
-                <h4><a href="">LPA</a></h4>
-                <p>{{$t("Logement Promotionnel Aidé")}} </p>
+                <h4 id="center-arabic"><a href="">LPA</a></h4>
+                <p id="center-arabic">{{$t("Logement Promotionnel Aidé")}} </p>
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
               <div class="icon-box">
                 <div class="icon"><i class="bi bi-building-check"></i></div>
-                <h4><a href="">LP</a></h4>
-                <p> {{$t("Logement Promotionnel")}}</p>
+                <h4 id="center-arabic"><a href="">LP</a></h4>
+                <p id="center-arabic"> {{$t("Logement Promotionnel")}}</p>
               </div>
             </div>
 

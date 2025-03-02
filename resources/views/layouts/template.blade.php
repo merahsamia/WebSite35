@@ -147,9 +147,7 @@
 
     @auth
     <script>
-    window.token = {
-        !!json_encode(session() - > get('token')) !!
-    }
+    window.token = {!!json_encode(session() -> get('token')) !!}
     //console.log(window.token);
     </script>
 

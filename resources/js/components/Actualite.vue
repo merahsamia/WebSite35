@@ -4,15 +4,15 @@
           <div class="container">
 
               <div class="d-flex justify-content-between align-items-center">
-              <h2>Actualité Details</h2>
+              <h2>{{$t("Actualité Details")}}</h2>
               <ol>
-                  <li><a href="\">Accueil</a></li>
+                  <li><a href="\">{{$t("Accueil")}}</a></li>
                  
                   <li>                 
-                     <router-link :to="{ name: 'Actualites' }" > Actualites</router-link>
+                     <router-link :to="{ name: 'Actualites' }" > {{$t("Actualités")}}</router-link>
                   </li>
 
-                  <li>Actualité</li>
+                  <li>{{$t("Actualité")}}</li>
               </ol>
               </div>
 
@@ -35,7 +35,7 @@
 
         <div class="col-lg-4">
           <div class="portfolio-info">
-            <h3>Actualité information</h3>
+            <h3>{{$t("Actualité information")}}</h3>
 
             <ul>
               <li>  
@@ -43,18 +43,18 @@
                   Modifier</button>
                 <button  @click="deleteActualite(actualite.id)" class="btn btn-danger" v-if="isAuthenticated">Supprimer</button>
               </li>
-              <li><strong>Titre</strong>: {{ actualite.title }}  </li>
-              <li><strong>Contenu</strong>: {{ actualite.content }}</li>
-              <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <li><strong>{{$t("Titre")}}</strong>: {{ actualite.title }}  </li>
+              <li><strong>{{$t("Contenu")}}</strong>: {{ actualite.content }}</li>
+              <li><strong>{{$t("Date")}}</strong>: {{ actualite.formatted_date }}</li>
+             <!--  <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
             </ul>
           </div>
-          <div class="portfolio-description">
+         <!--  <div class="portfolio-description">
             <h2>This is an example of portfolio detail</h2>
             <p>
               Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
             </p>
-          </div> 
+          </div> -->
         </div>
 
       </div>

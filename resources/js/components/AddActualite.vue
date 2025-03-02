@@ -2,11 +2,11 @@
     <section id="breadcrumbs" class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
-                <h2>Ajouter une Actualité</h2>
+                <h2>{{$t("Ajouter une actualité")}}</h2>
                 <ol>
                     
-                    <li><router-link :to="{ name: 'Actualites' }">Actualités</router-link></li>
-                    <li>Ajout d'actualités</li>
+                    <li><router-link :to="{ name: 'Actualites' }">{{$t("Actualités")}}</router-link></li>
+                    <li>{{$t("Ajout d'actualités")}}</li>
                 </ol>
             </div>
         </div>
@@ -19,13 +19,13 @@
 
                     <div class="row">
                         <div class="col-md-6 form-group">
-                            <input v-model="form.title" type="text" name="title" class="form-control" id="title" placeholder="Titre" required>
+                            <input v-model="form.title" type="text" name="title" class="form-control" id="title" :placeholder="$t('Titre')" required>
                         </div>
                         <div v-if="errors.title" class="text-danger">{{ errors.title[0] }}</div>
 
                     </div>
                     <div class="form-group mt-3">
-                        <textarea v-model="form.content" class="form-control" name="content" rows="5" placeholder="Contenu" ></textarea>
+                        <textarea v-model="form.content" class="form-control" name="content" rows="5" :placeholder="$t('Contenu')" ></textarea>
                         <div v-if="errors.content" class="text-danger">{{ errors.content[0] }}</div>
 
                     </div>

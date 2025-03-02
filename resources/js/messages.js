@@ -61,7 +61,16 @@ const messages = {
         "Objet": "Objet",
         "Message": "Nom",
         "Envoyer le message": "Envoyer le message",
-
+        "Toutes les Actualités": "Toutes les Actualités",
+        "Actualité Details": "Actualité Details",
+        "Actualité": "Actualité",
+        "Actualité information": "Actualité information",
+        "Lire plus": "Lire plus",
+        "Titre": "Titre",
+        "Contenu": "Contenu",
+        "Date": "Date",
+        "Ajouter une actualité": "Ajouter une actualité",
+        "Ajout d'actualités": "Ajout d'actualités",
 
     },
     ar: {
@@ -126,6 +135,16 @@ const messages = {
         "Objet": "الموضوع",
         "Message": "الرسالة",
         "Envoyer le message": "إرسال",
+        "Toutes les Actualités": "جميع الأخبار",
+        "Actualité Details": "تفاصيل الخبر",
+        "Actualité": "الخبر",
+        "Actualité information": "التفاصيل",
+        "Lire plus": "اقرأ المزيد",
+        "Titre": "العنوان",
+        "Contenu": "المحتوى",
+        "Date": "التاريخ",
+        "Ajouter une actualité": "إضافة خبر جديد",
+        "Ajout d'actualités": "إضافة الأخبار",
 
     },
 };

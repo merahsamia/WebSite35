@@ -6,15 +6,15 @@
           <div class="d-flex justify-content-between align-items-center">
            <!-- Conteneur pour le titre et le bouton -->
             <div class="d-flex align-items-center">
-              <h2 class="me-3">Toutes les Actualités</h2> <!-- Ajoute un margin-right pour espacer -->
+              <h2 class="me-3">{{$t("Toutes les Actualités")}}</h2> <!-- Ajoute un margin-right pour espacer -->
               
               <!-- Bouton d'ajout d'actualité (visible seulement si l'utilisateur est authentifié) -->
-              <button v-if="isAuthenticated" @click="goToAddActualite" class="btn btn-primary">Ajouter une actualité</button>
+              <button v-if="isAuthenticated" @click="goToAddActualite" class="btn btn-primary">{{$t("Ajouter une actualité")}}</button>
             </div>
 
             <ol>
-                <li><a href="\">Accueil</a></li>
-                <li>Actualités</li>
+                <li><a href="\">{{$t("Accueil")}}</a></li>
+                <li>{{$t("Actualités")}}</li>
             </ol>
           </div>
 
@@ -60,12 +60,12 @@
             <div class="portfolio-info">
               <h3>{{ actualite.title }}</h3>
               <ul>
-                <li><strong>Titre</strong>: </li>
-                <li><strong>Contenu</strong>: {{ actualite.content }}</li>
-                <li><strong>Project date</strong>: 01 March, 2020</li>
-                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
-                <li><strong>Lire plus</strong>: <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400"
-                     @click.prevent="readMore(actualite)">Lire plus</a></li>
+                <li><strong>{{ $t("Titre")}}</strong>:{{ actualite.title }} </li>
+                <li><strong>{{ $t("Contenu")}}</strong>: {{ actualite.content }}</li>
+                <li><strong>{{ $t("Date")}}</strong>: {{ actualite.formatted_date  }}</li>
+               <!--  <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>-->
+                <li><strong></strong> <a href="#" class="inline-block text-sky-500 underline hover:text-sky-400"
+                     @click.prevent="readMore(actualite)">{{ $t("Lire plus")}}</a></li>
               </ul>
             </div>
             <!-- <div class="portfolio-description">
