@@ -50,7 +50,7 @@
 
                             <div class="d-flex justify-content-between mt-3">
                                 <button type="submit" class="btn btn-warning">Login</button>
-                                <a href="{{route('register')}}" class="btn btn-dark">Go to register</a>
+                                {{--     <a href="{{route('register')}}" class="btn btn-dark">Go to register</a> --}}
                             </div>
                         </form>
                     </div>
