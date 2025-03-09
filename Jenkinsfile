@@ -1,5 +1,5 @@
 pipeline {
-    agent any  // Exécute le pipeline sur n'importe quel agent disponible
+    agent any
 
     stages {
         stage('Checkout') {
@@ -10,22 +10,22 @@ pipeline {
 
         stage('Install Dependencies') {
             steps {
-                sh 'composer install --no-dev --optimize-autoloader'  // Installe les dépendances PHP
-                sh 'npm install'  // Installe les dépendances Node.js
+                bat 'composer install --no-dev --optimize-autoloader'  // Windows : Installer les dépendances PHP
+                bat 'npm install'  // Windows : Installer les dépendances Node.js
             }
         }
 
         stage('Build Frontend') {
             steps {
-                sh 'npm run build'  // Compile les fichiers Vue.js
+                bat 'npm run build'  // Windows : Compiler les fichiers Vue.js
             }
         }
 
         stage('Optimize Laravel') {
             steps {
-                sh 'php artisan cache:clear'
-                sh 'php artisan config:cache'
-                sh 'php artisan route:cache'
+                bat 'php artisan cache:clear'
+                bat 'php artisan config:cache'
+                bat 'php artisan route:cache'
             }
         }
     }
