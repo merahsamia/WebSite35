@@ -7,7 +7,7 @@ pipeline {
                 git (
                     branch: 'main', 
                 url: 'git@github.com:merahsamia/WebSite35.git',
-                credentialsId: 'git'
+                credentialsId: '0ba0ed92-7394-4d3c-a939-48658abc9846'
                  )// Remplacez par l'ID de vos credentials SSH dans Jenkins
             }
         }
