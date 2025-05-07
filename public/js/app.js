@@ -25870,13 +25870,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var _en, _ar;
+var _fr, _ar;
 function _typeof(o) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (o) { return typeof o; } : function (o) { return o && "function" == typeof Symbol && o.constructor === Symbol && o !== Symbol.prototype ? "symbol" : typeof o; }, _typeof(o); }
 function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == _typeof(i) ? i : i + ""; }
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 var messages = {
-  en: (_en = {
+  fr: (_fr = {
     Accueil: 'Accueil',
     Actualités: 'Actualités',
     Projets: 'Projets',
@@ -25927,7 +25927,7 @@ var messages = {
     "Et bien plus de fonctionnalités via": "Et bien plus de fonctionnalités via",
     "Liens": "Liens",
     "Liens utiles": "Liens utiles"
-  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_en, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_en, "Envoyer le message", "Envoyer le message"), "Toutes les Actualités", "Toutes les Actualités"), "Actualité Details", "Actualité Details"), "Actualité", "Actualité"), "Actualité information", "Actualité information"), "Lire plus", "Lire plus"), "Titre", "Titre"), "Contenu", "Contenu"), "Date", "Date"), "Ajouter une actualité", "Ajouter une actualité"), _defineProperty(_en, "Ajout d'actualités", "Ajout d'actualités")),
+  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Envoyer le message", "Envoyer le message"), "Toutes les Actualités", "Toutes les Actualités"), "Actualité Details", "Actualité Details"), "Actualité", "Actualité"), "Actualité information", "Actualité information"), "Lire plus", "Lire plus"), "Titre", "Titre"), "Contenu", "Contenu"), "Date", "Date"), "Ajouter une actualité", "Ajouter une actualité"), _defineProperty(_fr, "Ajout d'actualités", "Ajout d'actualités")),
   ar: (_ar = {
     Accueil: 'صفحة',
     Actualités: 'أخبار',

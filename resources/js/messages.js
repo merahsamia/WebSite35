@@ -1,5 +1,5 @@
 const messages = {
-    en: {
+    fr: {
         Accueil: 'Accueil',
         Actualités: 'Actualités',
         Projets: 'Projets',
