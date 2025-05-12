@@ -18,7 +18,7 @@ pipeline {
 
         stage('Build Frontend') {
             steps {
-                bat 'npm run dev'  // Windows : Compiler les fichiers Vue.js
+                bat 'npm run production'  // Windows : Compiler les fichiers Vue.js
             }
         }
 
