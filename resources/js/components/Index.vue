@@ -52,9 +52,73 @@
       </div>
     </section>
   <!-- End Hero -->
+
+     <!-- ======= Counts Section  Espace Client======= -->
+      <div class="container" data-aos="fade-up"  style="margin-top: 6rem;">
+
+        <div class="section-title">
+          <h2>{{$t("Plateforme en ligne")}}</h2>
+          <p>{{$t("Espace Locataire")}}</p>
+        </div>
+        <div class="arrow-container mt-3">
+          <img src="assets/img/arrow.jpg" alt="Flèche" class="arrow-img">
+        </div>
+
+      </div>
+  
+  <!-- ======= Features Section Espace Client ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+       
+
+        <div class="row">
+          <div class="image col-lg-6" style='background-image: url("assets/img/client.png");' data-aos="fade-right"></div>
+          
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
+
+                <i class="bi bi-credit-card"></i>
+                <h4 >{{$t("Paiement en ligne")}} </h4> 
+                <p>{{$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")}}. </p> 
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bi bi-list-ul"></i>
+              <h4>{{$t("Mes quittances de paiement")}}</h4>
+              <p>{{$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")}}.</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bi bi-hourglass-split"></i>
+              <h4>{{$t("Préoccupations et Doléances")}}</h4>
+              <p>{{$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")}}</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
+              <i class="bi bi-sort-up"></i>
+              <h4>{{$t("Mouvement du contrat")}}</h4>
+              <p>{{$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")}}
+              </p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="sam" data-aos="fade-left" data-aos-delay="100">
+            <h4 >{{$t("Et bien plus de fonctionnalités via")}} : </h4>
+            <a href="https://client.opgi-boumerdes.dz/Login" target="_blank" class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150" >
+              <i class="bi bi-arrow-right-circle-fill"></i>
+            </a>
+          </div>
+        </div>
+
+       
+    
+    
+    
     
 
-    <!-- ======= About Section ======= -->
+      </div>
+    </section><!-- End Features Section -->
+    <!-- ======= About Section ======= 
       <div class="container" data-aos="fade-up">
 
       
@@ -82,11 +146,11 @@
 
         </div>
       </section>
-    <!-- End About Section -->
+   End About Section -->
 
     
     <!-- ======= Features Section ======= -->
-      <section id="features" class="features">
+      <!-- <section id="features" class="features">
         <div class="container" data-aos="fade-up">
 
           <div class="row">
@@ -106,7 +170,7 @@
                 </li>
                 <li><i class="ri-check-double-line"></i> {{$t("Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)") }}.
                 </li>
-              </ul>
+              </ul> -->
             <!-- <div class="image col-lg-6" style='background-image: url("assets/img/features.jpg");' data-aos="fade-right"></div>
             <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
               <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
@@ -129,11 +193,11 @@
                 <h4>Beatae veritatis</h4>
                 <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
               </div>
-            </div> -->
+            </div> 
           </div>
 
         </div>
-      </section>
+      </section>-->
     <!-- End Features Section -->
 
 
@@ -427,72 +491,9 @@
       </section>
     <!-- End Portfolio Section -->
 
-    <!-- ======= Counts Section  Espace Client======= -->
-      <div class="container" data-aos="fade-up">
+   
 
-        <div class="section-title">
-          <h2>{{$t("Plateforme en ligne")}}</h2>
-          <p>{{$t("Espace Client")}}</p>
-        </div>
-        <div class="arrow-container">
-          <img src="assets/img/arrow.jpg" alt="Flèche" class="arrow-img">
-        </div>
-
-      </div>
   
-
-    <!-- ======= Features Section Espace Client ======= -->
-    <section id="features" class="features">
-      <div class="container" data-aos="fade-up">
-
-       
-
-        <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/client.png");' data-aos="fade-right"></div>
-          
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-
-                <i class="bi bi-credit-card"></i>
-                <h4 >{{$t("Paiement en ligne")}} </h4> 
-                <p>{{$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")}}. </p> 
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bi bi-list-ul"></i>
-              <h4>{{$t("Mes quittances de paiement")}}</h4>
-              <p>{{$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")}}.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bi bi-hourglass-split"></i>
-              <h4>{{$t("Préoccupations et Doléances")}}</h4>
-              <p>{{$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")}}</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
-              <i class="bi bi-sort-up"></i>
-              <h4>{{$t("Mouvement du contrat")}}</h4>
-              <p>{{$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")}}
-              </p>
-            </div>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="sam" data-aos="fade-left" data-aos-delay="100">
-            <h4 >{{$t("Et bien plus de fonctionnalités via")}} : </h4>
-            <a href="https://client.opgi-boumerdes.dz/Login" target="_blank" class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150" >
-              <i class="bi bi-arrow-right-circle-fill"></i>
-            </a>
-          </div>
-        </div>
-
-       
-    
-    
-    
-    
-
-      </div>
-    </section><!-- End Features Section -->
 
 
     <!-- ======= Clients Section LIENS UTILES ======= -->

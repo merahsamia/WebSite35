@@ -23349,7 +23349,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       }), 128 /* KEYED_FRAGMENT */))];
     }),
     _: 1 /* STABLE */
-  }, 8 /* PROPS */, ["modules"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Actualité information")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [$setup.isAuthenticated ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", {
+  }, 8 /* PROPS */, ["modules"])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_10, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Détails de l'actualité")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [$setup.isAuthenticated ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("button", {
     key: 0,
     "class": "btn btn-primary me-2",
     onClick: _cache[0] || (_cache[0] = function ($event) {
@@ -23906,7 +23906,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     onClick: _cache[0] || (_cache[0] = function () {
       return $options.goToAllDocuments && $options.goToAllDocuments.apply($options, arguments);
     })
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Fond Documentaire")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <li class=\"dropdown\"><a href=\"#\"><span>Drop Down</span> <i class=\"bi bi-chevron-down\"></i></a>\r\n              <ul>\r\n                <li><a href=\"#\">Drop Down 1</a></li>\r\n                <li class=\"dropdown\"><a href=\"#\"><span>Deep Drop Down</span> <i class=\"bi bi-chevron-right\"></i></a>\r\n                  <ul>\r\n                    <li><a href=\"#\">Deep Drop Down 1</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 2</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 3</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 4</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 5</a></li>\r\n                  </ul>\r\n                </li>\r\n                <li><a href=\"#\">Drop Down 2</a></li>\r\n                <li><a href=\"#\">Drop Down 3</a></li>\r\n                <li><a href=\"#\">Drop Down 4</a></li>\r\n              </ul>\r\n            </li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contact")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("E-Paiement")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_10])]), $data.isAuthenticated ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LogoutComponent), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Composant de déconnexion (si nécessaire pour des interactions supplémentaires) ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .navbar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Commencer")), 1 /* TEXT */)])])]);
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Fond Documentaire")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <li class=\"dropdown\"><a href=\"#\"><span>Drop Down</span> <i class=\"bi bi-chevron-down\"></i></a>\r\n              <ul>\r\n                <li><a href=\"#\">Drop Down 1</a></li>\r\n                <li class=\"dropdown\"><a href=\"#\"><span>Deep Drop Down</span> <i class=\"bi bi-chevron-right\"></i></a>\r\n                  <ul>\r\n                    <li><a href=\"#\">Deep Drop Down 1</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 2</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 3</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 4</a></li>\r\n                    <li><a href=\"#\">Deep Drop Down 5</a></li>\r\n                  </ul>\r\n                </li>\r\n                <li><a href=\"#\">Drop Down 2</a></li>\r\n                <li><a href=\"#\">Drop Down 3</a></li>\r\n                <li><a href=\"#\">Drop Down 4</a></li>\r\n              </ul>\r\n            </li> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contact")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_9, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Espace Locataire")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_10])]), $data.isAuthenticated ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("li", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_LogoutComponent), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" Composant de déconnexion (si nécessaire pour des interactions supplémentaires) ")])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)]), _hoisted_12]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" .navbar "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h5", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Commencer")), 1 /* TEXT */)])])]);
 }
 
 /***/ }),
@@ -24006,232 +24006,252 @@ var _hoisted_24 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   "data-purecounter-duration": "4",
   "class": "purecounter"
 }, null, -1 /* HOISTED */);
-var _hoisted_25 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_25 = {
   "class": "container",
-  "data-aos": "fade-up"
-}, null, -1 /* HOISTED */);
+  "data-aos": "fade-up",
+  style: {
+    "margin-top": "6rem"
+  }
+};
 var _hoisted_26 = {
-  id: "about",
-  "class": "about"
+  "class": "section-title"
 };
-var _hoisted_27 = {
-  "class": "container",
-  "data-aos": "fade-up"
-};
-var _hoisted_28 = {
-  "class": "row"
-};
-var _hoisted_29 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "col-lg-6 order-1 order-lg-2",
-  "data-aos": "fade-left",
-  "data-aos-delay": "100"
+var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "arrow-container mt-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/about.jpg",
-  "class": "img-fluid",
-  alt: "",
-  height: "auto",
-  width: "100%"
+  src: "assets/img/arrow.jpg",
+  alt: "Flèche",
+  "class": "arrow-img"
 })], -1 /* HOISTED */);
-var _hoisted_30 = {
-  "class": "col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content",
-  "data-aos": "fade-right",
-  "data-aos-delay": "100"
-};
-var _hoisted_31 = {
-  "class": "fst-italic"
-};
-var _hoisted_32 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_33 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_35 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_36 = {
+var _hoisted_28 = {
   id: "features",
   "class": "features"
 };
-var _hoisted_37 = {
+var _hoisted_29 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_38 = {
+var _hoisted_30 = {
   "class": "row"
 };
-var _hoisted_39 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
+var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "image col-lg-6",
+  style: {
+    "background-image": "url(\"assets/img/client.png\")"
+  },
+  "data-aos": "fade-right"
 }, null, -1 /* HOISTED */);
+var _hoisted_32 = {
+  "class": "col-lg-6",
+  "data-aos": "fade-left",
+  "data-aos-delay": "100"
+};
+var _hoisted_33 = {
+  "class": "icon-box mt-5 mt-lg-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-credit-card"
+}, null, -1 /* HOISTED */);
+var _hoisted_35 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-list-ul"
+}, null, -1 /* HOISTED */);
+var _hoisted_37 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
+var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-hourglass-split"
+}, null, -1 /* HOISTED */);
+var _hoisted_39 = {
+  "class": "icon-box mt-5",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+};
 var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
+  "class": "bi bi-sort-up"
 }, null, -1 /* HOISTED */);
-var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
-}, null, -1 /* HOISTED */);
-var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
-}, null, -1 /* HOISTED */);
-var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
-}, null, -1 /* HOISTED */);
-var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
-}, null, -1 /* HOISTED */);
-var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "ri-check-double-line"
-}, null, -1 /* HOISTED */);
-var _hoisted_46 = {
+var _hoisted_41 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_42 = {
+  "class": "row"
+};
+var _hoisted_43 = {
+  "class": "sam",
+  "data-aos": "fade-left",
+  "data-aos-delay": "100"
+};
+var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+  href: "https://client.opgi-boumerdes.dz/Login",
+  target: "_blank",
+  "class": "icon-box mt-5 mt-lg-0",
+  "data-aos": "zoom-in",
+  "data-aos-delay": "150"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+  "class": "bi bi-arrow-right-circle-fill"
+})], -1 /* HOISTED */);
+var _hoisted_45 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_47 = {
+var _hoisted_46 = {
   "class": "section-title"
 };
-var _hoisted_48 = {
+var _hoisted_47 = {
   id: "testimonials",
   "class": "testimonials"
 };
-var _hoisted_49 = {
+var _hoisted_48 = {
   "class": "container",
   "data-aos": "zoom-in"
 };
-var _hoisted_50 = {
+var _hoisted_49 = {
   "class": "testimonials-slider swiper",
   "data-aos": "fade-up",
   "data-aos-delay": "100"
 };
-var _hoisted_51 = {
+var _hoisted_50 = {
   key: 0,
   "class": "testimonial-item"
 };
-var _hoisted_52 = ["src", "alt"];
-var _hoisted_53 = {
+var _hoisted_51 = ["src", "alt"];
+var _hoisted_52 = {
   id: "center-arabic"
 };
-var _hoisted_54 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_55 = {
+var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_54 = {
   id: "center-arabic"
 };
-var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_55 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bxs-quote-alt-left quote-icon-left"
 }, null, -1 /* HOISTED */);
-var _hoisted_57 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_56 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bxs-quote-alt-right quote-icon-right"
 }, null, -1 /* HOISTED */);
-var _hoisted_58 = {
+var _hoisted_57 = {
   id: "center-arabic"
 };
-var _hoisted_59 = ["onClick"];
-var _hoisted_60 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_58 = ["onClick"];
+var _hoisted_59 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
+var _hoisted_60 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "swiper-pagination swiper-pagination-custom"
 }, null, -1 /* HOISTED */);
-var _hoisted_62 = {
+var _hoisted_61 = {
   id: "services",
   "class": "services"
 };
-var _hoisted_63 = {
+var _hoisted_62 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_64 = {
+var _hoisted_63 = {
   "class": "section-title"
 };
-var _hoisted_65 = {
+var _hoisted_64 = {
   "class": "row"
 };
-var _hoisted_66 = {
+var _hoisted_65 = {
   "class": "col-lg-4 col-md-6 align-items-stretch",
   "data-aos": "zoom-in",
   "data-aos-delay": "100"
 };
-var _hoisted_67 = {
+var _hoisted_66 = {
   "class": "icon-box"
 };
-var _hoisted_68 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_67 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "icon"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-building"
 })], -1 /* HOISTED */);
-var _hoisted_69 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+var _hoisted_68 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   id: "center-arabic"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: ""
 }, "LPL")], -1 /* HOISTED */);
-var _hoisted_70 = {
+var _hoisted_69 = {
   id: "center-arabic"
 };
-var _hoisted_71 = {
+var _hoisted_70 = {
   "class": "col-lg-4 col-md-6 align-items-stretch mt-4 mt-md-0",
   "data-aos": "zoom-in",
   "data-aos-delay": "200"
 };
-var _hoisted_72 = {
+var _hoisted_71 = {
   "class": "icon-box"
 };
-var _hoisted_73 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_72 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "icon"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-building-add"
 })], -1 /* HOISTED */);
-var _hoisted_74 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+var _hoisted_73 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   id: "center-arabic"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: ""
 }, "LPA")], -1 /* HOISTED */);
-var _hoisted_75 = {
+var _hoisted_74 = {
   id: "center-arabic"
 };
-var _hoisted_76 = {
+var _hoisted_75 = {
   "class": "col-lg-4 col-md-6 align-items-stretch mt-4 mt-lg-0",
   "data-aos": "zoom-in",
   "data-aos-delay": "300"
 };
-var _hoisted_77 = {
+var _hoisted_76 = {
   "class": "icon-box"
 };
-var _hoisted_78 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_77 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "icon"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-building-check"
 })], -1 /* HOISTED */);
-var _hoisted_79 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
+var _hoisted_78 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", {
   id: "center-arabic"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: ""
 }, "LP")], -1 /* HOISTED */);
-var _hoisted_80 = {
+var _hoisted_79 = {
   id: "center-arabic"
 };
-var _hoisted_81 = {
+var _hoisted_80 = {
   id: "portfolio",
   "class": "portfolio"
 };
-var _hoisted_82 = {
+var _hoisted_81 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_83 = {
+var _hoisted_82 = {
   "class": "section-title"
 };
-var _hoisted_84 = {
+var _hoisted_83 = {
   "class": "row",
   "data-aos": "fade-up",
   "data-aos-delay": "100"
 };
-var _hoisted_85 = {
+var _hoisted_84 = {
   "class": "col-lg-12 d-flex justify-content-center"
 };
-var _hoisted_86 = {
+var _hoisted_85 = {
   id: "portfolio-flters"
 };
-var _hoisted_87 = {
+var _hoisted_86 = {
   "data-filter": "*",
   "class": "filter-active"
 };
-var _hoisted_88 = {
+var _hoisted_87 = {
   "data-filter": ".filter-app"
 };
-var _hoisted_89 = {
+var _hoisted_88 = {
   "data-filter": ".filter-card"
 };
-var _hoisted_90 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "row portfolio-container",
   "data-aos": "fade-up",
   "data-aos-delay": "200"
@@ -24422,113 +24442,26 @@ var _hoisted_90 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bx bx-link"
 })])])])])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 portfolio-item filter-card\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-8.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Card 3</h4>\r\n                  <p>Card</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-8.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Card 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 portfolio-item filter-web\">\r\n              <div class=\"portfolio-wrap\">\r\n                <img src=\"assets/img/portfolio/portfolio-9.jpg\" class=\"img-fluid\" alt=\"\">\r\n                <div class=\"portfolio-info\">\r\n                  <h4>Web 3</h4>\r\n                  <p>Web</p>\r\n                  <div class=\"portfolio-links\">\r\n                    <a href=\"assets/img/portfolio/portfolio-9.jpg\" data-gallery=\"portfolioGallery\" class=\"portfolio-lightbox\" title=\"Web 3\"><i class=\"bx bx-plus\"></i></a>\r\n                    <a href=\"portfolio-details.html\" title=\"More Details\"><i class=\"bx bx-link\"></i></a>\r\n                  </div>\r\n                </div>\r\n              </div>\r\n            </div> ")], -1 /* HOISTED */);
+var _hoisted_90 = {
+  "class": "container",
+  "data-aos": "fade-up"
+};
 var _hoisted_91 = {
-  "class": "container",
-  "data-aos": "fade-up"
-};
-var _hoisted_92 = {
   "class": "section-title"
 };
-var _hoisted_93 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "arrow-container"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/arrow.jpg",
-  alt: "Flèche",
-  "class": "arrow-img"
-})], -1 /* HOISTED */);
-var _hoisted_94 = {
-  id: "features",
-  "class": "features"
-};
-var _hoisted_95 = {
-  "class": "container",
-  "data-aos": "fade-up"
-};
-var _hoisted_96 = {
-  "class": "row"
-};
-var _hoisted_97 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "image col-lg-6",
-  style: {
-    "background-image": "url(\"assets/img/client.png\")"
-  },
-  "data-aos": "fade-right"
-}, null, -1 /* HOISTED */);
-var _hoisted_98 = {
-  "class": "col-lg-6",
-  "data-aos": "fade-left",
-  "data-aos-delay": "100"
-};
-var _hoisted_99 = {
-  "class": "icon-box mt-5 mt-lg-0",
-  "data-aos": "zoom-in",
-  "data-aos-delay": "150"
-};
-var _hoisted_100 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "bi bi-credit-card"
-}, null, -1 /* HOISTED */);
-var _hoisted_101 = {
-  "class": "icon-box mt-5",
-  "data-aos": "zoom-in",
-  "data-aos-delay": "150"
-};
-var _hoisted_102 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "bi bi-list-ul"
-}, null, -1 /* HOISTED */);
-var _hoisted_103 = {
-  "class": "icon-box mt-5",
-  "data-aos": "zoom-in",
-  "data-aos-delay": "150"
-};
-var _hoisted_104 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "bi bi-hourglass-split"
-}, null, -1 /* HOISTED */);
-var _hoisted_105 = {
-  "class": "icon-box mt-5",
-  "data-aos": "zoom-in",
-  "data-aos-delay": "150"
-};
-var _hoisted_106 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "bi bi-sort-up"
-}, null, -1 /* HOISTED */);
-var _hoisted_107 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("br", null, null, -1 /* HOISTED */);
-var _hoisted_108 = {
-  "class": "row"
-};
-var _hoisted_109 = {
-  "class": "sam",
-  "data-aos": "fade-left",
-  "data-aos-delay": "100"
-};
-var _hoisted_110 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "https://client.opgi-boumerdes.dz/Login",
-  target: "_blank",
-  "class": "icon-box mt-5 mt-lg-0",
-  "data-aos": "zoom-in",
-  "data-aos-delay": "150"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
-  "class": "bi bi-arrow-right-circle-fill"
-})], -1 /* HOISTED */);
-var _hoisted_111 = {
-  "class": "container",
-  "data-aos": "fade-up"
-};
-var _hoisted_112 = {
-  "class": "section-title"
-};
-var _hoisted_113 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.png\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 1);
-var _hoisted_114 = {
+var _hoisted_92 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.png\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 1);
+var _hoisted_93 = {
   id: "contact",
   "class": "contact"
 };
-var _hoisted_115 = {
+var _hoisted_94 = {
   "class": "container",
   "data-aos": "fade-up"
 };
-var _hoisted_116 = {
+var _hoisted_95 = {
   "class": "section-title"
 };
-var _hoisted_117 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
+var _hoisted_96 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("iframe", {
   style: {
     "border": "0",
     "width": "100%",
@@ -24539,48 +24472,48 @@ var _hoisted_117 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElemen
   allowfullscreen: "",
   loading: "lazy"
 })], -1 /* HOISTED */);
-var _hoisted_118 = {
+var _hoisted_97 = {
   "class": "row mt-5"
 };
-var _hoisted_119 = {
+var _hoisted_98 = {
   "class": "col-lg-4"
 };
-var _hoisted_120 = {
+var _hoisted_99 = {
   "class": "info"
 };
-var _hoisted_121 = {
+var _hoisted_100 = {
   "class": "address"
 };
-var _hoisted_122 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_101 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-geo-alt"
 }, null, -1 /* HOISTED */);
-var _hoisted_123 = {
+var _hoisted_102 = {
   "class": "email"
 };
-var _hoisted_124 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_103 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-envelope"
 }, null, -1 /* HOISTED */);
-var _hoisted_125 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_104 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "mailto:contact@opgi-boumerdes.dz"
 }, " contact@opgi-boumerdes.dz")], -1 /* HOISTED */);
-var _hoisted_126 = {
+var _hoisted_105 = {
   "class": "phone"
 };
-var _hoisted_127 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
+var _hoisted_106 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("i", {
   "class": "bi bi-phone"
 }, null, -1 /* HOISTED */);
-var _hoisted_128 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+var _hoisted_107 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: "tel:024795858",
   "class": "ltr-text"
 }, " +213 (0) 24 79 58 58 ")], -1 /* HOISTED */);
-var _hoisted_129 = {
+var _hoisted_108 = {
   "class": "col-lg-8 mt-5 mt-lg-0"
 };
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_router_link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("router-link");
   var _component_swiper_slide = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper-slide");
   var _component_swiper = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("swiper");
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["HeaderIndex"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Office de Promotion et de Gestion Immobilière")), 1 /* TEXT */), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Wilaya de BOUMERDES")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Direction Générale")), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Unités réparties dans la wilaya rapprochant l'administration des citoyens")) + " .", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')) + ".", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-paint-brush-line\"></i>\r\n              <h3><a href=\"\">Magni Dolores</a></h3>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-database-2-line\"></i>\r\n              <h3><a href=\"\">Nemos Enimade</a></h3>\r\n            </div>\r\n          </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= "), _hoisted_25, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_27, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_28, [_hoisted_29, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Présentation')), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_31, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI")) + " . ", 1 /* TEXT */), _hoisted_32, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_33, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI")) + ". ", 1 /* TEXT */), _hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(), _hoisted_35, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial")) + ". ", 1 /* TEXT */)])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_36, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_38, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :')) + " ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_39, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')) + ".", 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("À titre d'accessoire, il est chargé de")) + ": ", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("La promotion Immobilière et Foncière")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_42, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_43, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_44, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", null, [_hoisted_45, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)")) + ". ", 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"image col-lg-6\" style='background-image: url(\"assets/img/features.jpg\");' data-aos=\"fade-right\"></div>\r\n            <div class=\"col-lg-6\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-receipt\"></i>\r\n                <h4>Est labore ad</h4>\r\n                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-cube-alt\"></i>\r\n                <h4>Harum esse qui</h4>\r\n                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-images\"></i>\r\n                <h4>Aut occaecati</h4>\r\n                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-shield\"></i>\r\n                <h4>Beatae veritatis</h4>\r\n                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Dernières Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["HeaderIndex"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Hero Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h1", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Office de Promotion et de Gestion Immobilière")), 1 /* TEXT */), _hoisted_5]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_6, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Wilaya de BOUMERDES")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_7, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_9, [_hoisted_10, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_11, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_12, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Direction Générale")), 1 /* TEXT */)])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_13, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_14, [_hoisted_15, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_16, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_17, [_hoisted_18, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Unités réparties dans la wilaya rapprochant l'administration des citoyens")) + " .", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_19, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_20, [_hoisted_21, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_22, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", _hoisted_23, [_hoisted_24, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t('Caisses réparties dans la wilaya facilitant le paiement pour les locataires')) + ".", 1 /* TEXT */)])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" \r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-paint-brush-line\"></i>\r\n              <h3><a href=\"\">Magni Dolores</a></h3>\r\n            </div>\r\n          </div>\r\n          <div class=\"col-xl-2 col-md-4\">\r\n            <div class=\"icon-box\">\r\n              <i class=\"ri-database-2-line\"></i>\r\n              <h3><a href=\"\">Nemos Enimade</a></h3>\r\n            </div>\r\n          </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Hero "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_25, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_26, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Plateforme en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Espace Locataire")), 1 /* TEXT */)]), _hoisted_27]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_28, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_29, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_30, [_hoisted_31, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_32, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_33, [_hoisted_34, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_35, [_hoisted_36, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mes quittances de paiement")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_37, [_hoisted_38, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Préoccupations et Doléances")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_39, [_hoisted_40, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mouvement du contrat")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")), 1 /* TEXT */)])])]), _hoisted_41, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_42, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_43, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Et bien plus de fonctionnalités via")) + " : ", 1 /* TEXT */), _hoisted_44])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= About Section ======= \r\n      <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n      \r\n\r\n      </div>\r\n      <section id=\"about\" class=\"about\">\r\n        <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n          <div class=\"row\">\r\n            <div class=\"col-lg-6 order-1 order-lg-2\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n              <img src=\"assets/img/about.jpg\" class=\"img-fluid\" alt=\"\" height=\"auto\"  width=\"100%\">\r\n            </div>\r\n            <div class=\"col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content\" data-aos=\"fade-right\" data-aos-delay=\"100\">\r\n              <h3>{{$t('Présentation')}}</h3>\r\n              <p class=\"fst-italic\">\r\n               {{ $t(\"L’Office de Promotion et de Gestion Immobilière de la wilaya de Boumerdes (O.P.G.I de Boumerdes) a été crée à l’instar des autres offices répartis à travers le territoire national par le décret 76/93 du 23/10/1976 fixant les conditions de création des OPGI\") }} .\r\n                <br> <br> {{ $t(\"Sa nature juridique a été transformée par le décret exécutif n°91/147 du 21 mai 1991 portant modification de la nature juridiques des statuts des OPGI\")}}.\r\n                \r\n                <br> <br>{{ $t(\"Conformément à l’article 1 du décret exécutif ci-dessus, l’OPGI est un établissement public à caractère industriel et commercial, il est réputé commerçant dans ses rapports avec les tiers et est soumis aux règles de droit commercial\")}}.    \r\n              </p> \r\n              \r\n              \r\n            </div>\r\n          </div>\r\n\r\n        </div>\r\n      </section>\r\n   End About Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <section id=\"features\" class=\"features\">\r\n        <div class=\"container\" data-aos=\"fade-up\">\r\n\r\n          <div class=\"row\">\r\n            {{$t('Conformément à l’article 4 du décret exécutif n° 91/147 du 12/05/1991, l’OPGI est investi des missions suivantes :')}}\r\n              <ul>\r\n                <li><i class=\"ri-check-double-line\"></i> {{$t('Promouvoir le service public en matière de logement notamment pour les catégories sociales les plus démunies')}}.</li>\r\n                \r\n              </ul>\r\n              {{$t(\"À titre d'accessoire, il est chargé de\") }}: \r\n              <ul>  \r\n                <li><i class=\"ri-check-double-line\"></i> {{$t(\"La promotion Immobilière et Foncière\") }}.</li>\r\n                <li><i class=\"ri-check-double-line\"></i> {{$t(\"La maîtrise d’ouvrage déléguée de l’Etat ou pour le compte de tout autre opérateur\") }}.</li>\r\n                <li><i class=\"ri-check-double-line\"></i> {{$t(\"Des actions de prestation de services en vue d’assurer l’entretien, la maintenance, la  restauration et la réhabilitation des biens immobiliers\") }}.</li>\r\n                <li><i class=\"ri-check-double-line\"></i> {{$t(\"En outre, il est habilité à gérer les biens immobiliers qui lui sont confiés suivant une  convention déterminant les conditions et modalités de prise charge de cette mission\") }}.\r\n                </li>\r\n                <li><i class=\"ri-check-double-line\"></i> \t{{$t(\"L’administration des biens immobiliers suivant les dispositions du décret exécutif n°97-154 du 10 mai 1997\") }}.\r\n                </li>\r\n                <li><i class=\"ri-check-double-line\"></i> {{$t(\"Reconstruction des logements démolis suite au séisme du 21 mai 2003 ( cité 520/1200 logts Ibn Khaldoun, Boumerdes)\") }}.\r\n                </li>\r\n              </ul> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"image col-lg-6\" style='background-image: url(\"assets/img/features.jpg\");' data-aos=\"fade-right\"></div>\r\n            <div class=\"col-lg-6\" data-aos=\"fade-left\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box mt-5 mt-lg-0\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-receipt\"></i>\r\n                <h4>Est labore ad</h4>\r\n                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-cube-alt\"></i>\r\n                <h4>Harum esse qui</h4>\r\n                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-images\"></i>\r\n                <h4>Aut occaecati</h4>\r\n                <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>\r\n              </div>\r\n              <div class=\"icon-box mt-5\" data-aos=\"zoom-in\" data-aos-delay=\"150\">\r\n                <i class=\"bx bx-shield\"></i>\r\n                <h4>Beatae veritatis</h4>\r\n                <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>\r\n              </div>\r\n            </div> \r\n          </div>\r\n\r\n        </div>\r\n      </section>"), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Testimonials Section  ACTUALITES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_45, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_46, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Dernières Actualités")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_router_link, {
     to: {
       name: 'Actualites'
     }
@@ -24589,7 +24522,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
       return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)((0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Voir toutes les actualités")), 1 /* TEXT */)];
     }),
     _: 1 /* STABLE */
-  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
+  })])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_47, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_48, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_49, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_swiper, {
     modules: $setup.modules,
     pagination: {
       clickable: true,
@@ -24607,23 +24540,23 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
           key: actualite === null || actualite === void 0 ? void 0 : actualite.id
         }, {
           "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-            return [actualite && actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_51, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+            return [actualite && actualite.images && actualite.images.length > 0 ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("div", _hoisted_50, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
               src: '/storage/' + actualite.images[0].url,
               alt: actualite.images[0].caption,
               "class": "testimonial-img"
-            }, null, 8 /* PROPS */, _hoisted_52), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.title), 1 /* TEXT */), _hoisted_54, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_55, [_hoisted_56, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.content) + " ", 1 /* TEXT */), _hoisted_57]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_58, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
+            }, null, 8 /* PROPS */, _hoisted_51), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", _hoisted_52, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.title), 1 /* TEXT */), _hoisted_53, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", _hoisted_54, [_hoisted_55, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" " + (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(actualite.content) + " ", 1 /* TEXT */), _hoisted_56]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", _hoisted_57, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
               href: "",
               onClick: (0,vue__WEBPACK_IMPORTED_MODULE_0__.withModifiers)(function ($event) {
                 return $setup.readMore(actualite);
               }, ["prevent"])
-            }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Lire plus")), 9 /* TEXT, PROPS */, _hoisted_59)]), _hoisted_60])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
+            }, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Lire plus")), 9 /* TEXT, PROPS */, _hoisted_58)]), _hoisted_59])])) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true)];
           }),
           _: 2 /* DYNAMIC */
         }, 1024 /* DYNAMIC_SLOTS */);
       }), 128 /* KEYED_FRAGMENT */))];
     }),
     _: 1 /* STABLE */
-  }), _hoisted_61])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_62, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Programmes")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos Programmes")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_65, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_66, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_67, [_hoisted_68, _hoisted_69, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_70, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logements Publics Locatifs")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_71, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_72, [_hoisted_73, _hoisted_74, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_75, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel Aidé")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_76, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_77, [_hoisted_78, _hoisted_79, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_80, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\r\n                <h4><a href=\"\">Nemo Enim</a></h4>\r\n                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\r\n                <h4><a href=\"\">Dele cardo</a></h4>\r\n                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"300\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\r\n                <h4><a href=\"\">Divera don</a></h4>\r\n                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS And VIDEOS ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_81, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_82, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_83, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Galerie")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos projets")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_84, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_85, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_86, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_87, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Tous")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_88, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Vidéos")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_89, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Photos")), 1 /* TEXT */)])])]), _hoisted_90])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Counts Section  Espace Client======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_91, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_92, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Plateforme en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Espace Client")), 1 /* TEXT */)]), _hoisted_93]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Features Section Espace Client ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_94, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_95, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_96, [_hoisted_97, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_98, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_99, [_hoisted_100, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement en ligne")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB")) + ". ", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_101, [_hoisted_102, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mes quittances de paiement")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")) + ".", 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_103, [_hoisted_104, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Préoccupations et Doléances")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Soumission des doléances (Réclamation, demande d'achat et autres), Réception des réponses à chaque demande...")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_105, [_hoisted_106, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Mouvement du contrat")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Suivi de l'état d’avancement du contrat, sa position actuelle dans le processus, les actions en cours le concernant...")), 1 /* TEXT */)])])]), _hoisted_107, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_108, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_109, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Et bien plus de fonctionnalités via")) + " : ", 1 /* TEXT */), _hoisted_110])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Features Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_111, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_112, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens utiles")), 1 /* TEXT */)])]), _hoisted_113, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_114, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_115, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_116, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contact")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contactez-nous")), 1 /* TEXT */)]), _hoisted_117, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_118, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_119, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_120, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_121, [_hoisted_122, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Adresse")) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Cité Administrative, Boumerdes, Algérie")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_123, [_hoisted_124, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Email")) + ":", 1 /* TEXT */), _hoisted_125]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_126, [_hoisted_127, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Téléphone")) + ":", 1 /* TEXT */), _hoisted_128])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_129, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Contact"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
+  }), _hoisted_60])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Testimonials Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Services Section LPL/LPA/LP ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_61, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_62, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_63, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Programmes")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos Programmes")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_64, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_65, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_66, [_hoisted_67, _hoisted_68, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_69, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logements Publics Locatifs")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_70, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_71, [_hoisted_72, _hoisted_73, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_74, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel Aidé")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_75, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_76, [_hoisted_77, _hoisted_78, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", _hoisted_79, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Logement Promotionnel")), 1 /* TEXT */)])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"100\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-world\"></i></div>\r\n                <h4><a href=\"\">Nemo Enim</a></h4>\r\n                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"200\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-slideshow\"></i></div>\r\n                <h4><a href=\"\">Dele cardo</a></h4>\r\n                <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>\r\n              </div>\r\n            </div>\r\n\r\n            <div class=\"col-lg-4 col-md-6 d-flex align-items-stretch mt-4\" data-aos=\"zoom-in\" data-aos-delay=\"300\">\r\n              <div class=\"icon-box\">\r\n                <div class=\"icon\"><i class=\"bx bx-arch\"></i></div>\r\n                <h4><a href=\"\">Divera don</a></h4>\r\n                <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>\r\n              </div>\r\n            </div> ")])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Services Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= cta Call to action Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("  <section id=\"cta\" class=\"cta\">\r\n        <div class=\"container\" data-aos=\"zoom-in\">\r\n\r\n          <div class=\"text-center\">\r\n            <h3>Call To Action</h3>\r\n            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n            <a class=\"cta-btn\" href=\"#\">Call To Action</a>\r\n          </div>\r\n\r\n        </div>\r\n      </section> "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Cta Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Portfolio Section PROJETS PICS And VIDEOS ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_80, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_81, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_82, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Galerie")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Nos projets")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_83, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_84, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("ul", _hoisted_85, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_86, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Tous")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_87, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Vidéos")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("li", _hoisted_88, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Photos")), 1 /* TEXT */)])])]), _hoisted_89])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Portfolio Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Clients Section LIENS UTILES ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_90, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_91, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Liens utiles")), 1 /* TEXT */)])]), _hoisted_92, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Clients Section "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" ======= Contact Section ======= "), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("section", _hoisted_93, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_94, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_95, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h2", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contact")), 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Contactez-nous")), 1 /* TEXT */)]), _hoisted_96, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_97, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_98, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_99, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_100, [_hoisted_101, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Adresse")) + ":", 1 /* TEXT */), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Cité Administrative, Boumerdes, Algérie")), 1 /* TEXT */)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_102, [_hoisted_103, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Email")) + ":", 1 /* TEXT */), _hoisted_104]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_105, [_hoisted_106, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, (0,vue__WEBPACK_IMPORTED_MODULE_0__.toDisplayString)(_ctx.$t("Téléphone")) + ":", 1 /* TEXT */), _hoisted_107])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_108, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)($setup["Contact"])])])])]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)(" End Contact Section ")], 64 /* STABLE_FRAGMENT */);
 }
 
 /***/ }),
@@ -25927,7 +25860,7 @@ var messages = {
     "Et bien plus de fonctionnalités via": "Et bien plus de fonctionnalités via",
     "Liens": "Liens",
     "Liens utiles": "Liens utiles"
-  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Envoyer le message", "Envoyer le message"), "Toutes les Actualités", "Toutes les Actualités"), "Actualité Details", "Actualité Details"), "Actualité", "Actualité"), "Actualité information", "Actualité information"), "Lire plus", "Lire plus"), "Titre", "Titre"), "Contenu", "Contenu"), "Date", "Date"), "Ajouter une actualité", "Ajouter une actualité"), _defineProperty(_fr, "Ajout d'actualités", "Ajout d'actualités")),
+  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Envoyer le message", "Envoyer le message"), "Toutes les Actualités", "Toutes les Actualités"), "Actualité Details", "Actualité Details"), "Actualité", "Actualité"), "Détails de l'actualité", "Détails de l'actualité"), "Lire plus", "Lire plus"), "Titre", "Titre"), "Contenu", "Contenu"), "Date", "Date"), "Ajouter une actualité", "Ajouter une actualité"), _defineProperty(_fr, "Ajout d'actualités", "Ajout d'actualités")),
   ar: (_ar = {
     Accueil: 'صفحة',
     Actualités: 'أخبار',
@@ -25967,7 +25900,7 @@ var messages = {
     "Vidéos": "فيديوهات",
     "Photos": "صور",
     "Plateforme en ligne": "المنصة الإلكترونية",
-    "Espace Client": "فضاء الزبون",
+    "Espace Locataire": "فضاء المستأجر",
     "Paiement en ligne": "الدفع الإلكتروني",
     "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB": "الدفع الجزئي أو الكلي باستخدام البطاقة الذهبية أو بطاقة CIB",
     "Mes quittances de paiement": "إيصالات الدفع",
@@ -25979,7 +25912,7 @@ var messages = {
     "Et bien plus de fonctionnalités via": "والعديد من الميزات الأخرى عبر",
     "Liens": "روابط",
     "Liens utiles": "روابط ذات صلة"
-  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_ar, "Contact", "الاتصال"), "Contactez-nous", "اتصل بنا"), "Adresse", "العنوان"), "Cité Administrative, Boumerdes, Algérie", "الحي الإداري, بومرداس, الجزائر"), "Email", "البريد الإلكتروني"), "Téléphone", "الهاتف"), "Nom", "الاسم واللقب"), "Email", "البريد الإلكتروني"), "Objet", "الموضوع"), "Message", "الرسالة"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_ar, "Envoyer le message", "إرسال"), "Toutes les Actualités", "جميع الأخبار"), "Actualité Details", "تفاصيل الخبر"), "Actualité", "الخبر"), "Actualité information", "التفاصيل"), "Lire plus", "اقرأ المزيد"), "Titre", "العنوان"), "Contenu", "المحتوى"), "Date", "التاريخ"), "Ajouter une actualité", "إضافة خبر جديد"), _defineProperty(_ar, "Ajout d'actualités", "إضافة الأخبار"))
+  }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_ar, "Contact", "الاتصال"), "Contactez-nous", "اتصل بنا"), "Adresse", "العنوان"), "Cité Administrative, Boumerdes, Algérie", "الحي الإداري, بومرداس, الجزائر"), "Email", "البريد الإلكتروني"), "Téléphone", "الهاتف"), "Nom", "الاسم واللقب"), "Email", "البريد الإلكتروني"), "Objet", "الموضوع"), "Message", "الرسالة"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_ar, "Envoyer le message", "إرسال"), "Toutes les Actualités", "جميع الأخبار"), "Actualité Details", "تفاصيل الخبر"), "Actualité", "الخبر"), "Détails de l'actualité", "التفاصيل"), "Lire plus", "اقرأ المزيد"), "Titre", "العنوان"), "Contenu", "المحتوى"), "Date", "التاريخ"), "Ajouter une actualité", "إضافة خبر جديد"), _defineProperty(_ar, "Ajout d'actualités", "إضافة الأخبار"))
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   messages: messages

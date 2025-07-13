@@ -35,7 +35,7 @@
 
         <div class="col-lg-4">
           <div class="portfolio-info">
-            <h3>{{$t("Actualité information")}}</h3>
+            <h3>{{$t("Détails de l'actualité")}}</h3>
 
             <ul>
               <li>  
