@@ -84,8 +84,10 @@
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-list-ul"></i>
-              <h4>{{$t("Mes quittances de paiement")}}</h4>
-              <p>{{$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")}}.</p>
+           <!--   <h4>{{$t("Mes quittances de paiement")}}</h4>
+              <p>{{$t("Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF")}}.</p> -->
+            <h4>{{$t("Achat et Acquisition des biens")}}</h4>
+              <p>{{$t("Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.")}}</p>
             </div>
             <div class="icon-box mt-5" data-aos="zoom-in" data-aos-delay="150">
               <i class="bi bi-hourglass-split"></i>

@@ -71,6 +71,8 @@ const messages = {
         "Date": "Date",
         "Ajouter une actualité": "Ajouter une actualité",
         "Ajout d'actualités": "Ajout d'actualités",
+        "Achat et Acquisition des biens": "Achat et Acquisition des biens",
+        "Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.": "Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.",
 
     },
     ar: {
@@ -113,7 +115,7 @@ const messages = {
         "Photos": "صور",
         "Plateforme en ligne": "المنصة الإلكترونية",
         "Espace Locataire": "فضاء المستأجر",
-        "Paiement en ligne": "الدفع الإلكتروني",
+        "Paiement en ligne": "دفع مستحقات الإيجار",
         "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB": "الدفع الجزئي أو الكلي باستخدام البطاقة الذهبية أو بطاقة CIB",
         "Mes quittances de paiement": "إيصالات الدفع",
         "Consultation des quittances réglées en ligne via l'e-paiement, ainsi que celles réglées en espèces/TPE au niveau des caisses, avec la possibilité de les exporter au format PDF": "عرض الإيصالات المدفوعة عبر الإنترنت عن طريق الدفع الإلكتروني، بالإضافة إلى الإيصالات المدفوعة نقدًا/TPE في مكاتب الدفع، مع خيار تصديرها بصيغة PDF",
@@ -145,6 +147,8 @@ const messages = {
         "Date": "التاريخ",
         "Ajouter une actualité": "إضافة خبر جديد",
         "Ajout d'actualités": "إضافة الأخبار",
+        "Achat et Acquisition des biens": "شراء واقتناء الأملاك",
+        "Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.": "اقتناء المحلات ذات الاستعمال السكني، التجاري، المهني أو الحرفي",
 
     },
 };
