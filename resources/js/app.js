@@ -34,8 +34,8 @@ import { createI18n } from 'vue-i18n/dist/vue-i18n.cjs';
 
 
 const i18n = createI18n({
-  locale: locale,
-  fallbackLocale: 'en',
+  locale: 'fr',
+  fallbackLocale: 'fr',
   messages,
 })
 

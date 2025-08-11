@@ -61,7 +61,7 @@
           <p>{{$t("Espace Locataire")}}</p>
         </div>
         <div class="arrow-container mt-3">
-          <img src="assets/img/arrow.jpg" alt="Flèche" class="arrow-img">
+          <img src="assets/img/arrow.webp" alt="Flèche" class="arrow-img">
         </div>
 
       </div>
@@ -73,7 +73,7 @@
        
 
         <div class="row">
-          <div class="image col-lg-6" style='background-image: url("assets/img/client.png");' data-aos="fade-right"></div>
+          <div class="image col-lg-6" style='background-image: url("assets/img/client.webp");' data-aos="fade-right"></div>
           
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="100">
             <div class="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
@@ -370,12 +370,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>380 Logements Boumerdes</h4>
                   <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="380 LPL Boumerdes"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-2.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="380 LPL Boumerdes"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -405,12 +405,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>76 Logements Zemmouri</h4>
                   <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="76 LPL Zemmouri"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-4.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="76 LPL Zemmouri"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -419,12 +419,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>300 Logements Si mustapha</h4>
                   <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="300 LPL Si mustapha"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-5.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="300 LPL Si mustapha"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -433,12 +433,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>200 Logements Ouled Heddadj</h4>
                   <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="200 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-6.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="200 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -447,12 +447,12 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
                 <div class="portfolio-info">
                   <h4>100 Logements Ouled Heddadj</h4>
                   <p>LPL</p>
                   <div class="portfolio-links">
-                    <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="100 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
+                    <a href="assets/img/portfolio/portfolio-7.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="100 LPL Ouled Heddadj"><i class="bx bx-plus"></i></a>
                     <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
                   </div>
                 </div>
@@ -512,12 +512,12 @@
 
           <div class="clients-slider swiper">
             <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide"><a href="http://www.mhuv.gov.dz/"><img src="assets/img/logos/mhuv-logo.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="https://bnh.dz/"><img src="assets/img/logos/bnh-logo.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="https://www.aadl.com.dz/"><img src="assets/img/logos/aadl-logo.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="http://www.enpi.dz/"><img src="assets/img/logos/enpi-logo.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="http://www.fnpos.dz/"><img src="assets/img/logos/fnpos-logo.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="https://www.gloriousalgeria.dz/Ar"><img src="assets/img/logos/gloriousalgeria-logo.png" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="http://www.mhuv.gov.dz/"><img src="assets/img/logos/mhuv-logo.webp" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://bnh.dz/"><img src="assets/img/logos/bnh-logo.webp" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.aadl.com.dz/"><img src="assets/img/logos/aadl-logo.webp" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="http://www.enpi.dz/"><img src="assets/img/logos/enpi-logo.webp" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="http://www.fnpos.dz/"><img src="assets/img/logos/fnpos-logo.webp" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.gloriousalgeria.dz/Ar"><img src="assets/img/logos/gloriousalgeria-logo.webp" class="img-fluid" alt=""></a></div>
 
               
               

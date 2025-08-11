@@ -18,7 +18,7 @@
             <div class="container">
                 <div class="row justify-content-center align-items-center">
                     <div class="col-md-6 d-md-block d-none">
-                        <img src="assets/img/auth.png" alt="auth" width="100%">
+                        <img src="assets/img/auth.webp" alt="auth" width="100%">
                     </div>
                     <div class=" col-md-6" id="app">
                         @if(Session::has('success-message'))

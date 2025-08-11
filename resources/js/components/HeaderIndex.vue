@@ -3,7 +3,7 @@
       <div class="container d-flex align-items-center justify-content-lg-between">
 
         <h1 class="logo me-auto me-lg-0"><a href="">
-          <img src="assets/img/opgi.png" class="logo" alt="" width="115" >
+          <img src="assets/img/opgi.webp" class="logo" alt="" width="115" >
           
           
           
@@ -39,7 +39,7 @@
               </ul>
             </li> -->
             <li><a class="nav-link scrollto" href="#contact"><h5>{{ $t("Contact") }}</h5></a></li>
-            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>{{ $t("Espace Locataire") }} </h5> <img src="assets/img/e-paiement.jpg" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px; margin-right: 5px;"></a></li>
+            <li><a class="nav-link scrollto" href="https://client.opgi-boumerdes.dz/Login" target="_blank"><h5>{{ $t("Espace Locataire") }} </h5> <img src="assets/img/e-paiement.webp" class="img-fluid" alt="" style="border-radius: 5px; margin-left: 5px; margin-right: 5px;"></a></li>
             <li v-if="isAuthenticated">
               <LogoutComponent />
               <!-- Composant de déconnexion (si nécessaire pour des interactions supplémentaires) -->

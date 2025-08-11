@@ -28,7 +28,7 @@ class AuthController extends Controller
             $successToken = $user->createToken('website_opgi')->accessToken;
             session()->put('token', $successToken);
 
-            $locale = 'en';
+            $locale = 'fr';
             app()->setLocale($locale);
             session()->put('locale', $locale);
 

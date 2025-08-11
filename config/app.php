@@ -98,7 +98,7 @@ return [
     'fallback_locale' => 'fr',
 
     'available_locales' => [
-        'Français'  => 'fr',
+        'French'  => 'fr',
         'Arabic'     => 'ar',
     ],
 

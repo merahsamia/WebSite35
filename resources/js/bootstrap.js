@@ -11,21 +11,21 @@ window.axios = require('axios');
 window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
-window.onload = function() {
+window.onload = function () {
     function loggedIn() {
         if (window.token) {
             let successToken = window.token;
-            axios.defaults.headers.common = {'Authorization': `Bearer ${successToken}`};
+            axios.defaults.headers.common = { 'Authorization': `Bearer ${successToken}` };
             return successToken;
 
-            } else {
-                console.log('No token found');
+        } else {
+            // console.log('No token found');
 
-                return;
+            return;
 
         }
     }
-    
+
     loggedIn();
 };
 

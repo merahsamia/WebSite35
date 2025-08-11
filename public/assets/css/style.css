@@ -10,18 +10,22 @@
 # General
 --------------------------------------------------------------*/
 .arrow-container {
-  display: inline-block; /* Mettre .arrow-container en inline-block */
+  display: inline-block;
+  /* Mettre .arrow-container en inline-block */
 }
 
 .arrow-img {
-  transition: transform 1s ease; /* Animation de la transition */
-  width: 250px; /* Ajuster la taille de l'image */
+  transition: transform 1s ease;
+  /* Animation de la transition */
+  width: 250px;
+  /* Ajuster la taille de l'image */
   height: 150px;
-  
+
 }
 
 .arrow-img:hover {
-  transform: rotate(360deg); /* Rotation de 90 degrés au survol */
+  transform: rotate(360deg);
+  /* Rotation de 90 degrés au survol */
 }
 
 
@@ -423,7 +427,7 @@ h6 {
 #hero {
   width: 100%;
   min-height: 100vh;
-  background: url("../img/sam.jpg") top center;
+  background: url("../img/sam.webp") top center;
   background-size: cover;
   position: relative;
 }
@@ -632,7 +636,7 @@ section {
 # Features
 --------------------------------------------------------------*/
 
-.features .row:first-child .sam{
+.features .row:first-child .sam {
   display: flex;
   justify-content: center;
 }
@@ -648,15 +652,19 @@ section {
   font-size: 48px;
   float: left;
   color: #ff5151;
-  animation: bounce 0.5s infinite alternate; /* Applique une animation de rebond infinie */
+  animation: bounce 0.5s infinite alternate;
+  /* Applique une animation de rebond infinie */
 }
 
 @keyframes bounce {
   0% {
-    transform: translateY(0); /* Pas de déplacement vertical */
+    transform: translateY(0);
+    /* Pas de déplacement vertical */
   }
+
   100% {
-    transform: translateY(10px); /* Déplace l'icône vers le bas de 10px */
+    transform: translateY(10px);
+    /* Déplace l'icône vers le bas de 10px */
   }
 }
 
@@ -697,17 +705,17 @@ section {
 /* Mine  */
 
 
-.features   ul {
+.features ul {
   list-style: none;
   padding: 0;
 }
 
-.features  ul li {
+.features ul li {
   padding: 0 0 8px 26px;
   position: relative;
 }
 
-.features  ul i {
+.features ul i {
   position: absolute;
   font-size: 20px;
   left: 0;
@@ -778,7 +786,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/photoOpgi.jpeg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../img/photoOpgi.webp") fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -962,9 +970,8 @@ section {
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffc451;
-} */ */
-
- .portfolio-details .portfolio-info {
+} */
+*/ .portfolio-details .portfolio-info {
   padding: 30px;
   box-shadow: 0px 0 30px rgba(21, 21, 21, 0.08);
 }
@@ -1088,7 +1095,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("../img/photoOpgi.jpeg") no-repeat;
+  background: url("../img/photoOpgi.webp") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1119,9 +1126,12 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 200px; /* Ajustez la taille selon vos besoins */
-  height: auto; /* Pour conserver les proportions de l'image */
-  border-radius: 10px; /* Vous pouvez ajuster le rayon de la bordure si nécessaire */
+  width: 200px;
+  /* Ajustez la taille selon vos besoins */
+  height: auto;
+  /* Pour conserver les proportions de l'image */
+  border-radius: 10px;
+  /* Vous pouvez ajuster le rayon de la bordure si nécessaire */
   border: 6px solid rgba(255, 255, 255, 0.15);
   margin: 0 auto;
 }
@@ -1172,7 +1182,8 @@ section {
 }
 
 .testimonials .swiper-pagination-custom {
-  margin-top: 50px; /* Ajustez cette valeur selon vos besoins */
+  margin-top: 50px;
+  /* Ajustez cette valeur selon vos besoins */
 }
 
 
@@ -1483,7 +1494,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sam.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sam.webp") fixed center center;
   background-size: cover;
   padding: 0 0 30px 0;
   color: #fff;
@@ -1491,7 +1502,7 @@ section {
 }
 
 #footer .footer-top {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sam.jpg") fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/sam.jwebp") fixed center center;
   background-size: cover;
   border-bottom: 1px solid #222222;
   padding: 60px 0 30px 0;

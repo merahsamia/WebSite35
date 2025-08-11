@@ -23849,7 +23849,7 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementV
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
   href: ""
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/opgi.png",
+  src: "assets/img/opgi.webp",
   "class": "logo",
   alt: "",
   width: "115"
@@ -23880,7 +23880,7 @@ var _hoisted_9 = {
   target: "_blank"
 };
 var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/e-paiement.jpg",
+  src: "assets/img/e-paiement.webp",
   "class": "img-fluid",
   alt: "",
   style: {
@@ -24019,7 +24019,7 @@ var _hoisted_26 = {
 var _hoisted_27 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "arrow-container mt-3"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/arrow.jpg",
+  src: "assets/img/arrow.webp",
   alt: "Flèche",
   "class": "arrow-img"
 })], -1 /* HOISTED */);
@@ -24037,7 +24037,7 @@ var _hoisted_30 = {
 var _hoisted_31 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "image col-lg-6",
   style: {
-    "background-image": "url(\"assets/img/client.png\")"
+    "background-image": "url(\"assets/img/client.webp\")"
   },
   "data-aos": "fade-right"
 }, null, -1 /* HOISTED */);
@@ -24294,7 +24294,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-wrap"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/portfolio/portfolio-2.jpg",
+  src: "assets/img/portfolio/portfolio-2.webp",
   "class": "img-fluid",
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24302,7 +24302,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "380 Logements Boumerdes"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "LPL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-links"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "assets/img/portfolio/portfolio-2.jpg",
+  href: "assets/img/portfolio/portfolio-2.webp",
   "data-gallery": "portfolioGallery",
   "class": "portfolio-lightbox",
   title: "380 LPL Boumerdes"
@@ -24350,7 +24350,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-wrap"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/portfolio/portfolio-4.jpg",
+  src: "assets/img/portfolio/portfolio-4.webp",
   "class": "img-fluid",
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24358,7 +24358,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "76 Logements Zemmouri"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "LPL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-links"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "assets/img/portfolio/portfolio-4.jpg",
+  href: "assets/img/portfolio/portfolio-4.webp",
   "data-gallery": "portfolioGallery",
   "class": "portfolio-lightbox",
   title: "76 LPL Zemmouri"
@@ -24374,7 +24374,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-wrap"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/portfolio/portfolio-5.jpg",
+  src: "assets/img/portfolio/portfolio-5.webp",
   "class": "img-fluid",
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24382,7 +24382,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "300 Logements Si mustapha"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "LPL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-links"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "assets/img/portfolio/portfolio-5.jpg",
+  href: "assets/img/portfolio/portfolio-5.webp",
   "data-gallery": "portfolioGallery",
   "class": "portfolio-lightbox",
   title: "300 LPL Si mustapha"
@@ -24398,7 +24398,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-wrap"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/portfolio/portfolio-6.jpg",
+  src: "assets/img/portfolio/portfolio-6.webp",
   "class": "img-fluid",
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24406,7 +24406,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "200 Logements Ouled Heddadj"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "LPL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-links"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "assets/img/portfolio/portfolio-6.jpg",
+  href: "assets/img/portfolio/portfolio-6.webp",
   "data-gallery": "portfolioGallery",
   "class": "portfolio-lightbox",
   title: "200 LPL Ouled Heddadj"
@@ -24422,7 +24422,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-wrap"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: "assets/img/portfolio/portfolio-7.jpg",
+  src: "assets/img/portfolio/portfolio-7.webp",
   "class": "img-fluid",
   alt: ""
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
@@ -24430,7 +24430,7 @@ var _hoisted_89 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h4", null, "100 Logements Ouled Heddadj"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", null, "LPL"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "portfolio-links"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("a", {
-  href: "assets/img/portfolio/portfolio-7.jpg",
+  href: "assets/img/portfolio/portfolio-7.webp",
   "data-gallery": "portfolioGallery",
   "class": "portfolio-lightbox",
   title: "100 LPL Ouled Heddadj"
@@ -24449,7 +24449,7 @@ var _hoisted_90 = {
 var _hoisted_91 = {
   "class": "section-title"
 };
-var _hoisted_92 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.jpg\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.png\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 1);
+var _hoisted_92 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<section id=\"clients\" class=\"clients\"><div class=\"container\" data-aos=\"zoom-in\"><div class=\"clients-slider swiper\"><div class=\"swiper-wrapper align-items-center\"><div class=\"swiper-slide\"><a href=\"http://www.mhuv.gov.dz/\"><img src=\"assets/img/logos/mhuv-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://bnh.dz/\"><img src=\"assets/img/logos/bnh-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.aadl.com.dz/\"><img src=\"assets/img/logos/aadl-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.enpi.dz/\"><img src=\"assets/img/logos/enpi-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"http://www.fnpos.dz/\"><img src=\"assets/img/logos/fnpos-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div><div class=\"swiper-slide\"><a href=\"https://www.gloriousalgeria.dz/Ar\"><img src=\"assets/img/logos/gloriousalgeria-logo.webp\" class=\"img-fluid\" alt=\"\"></a></div></div><div class=\"swiper-pagination\"></div></div></div></section>", 1);
 var _hoisted_93 = {
   id: "contact",
   "class": "contact"
@@ -24963,8 +24963,8 @@ console.log(window.locale);
 var messages = _messages__WEBPACK_IMPORTED_MODULE_15__["default"].messages;
 
 var i18n = (0,vue_i18n_dist_vue_i18n_cjs__WEBPACK_IMPORTED_MODULE_16__.createI18n)({
-  locale: locale,
-  fallbackLocale: 'en',
+  locale: 'fr',
+  fallbackLocale: 'fr',
   messages: messages
 });
 var Toast = sweetalert2__WEBPACK_IMPORTED_MODULE_14___default().mixin({
@@ -25027,7 +25027,8 @@ window.onload = function () {
       };
       return successToken;
     } else {
-      console.log('No token found');
+      // console.log('No token found');
+
       return;
     }
   }
@@ -25810,13 +25811,13 @@ function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" 
 function _toPrimitive(t, r) { if ("object" != _typeof(t) || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != _typeof(i)) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
 var messages = {
   fr: (_fr = {
-    Accueil: 'Accueil',
-    Actualités: 'Actualités',
-    Projets: 'Projets',
+    "Accueil": 'Accueil',
+    "Actualités": 'Actualités',
+    "Projets": 'Projets',
     'Fond Documentaire': 'Fond Documentaire',
-    Contact: 'Contact',
+    "Contact": 'Contact',
     'E-Paiement': 'E-Paiement',
-    Commencer: 'Commencer',
+    "Commencer": 'Commencer',
     "Direction Générale": "Direction Générale",
     "Office de Promotion et de Gestion Immobilière": "Office de Promotion et de Gestion Immobilière",
     "Wilaya de BOUMERDES": "Wilaya de BOUMERDES",
@@ -25848,7 +25849,7 @@ var messages = {
     "Vidéos": "Vidéos",
     "Photos": "Photos",
     "Plateforme en ligne": "Plateforme en ligne",
-    "Espace Client": "Espace Client",
+    "Espace Locataire": "Espace Locataire",
     "Paiement en ligne": "Paiement en ligne",
     "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB": "Paiement partiel ou total, en utilisant la carte eddahabia ou bien la carte CIB",
     "Mes quittances de paiement": "Mes quittances de paiement",
@@ -25862,13 +25863,13 @@ var messages = {
     "Liens utiles": "Liens utiles"
   }, _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Contact", "Contact"), "Contactez-nous", "Contactez-nous"), "Adresse", "Adresse"), "Cité Administrative, Boumerdes, Algérie", "Cité Administrative, Boumerdes, Algérie"), "Email", "Email"), "Téléphone", "Téléphone"), "Nom", "Nom"), "Email", "Email"), "Objet", "Objet"), "Message", "Nom"), _defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_defineProperty(_fr, "Envoyer le message", "Envoyer le message"), "Toutes les Actualités", "Toutes les Actualités"), "Actualité Details", "Actualité Details"), "Actualité", "Actualité"), "Détails de l'actualité", "Détails de l'actualité"), "Lire plus", "Lire plus"), "Titre", "Titre"), "Contenu", "Contenu"), "Date", "Date"), "Ajouter une actualité", "Ajouter une actualité"), _defineProperty(_defineProperty(_defineProperty(_fr, "Ajout d'actualités", "Ajout d'actualités"), "Achat et Acquisition des biens", "Achat et Acquisition des biens"), "Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.", "Acquisition des locaux à usage d’habitation, commercial, professionnel ou artisanal.")),
   ar: (_ar = {
-    Accueil: 'صفحة',
-    Actualités: 'أخبار',
-    Projets: 'مشاريع',
+    "Accueil": 'صفحة',
+    "Actualités": 'أخبار',
+    "Projets": 'مشاريع',
     "Fond Documentaire": 'وثائق',
-    Contact: 'اتصل بنا',
+    "Contact": 'اتصل بنا',
     "E-Paiement": 'الدفع الإلكتروني',
-    Commencer: 'ابدأ',
+    "Commencer": 'ابدأ',
     "Direction Générale": "إدارة عامة",
     "Office de Promotion et de Gestion Immobilière": "ديوان الترقية والتسيير العقاري",
     "Wilaya de BOUMERDES": "ولاية بومرداس",
