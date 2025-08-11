@@ -370,7 +370,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-2.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="portfolio-info">
                   <h4>380 Logements Boumerdes</h4>
                   <p>LPL</p>
@@ -405,7 +405,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="portfolio-info">
                   <h4>76 Logements Zemmouri</h4>
                   <p>LPL</p>
@@ -419,7 +419,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="portfolio-info">
                   <h4>300 Logements Si mustapha</h4>
                   <p>LPL</p>
@@ -433,7 +433,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-6.webp" class="img-fluid" alt="" loading="lazy">
                 <div class="portfolio-info">
                   <h4>200 Logements Ouled Heddadj</h4>
                   <p>LPL</p>
@@ -447,7 +447,7 @@
 
             <div class="col-lg-4 col-md-6 portfolio-item filter-card">
               <div class="portfolio-wrap">
-                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="">
+                <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid" alt="" loading="lazy"> 
                 <div class="portfolio-info">
                   <h4>100 Logements Ouled Heddadj</h4>
                   <p>LPL</p>
